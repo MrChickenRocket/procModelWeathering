@@ -1,0 +1,77 @@
+{
+  "m_per_stud": 0.050872,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "tv": "ARC_tv"
+  },
+  "tint": [],
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.0,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "ARC_tv": {
+      "from": "MAT_painted_plastic",
+      "overlay": "topcoat",
+      "colors": {
+        "topcoat": [
+          0.5705,
+          0.448,
+          0.2633
+        ],
+        "primer": [
+          0.03,
+          0.03,
+          0.032
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "tex": null
+        },
+        "primer": {}
+      },
+      "weather": {
+        "flat_impacts": 0.0,
+        "large_edges": 0.5,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.25,
+        "use": 0.35
+      }
+    }
+  }
+}

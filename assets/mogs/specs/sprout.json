@@ -1,0 +1,265 @@
+{
+  "height": 3.27,
+  "min_decal_scale": 0.6,
+  "stacks": {
+    "MOG_sprout_fern": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.055,
+          0.17,
+          0.035
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_sprout_spot": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.018,
+          0.06,
+          0.014
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MECH_rubber": {
+      "from": "MECH_rubber",
+      "color": [
+        0.03,
+        0.07,
+        0.022
+      ]
+    },
+    "MECH_rubber_red": {
+      "from": "MECH_rubber",
+      "color": [
+        0.05,
+        0.12,
+        0.03
+      ]
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_sprout_belly": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.42,
+          0.5,
+          0.17
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_sprout_toe": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.6,
+          0.16,
+          0.02
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_glint": {
+      "from": "MECH_eye",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "slots": {
+    "paint": "MOG_sprout_fern",
+    "decal": "MOG_sprout_fern"
+  },
+  "tint": [
+    {
+      "slot": "eye",
+      "stack": "MOG_glint",
+      "near": [
+        [
+          -0.6148,
+          2.4644,
+          -1.5366
+        ],
+        [
+          -0.5147,
+          2.344,
+          -1.6114
+        ],
+        [
+          0.4753,
+          2.4644,
+          -1.5816
+        ],
+        [
+          0.6002,
+          2.344,
+          -1.5838
+        ]
+      ],
+      "mirror_x": false,
+      "within_studs": 0.004
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_sprout_belly",
+      "within_studs": 0.05,
+      "mirror_x": true,
+      "near": [
+        [
+          0.21,
+          1.07,
+          -1.33
+        ]
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_sprout_toe",
+      "bones": [
+        "ToeL",
+        "ToeR",
+        "FToeL",
+        "FToeR"
+      ]
+    }
+  ],
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MECH_eye",
+    "within_studs": 0.1,
+    "lateral_studs": 0.01
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.2
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.2
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.2
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.1
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.1
+    },
+    {
+      "bone": "FMetaL",
+      "weight": 0.1
+    },
+    {
+      "bone": "FMetaR",
+      "weight": 0.1
+    }
+  ],
+  "pinch": [],
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7,
+  "patterns": [
+    {
+      "from": [
+        "MOG_sprout_fern"
+      ],
+      "to": "MOG_sprout_spot",
+      "mode": "spots",
+      "period_studs": 0.28,
+      "fill": 0.16,
+      "seed": 5,
+      "octaves": 1
+    }
+  ],
+  "decals": {
+    "light_paint": [
+      "MOG_sprout_belly"
+    ]
+  }
+}

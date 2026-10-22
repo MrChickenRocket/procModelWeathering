@@ -1,0 +1,337 @@
+{
+  "m_per_stud": 0.091852,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MOG_shell_ice",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MECH_steel",
+    "rubber": "MECH_rubber",
+    "glass": "MECH_glass",
+    "eye": "MOG_shell_eye",
+    "decal": "MOG_shell_ice",
+    "yellow": "MECH_paint_yellow",
+    "copper": "MECH_copper"
+  },
+  "tint": [
+    {
+      "slot": "rubber",
+      "stack": "MECH_rubber_red",
+      "fraction": 0.35,
+      "pick": "thinnest"
+    },
+    {
+      "slot": "eye",
+      "stack": "MOG_glint",
+      "near": [
+        [
+          -0.16,
+          1.5201,
+          -0.7819
+        ],
+        [
+          -0.1172,
+          1.4656,
+          -0.8099
+        ],
+        [
+          0.1042,
+          1.5201,
+          -0.8117
+        ],
+        [
+          0.1513,
+          1.4656,
+          -0.7917
+        ]
+      ],
+      "mirror_x": false,
+      "within_studs": 0.004
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_shell_white",
+      "bones": [
+        "Chest"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_shell_white",
+      "within_studs": 0.04,
+      "mirror_x": true,
+      "near": [
+        [
+          0.59,
+          1.31,
+          0.1
+        ],
+        [
+          0.59,
+          1.31,
+          0.29
+        ],
+        [
+          0.54,
+          1.48,
+          -0.27
+        ],
+        [
+          0.42,
+          1.42,
+          0.69
+        ]
+      ]
+    }
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.15
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.15
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.15
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.15
+    }
+  ],
+  "decals": {
+    "count": 60,
+    "mirror": 0.6,
+    "targets": {
+      "MOG_shell_ice": 1.0,
+      "MECH_gunmetal": 0.45
+    },
+    "pinch": {
+      "radius_studs": 0.35,
+      "per_point": 2,
+      "kinds": [
+        "hazard",
+        "warning"
+      ],
+      "points": [
+        {
+          "at": [
+            -0.84,
+            0.94,
+            0.64
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.84,
+            0.3552,
+            0.5764
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.84,
+            0.94,
+            0.64
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.84,
+            0.3552,
+            0.5764
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.84,
+            0.94,
+            -0.44
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.84,
+            0.3552,
+            -0.3764
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.84,
+            0.94,
+            -0.44
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.84,
+            0.3552,
+            -0.3764
+          ],
+          "mirror_x": false,
+          "count": 1
+        }
+      ]
+    },
+    "light_paint": [
+      "MOG_shell_ice",
+      "MOG_shell_white"
+    ],
+    "scale": 0.6
+  },
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.52,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "MOG_shell_ice": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.3,
+          0.52,
+          0.72
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3,
+        "scorch": 0.6
+      }
+    },
+    "MOG_shell_white": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.6,
+          0.6,
+          0.58
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3,
+        "scorch": 0.6
+      }
+    },
+    "MOG_shell_eye": {
+      "from": "MECH_eye",
+      "color": [
+        0.35,
+        0.85,
+        1.0
+      ]
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3,
+        "scorch": 1.5
+      }
+    },
+    "MOG_glint": {
+      "from": "MECH_eye",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MOG_shell_eye",
+    "within_studs": 0.1,
+    "lateral_studs": 0.01
+  },
+  "soot": {
+    "color": [
+      0.72,
+      0.78,
+      0.82
+    ],
+    "rough": 0.75
+  }
+}

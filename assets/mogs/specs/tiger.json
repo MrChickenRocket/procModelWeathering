@@ -1,0 +1,267 @@
+{
+  "height": 6.29,
+  "stacks": {
+    "MOG_tiger_amber": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.38,
+          0.1,
+          0.012
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_tiger_black": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.014,
+          0.014,
+          0.016
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_tiger_eye": {
+      "from": "MECH_eye",
+      "color": [
+        0.12,
+        0.9,
+        0.18
+      ]
+    }
+  },
+  "slots": {
+    "paint": "MOG_tiger_amber",
+    "decal": "MOG_tiger_amber",
+    "eye": "MOG_tiger_eye"
+  },
+  "tint": [
+    {
+      "slot": "paint",
+      "stack": "MOG_tiger_black",
+      "bones": [
+        "Tail2",
+        "Tail4",
+        "Tail6",
+        "Tail8"
+      ]
+    }
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.6
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.6
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.6
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.6
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.3
+    },
+    {
+      "bone": "FMetaL",
+      "weight": 0.3
+    },
+    {
+      "bone": "FMetaR",
+      "weight": 0.3
+    }
+  ],
+  "pinch": [
+    {
+      "at": [
+        0,
+        3.73,
+        -4.16
+      ],
+      "mirror_x": false,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        0,
+        2.79,
+        -4.16
+      ],
+      "mirror_x": false,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        0.92,
+        3.24,
+        -2.68
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    }
+  ],
+  "atlases": [
+    [
+      "ThighL",
+      "ThighR",
+      "ShinL",
+      "ShinR",
+      "MetaL",
+      "MetaR",
+      "ToeL",
+      "ToeR",
+      "FThighL",
+      "FThighR",
+      "FShinL",
+      "FShinR",
+      "FMetaL",
+      "FMetaR",
+      "FToeL",
+      "FToeR"
+    ],
+    [
+      "Pelvis",
+      "Chest",
+      "Neck"
+    ],
+    [
+      "Head",
+      "Jaw",
+      "Tail1",
+      "Tail2",
+      "Tail3",
+      "Tail4",
+      "Tail5",
+      "Tail6",
+      "Tail7",
+      "Tail8",
+      "Tail9"
+    ]
+  ],
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7,
+  "patterns": [
+    {
+      "from": [
+        "MOG_tiger_amber"
+      ],
+      "to": "MOG_tiger_black",
+      "mode": "bands",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "period_studs": 0.75,
+      "fill": 0.3,
+      "box": [
+        [
+          -3,
+          2.9,
+          -2.0
+        ],
+        [
+          3,
+          6,
+          3.6
+        ]
+      ],
+      "seed": 11
+    },
+    {
+      "from": [
+        "MOG_tiger_amber"
+      ],
+      "to": "MOG_tiger_black",
+      "mode": "bands",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "period_studs": 0.55,
+      "fill": 0.28,
+      "box": [
+        [
+          -3,
+          0,
+          -3
+        ],
+        [
+          3,
+          2.9,
+          3
+        ]
+      ],
+      "seed": 12
+    }
+  ]
+}

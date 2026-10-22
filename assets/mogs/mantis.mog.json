@@ -1,0 +1,526 @@
+{
+ "mech": "mantis",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\mantis\\export",
+ "m_per_stud": 0.050612,
+ "atlases": 1,
+ "face_ranges": {
+  "Pelvis": [
+   "mantis_a1",
+   0,
+   3496
+  ],
+  "Chest": [
+   "mantis_a1",
+   3496,
+   4548
+  ],
+  "Head": [
+   "mantis_a1",
+   4548,
+   6168
+  ],
+  "EyeL": [
+   "mantis_a1",
+   6168,
+   6528
+  ],
+  "EyeR": [
+   "mantis_a1",
+   6528,
+   6888
+  ],
+  "Tail1": [
+   "mantis_a1",
+   6888,
+   9136
+  ],
+  "FThighL": [
+   "mantis_a1",
+   9136,
+   9836
+  ],
+  "FShinL": [
+   "mantis_a1",
+   9836,
+   12060
+  ],
+  "FMetaL": [
+   "mantis_a1",
+   12060,
+   12352
+  ],
+  "FToeL": [
+   "mantis_a1",
+   12352,
+   13092
+  ],
+  "FThighR": [
+   "mantis_a1",
+   13092,
+   13792
+  ],
+  "FShinR": [
+   "mantis_a1",
+   13792,
+   16016
+  ],
+  "FMetaR": [
+   "mantis_a1",
+   16016,
+   16308
+  ],
+  "FToeR": [
+   "mantis_a1",
+   16308,
+   17048
+  ],
+  "MThighL": [
+   "mantis_a1",
+   17048,
+   17752
+  ],
+  "MShinL": [
+   "mantis_a1",
+   17752,
+   18456
+  ],
+  "MMetaL": [
+   "mantis_a1",
+   18456,
+   18724
+  ],
+  "MToeL": [
+   "mantis_a1",
+   18724,
+   19172
+  ],
+  "MThighR": [
+   "mantis_a1",
+   19172,
+   19876
+  ],
+  "MShinR": [
+   "mantis_a1",
+   19876,
+   20580
+  ],
+  "MMetaR": [
+   "mantis_a1",
+   20580,
+   20848
+  ],
+  "MToeR": [
+   "mantis_a1",
+   20848,
+   21296
+  ],
+  "ThighL": [
+   "mantis_a1",
+   21296,
+   22000
+  ],
+  "ShinL": [
+   "mantis_a1",
+   22000,
+   22704
+  ],
+  "MetaL": [
+   "mantis_a1",
+   22704,
+   22972
+  ],
+  "ToeL": [
+   "mantis_a1",
+   22972,
+   23420
+  ],
+  "ThighR": [
+   "mantis_a1",
+   23420,
+   24124
+  ],
+  "ShinR": [
+   "mantis_a1",
+   24124,
+   24828
+  ],
+  "MetaR": [
+   "mantis_a1",
+   24828,
+   25096
+  ],
+  "ToeR": [
+   "mantis_a1",
+   25096,
+   25544
+  ],
+  "fkneeL_1": [
+   "mantis_a1",
+   25544,
+   25620
+  ],
+  "fkneeL_2": [
+   "mantis_a1",
+   25620,
+   25660
+  ],
+  "fkneeR_1": [
+   "mantis_a1",
+   25660,
+   25736
+  ],
+  "fkneeR_2": [
+   "mantis_a1",
+   25736,
+   25776
+  ],
+  "mkneeL_1": [
+   "mantis_a1",
+   25776,
+   25852
+  ],
+  "mkneeL_2": [
+   "mantis_a1",
+   25852,
+   25892
+  ],
+  "mkneeR_1": [
+   "mantis_a1",
+   25892,
+   25968
+  ],
+  "mkneeR_2": [
+   "mantis_a1",
+   25968,
+   26008
+  ],
+  "kneeL_1": [
+   "mantis_a1",
+   26008,
+   26084
+  ],
+  "kneeL_2": [
+   "mantis_a1",
+   26084,
+   26124
+  ],
+  "kneeR_1": [
+   "mantis_a1",
+   26124,
+   26200
+  ],
+  "kneeR_2": [
+   "mantis_a1",
+   26200,
+   26240
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 1,
+  "Head": 1,
+  "EyeL": 1,
+  "EyeR": 1,
+  "Tail1": 1,
+  "FThighL": 1,
+  "FShinL": 1,
+  "FMetaL": 1,
+  "FToeL": 1,
+  "FThighR": 1,
+  "FShinR": 1,
+  "FMetaR": 1,
+  "FToeR": 1,
+  "MThighL": 1,
+  "MShinL": 1,
+  "MMetaL": 1,
+  "MToeL": 1,
+  "MThighR": 1,
+  "MShinR": 1,
+  "MMetaR": 1,
+  "MToeR": 1,
+  "ThighL": 1,
+  "ShinL": 1,
+  "MetaL": 1,
+  "ToeL": 1,
+  "ThighR": 1,
+  "ShinR": 1,
+  "MetaR": 1,
+  "ToeR": 1,
+  "fkneeL_1": 1,
+  "fkneeL_2": 1,
+  "fkneeR_1": 1,
+  "fkneeR_2": 1,
+  "mkneeL_1": 1,
+  "mkneeL_2": 1,
+  "mkneeR_1": 1,
+  "mkneeR_2": 1,
+  "kneeL_1": 1,
+  "kneeL_2": 1,
+  "kneeR_1": 1,
+  "kneeR_2": 1
+ },
+ "stacks": [
+  "MECH_gunmetal",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MECH_steel",
+  "MOG_mantis_braid",
+  "MOG_mantis_green",
+  "MOG_mantis_lamp"
+ ],
+ "config": {
+  "m_per_stud": 0.050612,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_mantis_green",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MOG_mantis_lamp",
+   "decal": "MOG_mantis_green",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper"
+  },
+  "tint": [
+   {
+    "slot": "rubber",
+    "stack": "MOG_mantis_braid",
+    "bones": [
+     "Pelvis"
+    ]
+   }
+  ],
+  "wear": [
+   {
+    "bone": "FToeL",
+    "weight": 0.6
+   },
+   {
+    "bone": "FToeR",
+    "weight": 0.6
+   },
+   {
+    "bone": "MToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "MToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "FMetaL",
+    "weight": 0.3
+   },
+   {
+    "bone": "FMetaR",
+    "weight": 0.3
+   },
+   {
+    "bone": "MMetaL",
+    "weight": 0.2
+   },
+   {
+    "bone": "MMetaR",
+    "weight": 0.2
+   },
+   {
+    "bone": "MetaL",
+    "weight": 0.2
+   },
+   {
+    "bone": "MetaR",
+    "weight": 0.2
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_mantis_green": 1.0,
+    "MECH_gunmetal": 0.45
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       0.98,
+       0.66,
+       -2.78
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "chevron"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       1.23,
+       0.9,
+       -2.03
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "gear"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.75,
+       2.0,
+       -1.2
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "plate"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       1.71,
+       1.0,
+       -0.66
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       1.71,
+       1.0,
+       1.39
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     }
+    ]
+   },
+   "scale": 1.0
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.221,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_mantis_green": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.75,
+      0.12,
+      0.006
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.42
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MECH_gunmetal": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.1,
+     "large_edges": 0.15,
+     "detail": 0.25,
+     "crease": 0.2,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.5
+    }
+   },
+   "MOG_mantis_lamp": {
+    "from": "MECH_eye",
+    "color": [
+     0.78,
+     0.76,
+     0.68
+    ]
+   },
+   "MOG_mantis_braid": {
+    "from": "MECH_steel",
+    "color": [
+     0.3,
+     0.31,
+     0.32
+    ]
+   }
+  }
+ }
+}

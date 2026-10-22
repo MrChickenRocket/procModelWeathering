@@ -1,0 +1,1019 @@
+{
+ "mech": "bulldog",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\bulldog\\export",
+ "m_per_stud": 0.028671,
+ "atlases": 3,
+ "face_ranges": {
+  "Pelvis": [
+   "bulldog_a1",
+   0,
+   4282
+  ],
+  "Tail1": [
+   "bulldog_a1",
+   4282,
+   4442
+  ],
+  "ThighL": [
+   "bulldog_a1",
+   4442,
+   5176
+  ],
+  "ThighR": [
+   "bulldog_a1",
+   5176,
+   5910
+  ],
+  "kneeramL_1": [
+   "bulldog_a1",
+   5910,
+   5986
+  ],
+  "kneeramL_2": [
+   "bulldog_a1",
+   5986,
+   6042
+  ],
+  "kneeramL_3": [
+   "bulldog_a1",
+   6042,
+   6082
+  ],
+  "kneeramR_1": [
+   "bulldog_a1",
+   6082,
+   6158
+  ],
+  "kneeramR_2": [
+   "bulldog_a1",
+   6158,
+   6214
+  ],
+  "kneeramR_3": [
+   "bulldog_a1",
+   6214,
+   6254
+  ],
+  "Chest": [
+   "bulldog_a2",
+   0,
+   2304
+  ],
+  "Neck": [
+   "bulldog_a2",
+   2304,
+   2744
+  ],
+  "Head": [
+   "bulldog_a2",
+   2744,
+   4840
+  ],
+  "Jaw": [
+   "bulldog_a2",
+   4840,
+   6008
+  ],
+  "neckramL_1": [
+   "bulldog_a2",
+   6008,
+   6084
+  ],
+  "neckramL_2": [
+   "bulldog_a2",
+   6084,
+   6124
+  ],
+  "neckramR_1": [
+   "bulldog_a2",
+   6124,
+   6200
+  ],
+  "neckramR_2": [
+   "bulldog_a2",
+   6200,
+   6240
+  ],
+  "jawramL_1": [
+   "bulldog_a2",
+   6240,
+   6316
+  ],
+  "jawramL_2": [
+   "bulldog_a2",
+   6316,
+   6356
+  ],
+  "jawramR_1": [
+   "bulldog_a2",
+   6356,
+   6432
+  ],
+  "jawramR_2": [
+   "bulldog_a2",
+   6432,
+   6472
+  ],
+  "ShinL": [
+   "bulldog_a3",
+   0,
+   800
+  ],
+  "MetaL": [
+   "bulldog_a3",
+   800,
+   1272
+  ],
+  "ToeL": [
+   "bulldog_a3",
+   1272,
+   1944
+  ],
+  "FThighL": [
+   "bulldog_a3",
+   1944,
+   2642
+  ],
+  "FShinL": [
+   "bulldog_a3",
+   2642,
+   3442
+  ],
+  "FMetaL": [
+   "bulldog_a3",
+   3442,
+   3914
+  ],
+  "FToeL": [
+   "bulldog_a3",
+   3914,
+   4586
+  ],
+  "ShinR": [
+   "bulldog_a3",
+   4586,
+   5386
+  ],
+  "MetaR": [
+   "bulldog_a3",
+   5386,
+   5858
+  ],
+  "ToeR": [
+   "bulldog_a3",
+   5858,
+   6530
+  ],
+  "FThighR": [
+   "bulldog_a3",
+   6530,
+   7228
+  ],
+  "FShinR": [
+   "bulldog_a3",
+   7228,
+   8028
+  ],
+  "FMetaR": [
+   "bulldog_a3",
+   8028,
+   8500
+  ],
+  "FToeR": [
+   "bulldog_a3",
+   8500,
+   9172
+  ],
+  "FkneeramL_1": [
+   "bulldog_a3",
+   9172,
+   9248
+  ],
+  "FkneeramL_2": [
+   "bulldog_a3",
+   9248,
+   9304
+  ],
+  "FkneeramL_3": [
+   "bulldog_a3",
+   9304,
+   9344
+  ],
+  "FhockramLo_1": [
+   "bulldog_a3",
+   9344,
+   9420
+  ],
+  "FhockramLo_2": [
+   "bulldog_a3",
+   9420,
+   9476
+  ],
+  "FhockramLo_3": [
+   "bulldog_a3",
+   9476,
+   9516
+  ],
+  "FhockramLi_1": [
+   "bulldog_a3",
+   9516,
+   9592
+  ],
+  "FhockramLi_2": [
+   "bulldog_a3",
+   9592,
+   9648
+  ],
+  "FhockramLi_3": [
+   "bulldog_a3",
+   9648,
+   9688
+  ],
+  "FkneeramR_1": [
+   "bulldog_a3",
+   9688,
+   9764
+  ],
+  "FkneeramR_2": [
+   "bulldog_a3",
+   9764,
+   9820
+  ],
+  "FkneeramR_3": [
+   "bulldog_a3",
+   9820,
+   9860
+  ],
+  "FhockramRi_1": [
+   "bulldog_a3",
+   9860,
+   9936
+  ],
+  "FhockramRi_2": [
+   "bulldog_a3",
+   9936,
+   9992
+  ],
+  "FhockramRi_3": [
+   "bulldog_a3",
+   9992,
+   10032
+  ],
+  "FhockramRo_1": [
+   "bulldog_a3",
+   10032,
+   10108
+  ],
+  "FhockramRo_2": [
+   "bulldog_a3",
+   10108,
+   10164
+  ],
+  "FhockramRo_3": [
+   "bulldog_a3",
+   10164,
+   10204
+  ],
+  "hockramLo_1": [
+   "bulldog_a3",
+   10204,
+   10280
+  ],
+  "hockramLo_2": [
+   "bulldog_a3",
+   10280,
+   10336
+  ],
+  "hockramLo_3": [
+   "bulldog_a3",
+   10336,
+   10376
+  ],
+  "hockramLi_1": [
+   "bulldog_a3",
+   10376,
+   10452
+  ],
+  "hockramLi_2": [
+   "bulldog_a3",
+   10452,
+   10508
+  ],
+  "hockramLi_3": [
+   "bulldog_a3",
+   10508,
+   10548
+  ],
+  "hockramRi_1": [
+   "bulldog_a3",
+   10548,
+   10624
+  ],
+  "hockramRi_2": [
+   "bulldog_a3",
+   10624,
+   10680
+  ],
+  "hockramRi_3": [
+   "bulldog_a3",
+   10680,
+   10720
+  ],
+  "hockramRo_1": [
+   "bulldog_a3",
+   10720,
+   10796
+  ],
+  "hockramRo_2": [
+   "bulldog_a3",
+   10796,
+   10852
+  ],
+  "hockramRo_3": [
+   "bulldog_a3",
+   10852,
+   10892
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 2,
+  "Neck": 2,
+  "Head": 2,
+  "Jaw": 2,
+  "Tail1": 1,
+  "ThighL": 1,
+  "ShinL": 3,
+  "MetaL": 3,
+  "ToeL": 3,
+  "FThighL": 3,
+  "FShinL": 3,
+  "FMetaL": 3,
+  "FToeL": 3,
+  "ThighR": 1,
+  "ShinR": 3,
+  "MetaR": 3,
+  "ToeR": 3,
+  "FThighR": 3,
+  "FShinR": 3,
+  "FMetaR": 3,
+  "FToeR": 3,
+  "neckramL_1": 2,
+  "neckramL_2": 2,
+  "neckramR_1": 2,
+  "neckramR_2": 2,
+  "jawramL_1": 2,
+  "jawramL_2": 2,
+  "jawramR_1": 2,
+  "jawramR_2": 2,
+  "FkneeramL_1": 3,
+  "FkneeramL_2": 3,
+  "FkneeramL_3": 3,
+  "FhockramLo_1": 3,
+  "FhockramLo_2": 3,
+  "FhockramLo_3": 3,
+  "FhockramLi_1": 3,
+  "FhockramLi_2": 3,
+  "FhockramLi_3": 3,
+  "FkneeramR_1": 3,
+  "FkneeramR_2": 3,
+  "FkneeramR_3": 3,
+  "FhockramRi_1": 3,
+  "FhockramRi_2": 3,
+  "FhockramRi_3": 3,
+  "FhockramRo_1": 3,
+  "FhockramRo_2": 3,
+  "FhockramRo_3": 3,
+  "kneeramL_1": 1,
+  "kneeramL_2": 1,
+  "kneeramL_3": 1,
+  "hockramLo_1": 3,
+  "hockramLo_2": 3,
+  "hockramLo_3": 3,
+  "hockramLi_1": 3,
+  "hockramLi_2": 3,
+  "hockramLi_3": 3,
+  "kneeramR_1": 1,
+  "kneeramR_2": 1,
+  "kneeramR_3": 1,
+  "hockramRi_1": 3,
+  "hockramRi_2": 3,
+  "hockramRi_3": 3,
+  "hockramRo_1": 3,
+  "hockramRo_2": 3,
+  "hockramRo_3": 3
+ },
+ "stacks": [
+  "MECH_eye",
+  "MECH_glass",
+  "MECH_gunmetal",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MECH_rubber_red",
+  "MECH_steel",
+  "MOG_bulldog_od"
+ ],
+ "config": {
+  "m_per_stud": 0.028671,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_bulldog_od",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MECH_eye",
+   "decal": "MOG_bulldog_od",
+   "yellow": "MECH_paint_yellow"
+  },
+  "tint": [
+   {
+    "slot": "rubber",
+    "stack": "MECH_rubber_red",
+    "fraction": 0.35,
+    "pick": "thinnest"
+   }
+  ],
+  "wear": [
+   {
+    "bone": "ToeL",
+    "weight": 0.15
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.15
+   },
+   {
+    "bone": "FToeL",
+    "weight": 0.15
+   },
+   {
+    "bone": "FToeR",
+    "weight": 0.15
+   },
+   {
+    "bone": "MetaL",
+    "weight": 0.1
+   },
+   {
+    "bone": "MetaR",
+    "weight": 0.1
+   },
+   {
+    "bone": "FMetaL",
+    "weight": 0.1
+   },
+   {
+    "bone": "FMetaR",
+    "weight": 0.1
+   },
+   {
+    "bone": "ShinL",
+    "weight": 0.1
+   },
+   {
+    "bone": "ShinR",
+    "weight": 0.1
+   },
+   {
+    "bone": "FShinL",
+    "weight": 0.1
+   },
+   {
+    "bone": "FShinR",
+    "weight": 0.1
+   },
+   {
+    "bone": "Jaw",
+    "weight": 0.6
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_bulldog_od": 1.0,
+    "MECH_gunmetal": 0.45
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       2.3,
+       4.5,
+       3.4
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       2.38,
+       2.95,
+       2.72
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       2.44,
+       1.42,
+       3.45
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       2.45,
+       0.66,
+       3.12
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       2.42,
+       4.45,
+       -3.35
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       2.48,
+       2.8,
+       -2.72
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       2.5,
+       1.32,
+       -3.18
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       2.5,
+       0.66,
+       -2.98
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       0,
+       4.3,
+       -4.05
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       3.95,
+       -4.85
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       3.05,
+       -4.9
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       4.15,
+       5.45
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       4.7,
+       -0.3
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0.8,
+       2.2,
+       -6.8
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       -1.2,
+       5.95,
+       -3.7
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -1.2,
+       4.62,
+       -5.05
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.2,
+       5.95,
+       -3.7
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.2,
+       4.62,
+       -5.05
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -1.5,
+       3.42,
+       -4.82
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -1.5,
+       2.5,
+       -5.6
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.5,
+       3.42,
+       -4.82
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.5,
+       2.5,
+       -5.6
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -2.42,
+       3.9,
+       -4.35
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -2.492,
+       1.912,
+       -3.976
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -3.26,
+       2.5,
+       -2.72
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -3.28,
+       0.9,
+       -2.98
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -1.7,
+       2.5,
+       -2.72
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -1.72,
+       0.9,
+       -2.98
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       2.42,
+       3.9,
+       -4.35
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       2.492,
+       1.912,
+       -3.976
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.7,
+       2.5,
+       -2.72
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.72,
+       0.9,
+       -2.98
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       3.26,
+       2.5,
+       -2.72
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       3.28,
+       0.9,
+       -2.98
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -2.3,
+       3.95,
+       4.4
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -2.416,
+       2.032,
+       4.138
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -3.16,
+       2.65,
+       2.72
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -3.23,
+       0.9,
+       3.12
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -1.6,
+       2.65,
+       2.72
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -1.67,
+       0.9,
+       3.12
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       2.3,
+       3.95,
+       4.4
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       2.416,
+       2.032,
+       4.138
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.6,
+       2.65,
+       2.72
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.67,
+       0.9,
+       3.12
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       3.16,
+       2.65,
+       2.72
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       3.23,
+       0.9,
+       3.12
+      ],
+      "mirror_x": false,
+      "count": 1
+     }
+    ]
+   },
+   "mix": {
+    "paint": {
+     "stencil": 0.4,
+     "numbers": 0.2,
+     "plate": 0.15,
+     "roundel": 0.1,
+     "triangle": 0.05,
+     "warning": 0.05,
+     "hazard": 0.05
+    }
+   },
+   "scale": 1.3951612903225807
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.221,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_bulldog_od": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.04,
+      0.045,
+      0.022
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   }
+  },
+  "atlases": [
+   [
+    "Root",
+    "Pelvis",
+    "Tail1",
+    "ThighL",
+    "ThighR"
+   ],
+   [
+    "Chest",
+    "Neck",
+    "Head",
+    "Jaw"
+   ],
+   [
+    "ShinL",
+    "ShinR",
+    "MetaL",
+    "MetaR",
+    "ToeL",
+    "ToeR",
+    "FThighL",
+    "FThighR",
+    "FShinL",
+    "FShinR",
+    "FMetaL",
+    "FMetaR",
+    "FToeL",
+    "FToeR"
+   ]
+  ]
+ }
+}

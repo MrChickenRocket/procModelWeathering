@@ -1,0 +1,212 @@
+{
+  "height": 3.6,
+  "min_decal_scale": 0.6,
+  "stacks": {
+    "MOG_orb_white": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.62,
+          0.62,
+          0.6
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.22,
+          "chip": 0.45
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_orb_lilac": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.4,
+          0.3,
+          0.62
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.26,
+          "chip": 0.45
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_orb_red_eye": {
+      "from": "MECH_eye",
+      "color": [
+        0.95,
+        0.04,
+        0.03
+      ]
+    },
+    "MOG_orb_heatsink": {
+      "from": "MAT_steel_blued",
+      "colors": {
+        "bluing": [
+          0.1,
+          0.09,
+          0.26
+        ]
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    }
+  },
+  "slots": {
+    "paint": "MOG_orb_white",
+    "decal": "MOG_orb_white",
+    "eye": "MOG_orb_red_eye"
+  },
+  "tint": [
+    {
+      "slot": "paint",
+      "stack": "MOG_orb_lilac",
+      "within_studs": 0.04,
+      "mirror_x": true,
+      "near": [
+        [
+          0,
+          3.12,
+          -0.78
+        ],
+        [
+          0,
+          1.34,
+          -0.85
+        ],
+        [
+          0.83,
+          3.04,
+          -0.22
+        ],
+        [
+          0,
+          2.22,
+          1.14
+        ],
+        [
+          2.25,
+          2.2,
+          0.88
+        ],
+        [
+          2.25,
+          3.13,
+          0
+        ],
+        [
+          2.25,
+          1.27,
+          0
+        ]
+      ]
+    },
+    {
+      "slot": "gunmetal",
+      "stack": "MOG_orb_heatsink",
+      "within_studs": 0.03,
+      "mirror_x": true,
+      "near": [
+        [
+          1.98,
+          2.2,
+          -0.15
+        ],
+        [
+          1.98,
+          2.2,
+          -0.25
+        ],
+        [
+          1.98,
+          2.2,
+          -0.35
+        ]
+      ]
+    },
+    {
+      "slot": "steel",
+      "stack": "MOG_orb_heatsink",
+      "within_studs": 0.03,
+      "mirror_x": true,
+      "near": [
+        [
+          1.98,
+          2.2,
+          -0.5
+        ],
+        [
+          1.98,
+          2.2,
+          -0.6
+        ]
+      ]
+    }
+  ],
+  "decals": {
+    "light_paint": [
+      "MOG_orb_white",
+      "MOG_orb_lilac"
+    ]
+  },
+  "wear": [],
+  "pinch": [],
+  "tier_scale": {
+    "scorch": 0.1
+  },
+  "min_feature_px": 7,
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MOG_orb_red_eye",
+    "within_studs": 0.08,
+    "lateral_studs": 0.01
+  }
+}

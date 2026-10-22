@@ -1,0 +1,391 @@
+{
+ "mech": "soldier",
+ "src": "C:\\Repos\\ArcRoyale\\tools\\out\\weather\\soldier\\export",
+ "m_per_stud": 0.050872,
+ "atlases": 3,
+ "face_ranges": {
+  "vest": [
+   "soldier_a1",
+   0,
+   1320
+  ],
+  "vestpads": [
+   "soldier_a1",
+   1320,
+   1408
+  ],
+  "neck": [
+   "soldier_a1",
+   1408,
+   1604
+  ],
+  "neck__lod1": [
+   "soldier_a1",
+   1604,
+   1648
+  ],
+  "pelvis": [
+   "soldier_a2",
+   0,
+   528
+  ],
+  "fore": [
+   "soldier_a2",
+   528,
+   616
+  ],
+  "thigh_L": [
+   "soldier_a3",
+   0,
+   88
+  ],
+  "thigh_R": [
+   "soldier_a3",
+   88,
+   176
+  ],
+  "shin": [
+   "soldier_a3",
+   176,
+   572
+  ],
+  "shin__lod1": [
+   "soldier_a3",
+   572,
+   728
+  ],
+  "boot": [
+   "soldier_a3",
+   728,
+   1328
+  ],
+  "boot__lod1": [
+   "soldier_a3",
+   1328,
+   1736
+  ]
+ },
+ "atlas_of": {
+  "vest": 1,
+  "vestpads": 1,
+  "neck": 1,
+  "neck__lod1": 1,
+  "pelvis": 2,
+  "fore": 2,
+  "thigh_L": 3,
+  "thigh_R": 3,
+  "shin": 3,
+  "shin__lod1": 3,
+  "boot": 3,
+  "boot__lod1": 3
+ },
+ "stacks": [
+  "ARC_boot",
+  "ARC_buckle",
+  "ARC_gear",
+  "ARC_gearhi",
+  "ARC_lining",
+  "ARC_neck",
+  "ARC_pad",
+  "ARC_pockethi",
+  "ARC_rubber",
+  "ARC_strap"
+ ],
+ "config": {
+  "m_per_stud": 0.050872,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MECH_paint_red",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "ARC_rubber",
+   "glass": "MECH_glass",
+   "eye": "MECH_eye",
+   "decal": "MECH_paint_red",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper",
+   "boot": "ARC_boot",
+   "buckle": "ARC_buckle",
+   "gear": "ARC_gear",
+   "gearhi": "ARC_gearhi",
+   "lining": "ARC_lining",
+   "neck": "ARC_neck",
+   "pad": "ARC_pad",
+   "pockethi": "ARC_pockethi",
+   "strap": "ARC_strap"
+  },
+  "tint": [],
+  "wear": [
+   {
+    "bone": "pelvis",
+    "weight": 0.3
+   },
+   {
+    "bone": "fore",
+    "weight": 0.35
+   },
+   {
+    "bone": "thigh_L",
+    "weight": 0.3
+   },
+   {
+    "bone": "thigh_R",
+    "weight": 0.3
+   },
+   {
+    "bone": "shin",
+    "weight": 0.5
+   },
+   {
+    "bone": "shin__lod1",
+    "weight": 0.5
+   },
+   {
+    "bone": "boot",
+    "weight": 0.5
+   },
+   {
+    "bone": "boot__lod1",
+    "weight": 0.5
+   }
+  ],
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.0,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "ARC_boot": {
+    "from": "MAT_polymer",
+    "overlay": "base",
+    "color": [
+     0.7874,
+     0.7874,
+     0.7678
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_buckle": {
+    "from": "MAT_polymer",
+    "overlay": "base",
+    "color": [
+     0.0732,
+     0.0732,
+     0.0783
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_gear": {
+    "from": "MAT_polymer",
+    "overlay": "base",
+    "color": [
+     0.0079,
+     0.0079,
+     0.0085
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_gearhi": {
+    "from": "MAT_polymer",
+    "overlay": "base",
+    "color": [
+     0.022,
+     0.022,
+     0.0245
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_lining": {
+    "from": "MECH_rubber",
+    "overlay": "base",
+    "color": [
+     0.0027,
+     0.0027,
+     0.0031
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_neck": {
+    "from": "MECH_rubber",
+    "overlay": "base",
+    "color": [
+     0.0116,
+     0.0116,
+     0.0134
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_pad": {
+    "from": "MAT_polymer",
+    "overlay": "base",
+    "color": [
+     0.0079,
+     0.0079,
+     0.0085
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_pockethi": {
+    "from": "MAT_polymer",
+    "overlay": "base",
+    "color": [
+     0.022,
+     0.022,
+     0.0245
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_rubber": {
+    "from": "MECH_rubber",
+    "overlay": "base",
+    "color": [
+     0.0044,
+     0.0044,
+     0.0049
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_strap": {
+    "from": "MAT_polymer",
+    "overlay": "base",
+    "color": [
+     0.0783,
+     0.1005,
+     0.0301
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   }
+  },
+  "atlases": [
+   [
+    "vest",
+    "vestpads",
+    "neck",
+    "neck__lod1"
+   ],
+   [
+    "pelvis",
+    "fore"
+   ],
+   [
+    "thigh_L",
+    "thigh_R",
+    "shin",
+    "shin__lod1",
+    "boot",
+    "boot__lod1"
+   ]
+  ]
+ }
+}

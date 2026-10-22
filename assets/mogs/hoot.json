@@ -1,0 +1,255 @@
+{
+  "m_per_stud": 0.094476,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MOG_hoot_sky",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MECH_steel",
+    "rubber": "MECH_rubber",
+    "glass": "MECH_glass",
+    "eye": "MECH_eye",
+    "decal": "MOG_hoot_sky",
+    "yellow": "MECH_paint_yellow"
+  },
+  "tint": [
+    {
+      "slot": "rubber",
+      "stack": "MECH_rubber_red",
+      "fraction": 0.35,
+      "pick": "thinnest"
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_hoot_face",
+      "within_studs": 0.04,
+      "near": [
+        [
+          0,
+          1.43,
+          -0.36
+        ],
+        [
+          0,
+          1.63,
+          -0.43
+        ]
+      ]
+    }
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.2
+    },
+    {
+      "bone": "WingL",
+      "weight": 0.15
+    },
+    {
+      "bone": "WingR",
+      "weight": 0.15
+    },
+    {
+      "bone": "FanL",
+      "weight": 0.15
+    },
+    {
+      "bone": "FanR",
+      "weight": 0.15
+    }
+  ],
+  "decals": {
+    "count": 60,
+    "mirror": 0.6,
+    "targets": {
+      "MOG_hoot_sky": 1.0,
+      "MECH_gunmetal": 0.45
+    },
+    "pinch": {
+      "radius_studs": 0.35,
+      "per_point": 2,
+      "kinds": [
+        "hazard",
+        "warning"
+      ],
+      "points": [
+        {
+          "at": [
+            0,
+            0.81,
+            -0.43
+          ],
+          "mirror_x": false,
+          "kinds": [
+            "hazard"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            -0.33,
+            0.4635,
+            -0.0233
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.33,
+            0.323,
+            0.1774
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.33,
+            0.4635,
+            -0.0233
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.33,
+            0.323,
+            0.1774
+          ],
+          "mirror_x": false,
+          "count": 1
+        }
+      ]
+    },
+    "light_paint": [
+      "MOG_hoot_sky",
+      "MOG_hoot_face"
+    ],
+    "scale": 0.6
+  },
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.13,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "MOG_hoot_sky": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.17,
+          0.36,
+          0.6
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_hoot_face": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.45,
+          0.46,
+          0.46
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    }
+  },
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MECH_eye",
+    "within_studs": 0.1,
+    "lateral_studs": 0.01
+  }
+}

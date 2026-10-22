@@ -1,0 +1,942 @@
+{
+ "mech": "scorpion",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\scorpion\\export",
+ "m_per_stud": 0.022044,
+ "atlases": 2,
+ "face_ranges": {
+  "Pelvis": [
+   "scorpion_a1",
+   0,
+   5664
+  ],
+  "Chest": [
+   "scorpion_a1",
+   5664,
+   6460
+  ],
+  "Head": [
+   "scorpion_a1",
+   6460,
+   6908
+  ],
+  "Tail1": [
+   "scorpion_a1",
+   6908,
+   7952
+  ],
+  "Tail2": [
+   "scorpion_a1",
+   7952,
+   8996
+  ],
+  "Tail3": [
+   "scorpion_a1",
+   8996,
+   10040
+  ],
+  "Tail4": [
+   "scorpion_a1",
+   10040,
+   11104
+  ],
+  "Tail5": [
+   "scorpion_a1",
+   11104,
+   12188
+  ],
+  "Tail6": [
+   "scorpion_a1",
+   12188,
+   12992
+  ],
+  "FThighL": [
+   "scorpion_a2",
+   0,
+   816
+  ],
+  "FShinL": [
+   "scorpion_a2",
+   816,
+   1644
+  ],
+  "FMetaL": [
+   "scorpion_a2",
+   1644,
+   2080
+  ],
+  "FToeL": [
+   "scorpion_a2",
+   2080,
+   2456
+  ],
+  "FThighR": [
+   "scorpion_a2",
+   2456,
+   3272
+  ],
+  "FShinR": [
+   "scorpion_a2",
+   3272,
+   4100
+  ],
+  "FMetaR": [
+   "scorpion_a2",
+   4100,
+   4536
+  ],
+  "FToeR": [
+   "scorpion_a2",
+   4536,
+   4912
+  ],
+  "MThighL": [
+   "scorpion_a2",
+   4912,
+   5728
+  ],
+  "MShinL": [
+   "scorpion_a2",
+   5728,
+   6556
+  ],
+  "MMetaL": [
+   "scorpion_a2",
+   6556,
+   6992
+  ],
+  "MToeL": [
+   "scorpion_a2",
+   6992,
+   7368
+  ],
+  "MThighR": [
+   "scorpion_a2",
+   7368,
+   8184
+  ],
+  "MShinR": [
+   "scorpion_a2",
+   8184,
+   9012
+  ],
+  "MMetaR": [
+   "scorpion_a2",
+   9012,
+   9448
+  ],
+  "MToeR": [
+   "scorpion_a2",
+   9448,
+   9824
+  ],
+  "NThighL": [
+   "scorpion_a2",
+   9824,
+   10640
+  ],
+  "NShinL": [
+   "scorpion_a2",
+   10640,
+   11468
+  ],
+  "NMetaL": [
+   "scorpion_a2",
+   11468,
+   11904
+  ],
+  "NToeL": [
+   "scorpion_a2",
+   11904,
+   12280
+  ],
+  "NThighR": [
+   "scorpion_a2",
+   12280,
+   13096
+  ],
+  "NShinR": [
+   "scorpion_a2",
+   13096,
+   13924
+  ],
+  "NMetaR": [
+   "scorpion_a2",
+   13924,
+   14360
+  ],
+  "NToeR": [
+   "scorpion_a2",
+   14360,
+   14736
+  ],
+  "ThighL": [
+   "scorpion_a2",
+   14736,
+   15552
+  ],
+  "ShinL": [
+   "scorpion_a2",
+   15552,
+   16380
+  ],
+  "MetaL": [
+   "scorpion_a2",
+   16380,
+   16816
+  ],
+  "ToeL": [
+   "scorpion_a2",
+   16816,
+   17192
+  ],
+  "ThighR": [
+   "scorpion_a2",
+   17192,
+   18008
+  ],
+  "ShinR": [
+   "scorpion_a2",
+   18008,
+   18836
+  ],
+  "MetaR": [
+   "scorpion_a2",
+   18836,
+   19272
+  ],
+  "ToeR": [
+   "scorpion_a2",
+   19272,
+   19648
+  ],
+  "UpperArmL": [
+   "scorpion_a2",
+   19648,
+   20116
+  ],
+  "ForearmL": [
+   "scorpion_a2",
+   20116,
+   20788
+  ],
+  "HandL": [
+   "scorpion_a2",
+   20788,
+   21908
+  ],
+  "PincerL": [
+   "scorpion_a2",
+   21908,
+   22308
+  ],
+  "UpperArmR": [
+   "scorpion_a2",
+   22308,
+   22776
+  ],
+  "ForearmR": [
+   "scorpion_a2",
+   22776,
+   23448
+  ],
+  "HandR": [
+   "scorpion_a2",
+   23448,
+   24568
+  ],
+  "PincerR": [
+   "scorpion_a2",
+   24568,
+   24968
+  ],
+  "elbowL_1": [
+   "scorpion_a2",
+   24968,
+   25044
+  ],
+  "elbowL_2": [
+   "scorpion_a2",
+   25044,
+   25084
+  ],
+  "pinchL_1": [
+   "scorpion_a2",
+   25084,
+   25160
+  ],
+  "pinchL_2": [
+   "scorpion_a2",
+   25160,
+   25208
+  ],
+  "pinchL_3": [
+   "scorpion_a2",
+   25208,
+   25248
+  ],
+  "elbowR_1": [
+   "scorpion_a2",
+   25248,
+   25324
+  ],
+  "elbowR_2": [
+   "scorpion_a2",
+   25324,
+   25364
+  ],
+  "pinchR_1": [
+   "scorpion_a2",
+   25364,
+   25440
+  ],
+  "pinchR_2": [
+   "scorpion_a2",
+   25440,
+   25488
+  ],
+  "pinchR_3": [
+   "scorpion_a2",
+   25488,
+   25528
+  ],
+  "kneeFL_1": [
+   "scorpion_a2",
+   25528,
+   25604
+  ],
+  "kneeFL_2": [
+   "scorpion_a2",
+   25604,
+   25652
+  ],
+  "kneeFL_3": [
+   "scorpion_a2",
+   25652,
+   25692
+  ],
+  "kneeFR_1": [
+   "scorpion_a2",
+   25692,
+   25768
+  ],
+  "kneeFR_2": [
+   "scorpion_a2",
+   25768,
+   25816
+  ],
+  "kneeFR_3": [
+   "scorpion_a2",
+   25816,
+   25856
+  ],
+  "kneeML_1": [
+   "scorpion_a2",
+   25856,
+   25932
+  ],
+  "kneeML_2": [
+   "scorpion_a2",
+   25932,
+   25980
+  ],
+  "kneeML_3": [
+   "scorpion_a2",
+   25980,
+   26020
+  ],
+  "kneeMR_1": [
+   "scorpion_a2",
+   26020,
+   26096
+  ],
+  "kneeMR_2": [
+   "scorpion_a2",
+   26096,
+   26144
+  ],
+  "kneeMR_3": [
+   "scorpion_a2",
+   26144,
+   26184
+  ],
+  "kneeNL_1": [
+   "scorpion_a2",
+   26184,
+   26260
+  ],
+  "kneeNL_2": [
+   "scorpion_a2",
+   26260,
+   26308
+  ],
+  "kneeNL_3": [
+   "scorpion_a2",
+   26308,
+   26348
+  ],
+  "kneeNR_1": [
+   "scorpion_a2",
+   26348,
+   26424
+  ],
+  "kneeNR_2": [
+   "scorpion_a2",
+   26424,
+   26472
+  ],
+  "kneeNR_3": [
+   "scorpion_a2",
+   26472,
+   26512
+  ],
+  "kneeL_1": [
+   "scorpion_a2",
+   26512,
+   26588
+  ],
+  "kneeL_2": [
+   "scorpion_a2",
+   26588,
+   26636
+  ],
+  "kneeL_3": [
+   "scorpion_a2",
+   26636,
+   26676
+  ],
+  "kneeR_1": [
+   "scorpion_a2",
+   26676,
+   26752
+  ],
+  "kneeR_2": [
+   "scorpion_a2",
+   26752,
+   26800
+  ],
+  "kneeR_3": [
+   "scorpion_a2",
+   26800,
+   26840
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 1,
+  "Head": 1,
+  "FThighL": 2,
+  "FShinL": 2,
+  "FMetaL": 2,
+  "FToeL": 2,
+  "FThighR": 2,
+  "FShinR": 2,
+  "FMetaR": 2,
+  "FToeR": 2,
+  "MThighL": 2,
+  "MShinL": 2,
+  "MMetaL": 2,
+  "MToeL": 2,
+  "MThighR": 2,
+  "MShinR": 2,
+  "MMetaR": 2,
+  "MToeR": 2,
+  "NThighL": 2,
+  "NShinL": 2,
+  "NMetaL": 2,
+  "NToeL": 2,
+  "NThighR": 2,
+  "NShinR": 2,
+  "NMetaR": 2,
+  "NToeR": 2,
+  "ThighL": 2,
+  "ShinL": 2,
+  "MetaL": 2,
+  "ToeL": 2,
+  "ThighR": 2,
+  "ShinR": 2,
+  "MetaR": 2,
+  "ToeR": 2,
+  "UpperArmL": 2,
+  "ForearmL": 2,
+  "HandL": 2,
+  "PincerL": 2,
+  "UpperArmR": 2,
+  "ForearmR": 2,
+  "HandR": 2,
+  "PincerR": 2,
+  "Tail1": 1,
+  "Tail2": 1,
+  "Tail3": 1,
+  "Tail4": 1,
+  "Tail5": 1,
+  "Tail6": 1,
+  "elbowL_1": 2,
+  "elbowL_2": 2,
+  "pinchL_1": 2,
+  "pinchL_2": 2,
+  "pinchL_3": 2,
+  "elbowR_1": 2,
+  "elbowR_2": 2,
+  "pinchR_1": 2,
+  "pinchR_2": 2,
+  "pinchR_3": 2,
+  "kneeFL_1": 2,
+  "kneeFL_2": 2,
+  "kneeFL_3": 2,
+  "kneeFR_1": 2,
+  "kneeFR_2": 2,
+  "kneeFR_3": 2,
+  "kneeML_1": 2,
+  "kneeML_2": 2,
+  "kneeML_3": 2,
+  "kneeMR_1": 2,
+  "kneeMR_2": 2,
+  "kneeMR_3": 2,
+  "kneeNL_1": 2,
+  "kneeNL_2": 2,
+  "kneeNL_3": 2,
+  "kneeNR_1": 2,
+  "kneeNR_2": 2,
+  "kneeNR_3": 2,
+  "kneeL_1": 2,
+  "kneeL_2": 2,
+  "kneeL_3": 2,
+  "kneeR_1": 2,
+  "kneeR_2": 2,
+  "kneeR_3": 2
+ },
+ "stacks": [
+  "MECH_gunmetal",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MOG_scorp_acid",
+  "MOG_scorp_fern",
+  "MOG_scorp_glass",
+  "MOG_scorp_olive",
+  "MOG_scorp_ss"
+ ],
+ "config": {
+  "m_per_stud": 0.022044,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_scorp_fern",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MOG_scorp_ss",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MOG_scorp_acid",
+   "decal": "MOG_scorp_fern",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper"
+  },
+  "tint": [
+   {
+    "slot": "steel",
+    "stack": "MOG_scorp_glass",
+    "near": [
+     [
+      0.8,
+      4.6,
+      0.55
+     ]
+    ],
+    "mirror_x": true,
+    "within_studs": 0.03
+   },
+   {
+    "slot": "paint",
+    "stack": "MOG_scorp_olive",
+    "near": [
+     [
+      0,
+      2.32,
+      -1.6
+     ],
+     [
+      2.01,
+      2.54,
+      -1.2
+     ],
+     [
+      0,
+      2.34,
+      0.28
+     ],
+     [
+      0,
+      2.34,
+      1.66
+     ],
+     [
+      0,
+      2.34,
+      2.89
+     ],
+     [
+      0,
+      1.74,
+      0.18
+     ],
+     [
+      0,
+      2.26,
+      -3.31
+     ],
+     [
+      0,
+      1.73,
+      -3.08
+     ],
+     [
+      0,
+      2.45,
+      -4.14
+     ]
+    ],
+    "mirror_x": true,
+    "within_studs": 0.015
+   }
+  ],
+  "wear": [
+   {
+    "bone": "FToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "FToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "MToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "MToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "NToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "NToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.4
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_scorp_fern": 1.0,
+    "MOG_scorp_olive": 0.8,
+    "MOG_scorp_glass": 0.6,
+    "MECH_gunmetal": 0.3
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       2.5,
+       1.3,
+       -5.9
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "biohazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       1.5,
+       4.6,
+       0.55
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "corrosive"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       2.05,
+       2.54,
+       -1.2
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "corrosive"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.8,
+       2.9,
+       -3.65
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "diamond"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.6,
+       3.75,
+       1.4
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "refband"
+      ],
+      "count": 1
+     }
+    ]
+   },
+   "light_paint": [
+    "MOG_scorp_glass"
+   ],
+   "scale": 1.814516129032258
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.221,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_scorp_fern": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.07,
+      0.16,
+      0.06
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.4
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.2,
+     "large_edges": 0.25,
+     "detail": 0.35,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MOG_scorp_olive": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.1,
+      0.1,
+      0.04
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.45
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.2,
+     "large_edges": 0.25,
+     "detail": 0.35,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MECH_gunmetal": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.1,
+     "large_edges": 0.15,
+     "detail": 0.25,
+     "crease": 0.2,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.5
+    }
+   },
+   "MOG_scorp_ss": {
+    "from": "MAT_anodized_alu",
+    "colors": {
+     "anodize": [
+      0.55,
+      0.56,
+      0.57
+     ]
+    },
+    "layers": {
+     "anodize": {
+      "metal": 0.9,
+      "rough": 0.35
+     }
+    }
+   },
+   "MOG_scorp_glass": {
+    "from": "MAT_painted_polymer",
+    "colors": {
+     "topcoat": [
+      0.66,
+      0.64,
+      0.56
+     ],
+     "primer": [
+      0.05,
+      0.06,
+      0.08
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.35
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.15,
+     "large_edges": 0.25,
+     "detail": 0.35,
+     "crease": 0.3,
+     "use": 0.3,
+     "dirt": 0.4,
+     "dust": 0.3
+    }
+   },
+   "MOG_scorp_acid": {
+    "from": "MECH_eye",
+    "color": [
+     0.25,
+     0.45,
+     0.01
+    ]
+   }
+  },
+  "atlases": [
+   [
+    "Pelvis",
+    "Chest",
+    "Head",
+    "Tail1",
+    "Tail2",
+    "Tail3",
+    "Tail4",
+    "Tail5",
+    "Tail6"
+   ],
+   [
+    "FThighL",
+    "FThighR",
+    "FShinL",
+    "FShinR",
+    "FMetaL",
+    "FMetaR",
+    "FToeL",
+    "FToeR",
+    "MThighL",
+    "MThighR",
+    "MShinL",
+    "MShinR",
+    "MMetaL",
+    "MMetaR",
+    "MToeL",
+    "MToeR",
+    "NThighL",
+    "NThighR",
+    "NShinL",
+    "NShinR",
+    "NMetaL",
+    "NMetaR",
+    "NToeL",
+    "NToeR",
+    "ThighL",
+    "ThighR",
+    "ShinL",
+    "ShinR",
+    "MetaL",
+    "MetaR",
+    "ToeL",
+    "ToeR",
+    "UpperArmL",
+    "UpperArmR",
+    "ForearmL",
+    "ForearmR",
+    "HandL",
+    "HandR",
+    "PincerL",
+    "PincerR"
+   ]
+  ]
+ }
+}

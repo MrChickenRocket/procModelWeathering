@@ -1,0 +1,358 @@
+{
+ "mech": "exo",
+ "src": "C:\\Repos\\ArcRoyale\\tools\\out\\weather\\exo\\export",
+ "m_per_stud": 0.050872,
+ "atlases": 3,
+ "face_ranges": {
+  "torso": [
+   "exo_a1",
+   0,
+   1936
+  ],
+  "torso__lod1": [
+   "exo_a1",
+   1936,
+   3000
+  ],
+  "vest": [
+   "exo_a1",
+   3000,
+   3232
+  ],
+  "vest__lod1": [
+   "exo_a1",
+   3232,
+   3464
+  ],
+  "vestpads": [
+   "exo_a1",
+   3464,
+   3552
+  ],
+  "shoulder_L": [
+   "exo_a1",
+   3552,
+   3764
+  ],
+  "shoulder_L__lod1": [
+   "exo_a1",
+   3764,
+   3812
+  ],
+  "shoulder_R": [
+   "exo_a1",
+   3812,
+   4024
+  ],
+  "shoulder_R__lod1": [
+   "exo_a1",
+   4024,
+   4072
+  ],
+  "pelvis": [
+   "exo_a2",
+   0,
+   668
+  ],
+  "pelvis__lod1": [
+   "exo_a2",
+   668,
+   828
+  ],
+  "upper": [
+   "exo_a2",
+   828,
+   1224
+  ],
+  "upper__lod1": [
+   "exo_a2",
+   1224,
+   1444
+  ],
+  "fore": [
+   "exo_a2",
+   1444,
+   1924
+  ],
+  "fore__lod1": [
+   "exo_a2",
+   1924,
+   2188
+  ],
+  "thigh_L": [
+   "exo_a3",
+   0,
+   584
+  ],
+  "thigh_L__lod1": [
+   "exo_a3",
+   584,
+   980
+  ],
+  "thigh_R": [
+   "exo_a3",
+   980,
+   1564
+  ],
+  "thigh_R__lod1": [
+   "exo_a3",
+   1564,
+   1960
+  ],
+  "shin": [
+   "exo_a3",
+   1960,
+   2340
+  ],
+  "shin__lod1": [
+   "exo_a3",
+   2340,
+   2484
+  ],
+  "boot": [
+   "exo_a3",
+   2484,
+   3108
+  ],
+  "boot__lod1": [
+   "exo_a3",
+   3108,
+   3284
+  ]
+ },
+ "atlas_of": {
+  "torso": 1,
+  "torso__lod1": 1,
+  "vest": 1,
+  "vest__lod1": 1,
+  "vestpads": 1,
+  "shoulder_L": 1,
+  "shoulder_L__lod1": 1,
+  "shoulder_R": 1,
+  "shoulder_R__lod1": 1,
+  "pelvis": 2,
+  "pelvis__lod1": 2,
+  "upper": 2,
+  "upper__lod1": 2,
+  "fore": 2,
+  "fore__lod1": 2,
+  "thigh_L": 3,
+  "thigh_L__lod1": 3,
+  "thigh_R": 3,
+  "thigh_R__lod1": 3,
+  "shin": 3,
+  "shin__lod1": 3,
+  "boot": 3,
+  "boot__lod1": 3
+ },
+ "stacks": [
+  "EXO_detail",
+  "EXO_fabric",
+  "EXO_plate",
+  "EXO_rod"
+ ],
+ "config": {
+  "m_per_stud": 0.050872,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "EXO_plate",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MECH_eye",
+   "decal": "MECH_paint_red",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper",
+   "plate": "EXO_plate",
+   "fabric": "EXO_fabric",
+   "rod": "EXO_rod",
+   "detail": "EXO_detail"
+  },
+  "tint": [],
+  "wear": [
+   {
+    "bone": "pelvis",
+    "weight": 0.3
+   },
+   {
+    "bone": "pelvis__lod1",
+    "weight": 0.3
+   },
+   {
+    "bone": "upper",
+    "weight": 0.2
+   },
+   {
+    "bone": "upper__lod1",
+    "weight": 0.2
+   },
+   {
+    "bone": "fore",
+    "weight": 0.35
+   },
+   {
+    "bone": "fore__lod1",
+    "weight": 0.35
+   },
+   {
+    "bone": "thigh_L",
+    "weight": 0.3
+   },
+   {
+    "bone": "thigh_L__lod1",
+    "weight": 0.3
+   },
+   {
+    "bone": "thigh_R",
+    "weight": 0.3
+   },
+   {
+    "bone": "thigh_R__lod1",
+    "weight": 0.3
+   },
+   {
+    "bone": "shin",
+    "weight": 0.5
+   },
+   {
+    "bone": "shin__lod1",
+    "weight": 0.5
+   },
+   {
+    "bone": "boot",
+    "weight": 0.5
+   },
+   {
+    "bone": "boot__lod1",
+    "weight": 0.5
+   }
+  ],
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.0,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "EXO_plate": {
+    "from": "MECH_paint_red",
+    "overlay": "topcoat",
+    "colors": {
+     "topcoat": [
+      0.0331,
+      0.0593,
+      0.022
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "tex": null
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "EXO_fabric": {
+    "from": "MAT_fabric",
+    "overlay": "base",
+    "color": [
+     0.0331,
+     0.047,
+     0.1626
+    ]
+   },
+   "EXO_rod": {
+    "from": "MECH_steel",
+    "overlay": "base",
+    "color": [
+     0.477,
+     0.5071,
+     0.5542
+    ]
+   },
+   "EXO_detail": {
+    "from": "MAT_polymer",
+    "overlay": "base",
+    "color": [
+     0.01,
+     0.01,
+     0.0116
+    ]
+   }
+  },
+  "atlases": [
+   [
+    "torso",
+    "torso__lod1",
+    "vest",
+    "vest__lod1",
+    "vestpads",
+    "shoulder_L",
+    "shoulder_L__lod1",
+    "shoulder_R",
+    "shoulder_R__lod1"
+   ],
+   [
+    "pelvis",
+    "pelvis__lod1",
+    "upper",
+    "upper__lod1",
+    "fore",
+    "fore__lod1"
+   ],
+   [
+    "thigh_L",
+    "thigh_L__lod1",
+    "thigh_R",
+    "thigh_R__lod1",
+    "shin",
+    "shin__lod1",
+    "boot",
+    "boot__lod1"
+   ]
+  ]
+ }
+}

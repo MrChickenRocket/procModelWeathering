@@ -1,0 +1,551 @@
+{
+  "m_per_stud": 0.009143,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MOG_bear_blue",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MECH_steel",
+    "rubber": "MECH_rubber",
+    "glass": "MECH_glass",
+    "eye": "MECH_eye",
+    "decal": "MOG_bear_blue",
+    "yellow": "MECH_paint_yellow"
+  },
+  "tint": [
+    {
+      "slot": "rubber",
+      "stack": "MECH_rubber_red",
+      "fraction": 0.35,
+      "pick": "thinnest"
+    }
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.15
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.15
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.1
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.1
+    },
+    {
+      "bone": "ShinL",
+      "weight": 0.1
+    },
+    {
+      "bone": "ShinR",
+      "weight": 0.1
+    },
+    {
+      "bone": "HandL",
+      "weight": 0.2
+    },
+    {
+      "bone": "HandR",
+      "weight": 0.2
+    },
+    {
+      "bone": "ForearmL",
+      "weight": 0.1
+    },
+    {
+      "bone": "ForearmR",
+      "weight": 0.1
+    },
+    {
+      "bone": "Jaw",
+      "weight": 0.15
+    }
+  ],
+  "decals": {
+    "count": 60,
+    "mirror": 0.6,
+    "targets": {
+      "MOG_bear_blue": 1.0,
+      "MECH_gunmetal": 0.45
+    },
+    "pinch": {
+      "radius_studs": 0.35,
+      "per_point": 2,
+      "kinds": [
+        "hazard",
+        "warning"
+      ],
+      "points": [
+        {
+          "at": [
+            3.0,
+            10.4,
+            0.8
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            3.2,
+            6.0,
+            -0.9
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            3.2,
+            2.2,
+            0.5
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            3.2,
+            0.9,
+            -1.8
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            6.4,
+            18.0,
+            -0.6
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            7.3,
+            13.2,
+            0.5
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            7.5,
+            8.9,
+            -1.0
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            0,
+            16.0,
+            -2.9
+          ],
+          "mirror_x": false
+        },
+        {
+          "at": [
+            0,
+            16.0,
+            -3.9
+          ],
+          "mirror_x": false
+        },
+        {
+          "at": [
+            0,
+            14.7,
+            -4.6
+          ],
+          "mirror_x": false
+        },
+        {
+          "at": [
+            0,
+            12.4,
+            0.5
+          ],
+          "mirror_x": false
+        },
+        {
+          "at": [
+            1.7,
+            14.3,
+            -6.5
+          ],
+          "mirror_x": true,
+          "kinds": [
+            "hazard"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            1.7,
+            14.3,
+            -7.7
+          ],
+          "mirror_x": true,
+          "kinds": [
+            "hazard"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            -2.6,
+            15.1,
+            -2.75
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -2.55,
+            15.5,
+            -4.9
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            2.6,
+            15.1,
+            -2.75
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            2.55,
+            15.5,
+            -4.9
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -5.334,
+            8.552,
+            0.436
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -5.45,
+            3.644,
+            0.418
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.984,
+            8.552,
+            0.436
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.1,
+            3.644,
+            0.418
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -3.95,
+            4.3,
+            1.95
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -3.95,
+            1.85,
+            2.45
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -2.45,
+            4.3,
+            1.95
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -2.45,
+            1.85,
+            2.45
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -9.128,
+            15.984,
+            0.262
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -9.834,
+            11.394,
+            0.47
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            5.334,
+            8.552,
+            0.436
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            5.45,
+            3.644,
+            0.418
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.984,
+            8.552,
+            0.436
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.1,
+            3.644,
+            0.418
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            2.45,
+            4.3,
+            1.95
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            2.45,
+            1.85,
+            2.45
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            3.95,
+            4.3,
+            1.95
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            3.95,
+            1.85,
+            2.45
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            9.128,
+            15.984,
+            0.262
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            9.834,
+            11.394,
+            0.47
+          ],
+          "mirror_x": false,
+          "count": 1
+        }
+      ]
+    },
+    "scale": 4.375
+  },
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.221,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "MOG_bear_blue": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.012,
+          0.02,
+          0.05
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    }
+  },
+  "atlases": [
+    [
+      "ShinL",
+      "ShinR",
+      "MetaL",
+      "MetaR",
+      "ToeL",
+      "ToeR"
+    ],
+    [
+      "UpperArmL",
+      "UpperArmR",
+      "ForearmL",
+      "ForearmR",
+      "HandL",
+      "HandR"
+    ],
+    [
+      "Root",
+      "Pelvis",
+      "Neck",
+      "Head",
+      "Jaw",
+      "ThighL",
+      "ThighR"
+    ],
+    [
+      "Chest"
+    ]
+  ],
+  "density": {
+    "install_scale": 1.0,
+    "full_below": 12,
+    "floor_at": 35,
+    "floor": 0.35,
+    "rider_boxes": [
+      [
+        [
+          -3.0,
+          18.0,
+          -1.8
+        ],
+        [
+          3.0,
+          24.0,
+          4.6
+        ]
+      ],
+      [
+        [
+          -4.5,
+          17.0,
+          2.5
+        ],
+        [
+          4.5,
+          27.0,
+          4.5
+        ]
+      ],
+      [
+        [
+          -2.1,
+          17.5,
+          -4.8
+        ],
+        [
+          2.1,
+          18.7,
+          -4.3
+        ]
+      ]
+    ]
+  }
+}

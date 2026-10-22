@@ -1,0 +1,319 @@
+{
+  "m_per_stud": 0.050872,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MECH_paint_red",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MECH_steel",
+    "rubber": "MECH_rubber",
+    "glass": "MECH_glass",
+    "eye": "MECH_eye",
+    "decal": "MECH_paint_red",
+    "yellow": "MECH_paint_yellow",
+    "copper": "MECH_copper",
+    "as_boot": "ARC_as_boot",
+    "as_chrome": "ARC_as_chrome",
+    "as_dark": "ARC_as_dark",
+    "as_dial": "ARC_as_dial",
+    "as_pack": "ARC_as_pack",
+    "as_panel": "ARC_as_panel",
+    "as_red": "ARC_as_red",
+    "as_rib": "ARC_as_rib",
+    "as_sole": "ARC_as_sole"
+  },
+  "tint": [],
+  "wear": [
+    {
+      "bone": "pelvis",
+      "weight": 0.3
+    },
+    {
+      "bone": "pelvis__lod1",
+      "weight": 0.3
+    },
+    {
+      "bone": "upper",
+      "weight": 0.2
+    },
+    {
+      "bone": "upper__lod1",
+      "weight": 0.2
+    },
+    {
+      "bone": "fore",
+      "weight": 0.35
+    },
+    {
+      "bone": "fore__lod1",
+      "weight": 0.35
+    },
+    {
+      "bone": "thigh_L",
+      "weight": 0.3
+    },
+    {
+      "bone": "thigh_L__lod1",
+      "weight": 0.3
+    },
+    {
+      "bone": "thigh_R",
+      "weight": 0.3
+    },
+    {
+      "bone": "thigh_R__lod1",
+      "weight": 0.3
+    },
+    {
+      "bone": "shin",
+      "weight": 0.5
+    },
+    {
+      "bone": "shin__lod1",
+      "weight": 0.5
+    },
+    {
+      "bone": "boot",
+      "weight": 0.5
+    },
+    {
+      "bone": "boot__lod1",
+      "weight": 0.5
+    }
+  ],
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.0,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "ARC_as_boot": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.8481,
+        0.8481,
+        0.8073
+      ],
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.175,
+        "detail": 0.25,
+        "crease": 0.25,
+        "dirt": 0.2,
+        "dust": 0.075,
+        "use": 0.2,
+        "streaks": 0.0
+      }
+    },
+    "ARC_as_chrome": {
+      "from": "MECH_steel",
+      "overlay": "base",
+      "color": [
+        0.5705,
+        0.587,
+        0.6038
+      ],
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.175,
+        "detail": 0.25,
+        "crease": 0.25,
+        "dirt": 0.3,
+        "dust": 0.175,
+        "use": 0.4,
+        "humidity": 0.0,
+        "streaks": 0.0
+      }
+    },
+    "ARC_as_dark": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.0331,
+        0.0331,
+        0.0363
+      ],
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.175,
+        "detail": 0.25,
+        "crease": 0.25,
+        "dirt": 0.2,
+        "dust": 0.075,
+        "use": 0.2,
+        "streaks": 0.0
+      }
+    },
+    "ARC_as_dial": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.8481,
+        0.8481,
+        0.8276
+      ],
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.175,
+        "detail": 0.25,
+        "crease": 0.25,
+        "dirt": 0.2,
+        "dust": 0.075,
+        "use": 0.2,
+        "streaks": 0.0
+      }
+    },
+    "ARC_as_pack": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.8276,
+        0.8276,
+        0.7874
+      ],
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.175,
+        "detail": 0.25,
+        "crease": 0.25,
+        "dirt": 0.2,
+        "dust": 0.075,
+        "use": 0.2,
+        "streaks": 0.0
+      }
+    },
+    "ARC_as_panel": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.6383,
+        0.6383,
+        0.6038
+      ],
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.175,
+        "detail": 0.25,
+        "crease": 0.25,
+        "dirt": 0.2,
+        "dust": 0.075,
+        "use": 0.2,
+        "streaks": 0.0
+      }
+    },
+    "ARC_as_red": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.6038,
+        0.0134,
+        0.0134
+      ],
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.175,
+        "detail": 0.25,
+        "crease": 0.25,
+        "dirt": 0.2,
+        "dust": 0.075,
+        "use": 0.2,
+        "streaks": 0.0
+      }
+    },
+    "ARC_as_rib": {
+      "from": "MECH_steel",
+      "overlay": "base",
+      "color": [
+        0.477,
+        0.4919,
+        0.5225
+      ],
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.175,
+        "detail": 0.25,
+        "crease": 0.25,
+        "dirt": 0.3,
+        "dust": 0.175,
+        "use": 0.4,
+        "humidity": 0.0,
+        "streaks": 0.0
+      }
+    },
+    "ARC_as_sole": {
+      "from": "MECH_rubber",
+      "overlay": "base",
+      "color": [
+        0.1706,
+        0.1789,
+        0.196
+      ],
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.175,
+        "detail": 0.25,
+        "crease": 0.25,
+        "dirt": 0.2,
+        "dust": 0.075,
+        "use": 0.2,
+        "streaks": 0.0
+      }
+    }
+  },
+  "atlases": [
+    [
+      "torso",
+      "torso__lod1",
+      "vest"
+    ],
+    [
+      "pelvis",
+      "pelvis__lod1",
+      "upper",
+      "upper__lod1",
+      "fore",
+      "fore__lod1"
+    ],
+    [
+      "thigh_L",
+      "thigh_L__lod1",
+      "thigh_R",
+      "thigh_R__lod1",
+      "shin",
+      "shin__lod1",
+      "boot",
+      "boot__lod1"
+    ]
+  ]
+}

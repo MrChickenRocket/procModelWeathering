@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Material Preview</title>
+<style>
+  :root { --bg: #16181b; --panel: #202328ee; --fg: #d8dbe0; --dim: #8a9099; --accent: #6fa8dc; --line: #33373e; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 13px/1.4 system-ui, sans-serif; overflow: hidden; }
+  canvas { display: block; }
+  #panel { position: absolute; top: 12px; left: 12px; width: 220px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; z-index: 2; }
+  #panel h1 { font-size: 13px; margin: 0 0 8px; font-weight: 600; }
+  .row { display: flex; gap: 6px; margin: 6px 0; flex-wrap: wrap; }
+  .seg button { flex: 1; background: transparent; color: var(--fg); border: 1px solid var(--line); padding: 4px 0; border-radius: 4px; cursor: pointer; font: inherit; }
+  .seg button.on { background: var(--accent); border-color: var(--accent); color: #111; }
+  label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+  .slider { align-items: center; }
+  .slider span:first-child { width: 58px; color: var(--dim); }
+  .slider input { flex: 1; min-width: 0; }
+  .slider span:last-child { width: 32px; text-align: right; font-variant-numeric: tabular-nums; }
+  .hint { color: var(--dim); font-size: 11px; margin-top: 8px; }
+  .tag { position: absolute; transform: translate(-50%, 0); text-align: center; pointer-events: none; white-space: nowrap; }
+  .tag b { display: block; font-size: 12px; }
+  .tag span { color: var(--dim); font-size: 11px; }
+</style>
+</head>
+<body>
+<div id="panel">
+  <h1>Material Preview</h1>
+  <div class="row seg" id="kind"><button data-v="material" class="on">Materials</button><button data-v="mask">Masks</button></div>
+  <div class="row seg" id="shape"><button data-v="sphere" class="on">Sphere</button><button data-v="box">Box</button><button data-v="cyl">Cylinder</button><button data-v="plane">Plane</button></div>
+  <div class="row seg" id="envsel"><button data-v="sky" class="on">Sky</button><button data-v="room">Room</button></div>
+  <div class="row slider"><span>Tiling</span><input type="range" id="tiling" min="0.25" max="6" step="0.25" value="1"><span id="tiling_v">1.00</span></div>
+  <div class="row slider"><span>Height</span><input type="range" id="disp" min="0" max="0.05" step="0.0025" value="0"><span id="disp_v">0</span></div>
+  <div class="row slider"><span>Exposure</span><input type="range" id="exposure" min="-2" max="2" step="0.05" value="0"><span id="exposure_v">1.00</span></div>
+  <div class="row"><label><input type="checkbox" id="spin" checked> Rotate</label></div>
+  <div class="row"><label><input type="checkbox" id="tint"> Use sim stack colors</label></div>
+  <div class="hint">Click an object to focus it, click again to return. Drag to orbit.</div>
+</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+const ROOT = '../../build/matpreview/';
+// Candidate role in the sim, and the stack color it would be tinted to.
+const ROLES = {
+  Metal027: ['coat texture (cerakote / anodize)', 0x1c2018], Metal028: ['coat texture (cerakote / anodize)', 0x1c2018],
+  Metal029: ['coat texture (cerakote / anodize)', 0x1c2018],
+  Metal050A: ['bare aluminum', 0xe4e6e8], Metal050B: ['bare aluminum, scratched', 0xe4e6e8],
+  Metal049A: ['bare steel', 0xc4c6c8], Metal009: ['bare steel, brushed', 0xc4c6c8], Metal011: ['bare steel, brushed', 0xc4c6c8],
+  Metal046A: ['parkerized', 0x34362f], Metal052C: ['parkerized', 0x34362f],
+  Plastic012A: ['polymer', 0x282829], Plastic012B: ['polymer, scratched', 0x282829],
+  Proc_Primer_Grey: ['primer (procedural)', 0x84847f],
+  Proc_Topcoat_Cerakote: ['topcoat, satin (procedural)', 0x5d6554], Proc_Topcoat_Enamel: ['topcoat, gloss (procedural)', 0x5d6554],
+};
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(devicePixelRatio);
+renderer.setSize(innerWidth, innerHeight);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+document.body.prepend(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x16181b);
+const pmrem = new THREE.PMREMGenerator(renderer);
+function skyEnvironment() {
+  const s = new THREE.Scene();
+  s.add(new THREE.Mesh(new THREE.SphereGeometry(10, 64, 32), new THREE.ShaderMaterial({
+    side: THREE.BackSide,
+    vertexShader: 'varying vec3 d; void main() { d = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }',
+    fragmentShader: `varying vec3 d; void main() {
+      float y = d.y;
+      vec3 sky = mix(vec3(1.0, 1.0, 1.02), vec3(0.55, 0.68, 0.9), smoothstep(0.0, 0.8, y));
+      vec3 ground = mix(vec3(0.45, 0.43, 0.4), vec3(0.25, 0.24, 0.22), smoothstep(0.0, -0.6, y));
+      gl_FragColor = vec4(y > 0.0 ? sky : ground, 1.0);
+    }`,
+  })));
+  return pmrem.fromScene(s, 0.02).texture;
+}
+const envs = { sky: skyEnvironment(), room: pmrem.fromScene(new RoomEnvironment(), 0.04).texture };
+scene.environment = envs.sky;
+const key = new THREE.DirectionalLight(0xffffff, 1.5);
+key.position.set(2, 3, 4);
+scene.add(key);
+
+const camera = new THREE.PerspectiveCamera(30, innerWidth / innerHeight, 0.1, 100);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+const geos = {
+  sphere: new THREE.SphereGeometry(0.5, 256, 128),
+  box: new RoundedBoxGeometry(0.8, 0.8, 0.8, 16, 0.06),
+  cyl: new THREE.CylinderGeometry(0.4, 0.4, 0.9, 256, 64),
+  plane: new THREE.PlaneGeometry(1.1, 1.1, 256, 256),
+};
+const loader = new THREE.TextureLoader();
+const items = [];
+let focused = null;
+
+function tex(id, name, srgb) {
+  const t = loader.load(`${ROOT}${id}/${name}.jpg`);
+  t.wrapS = t.wrapT = THREE.RepeatWrapping;
+  t.anisotropy = renderer.capabilities.getMaxAnisotropy();
+  if (srgb) t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+
+function shown() { return items.filter(i => i.kind === state.kind); }
+
+function layout() {
+  const items = shown();
+  const cols = Math.max(1, Math.min(items.length, Math.floor(innerWidth / innerHeight * 3.2)));
+  const rows = Math.ceil(items.length / cols);
+  items.forEach((it, i) => {
+    const c = i % cols, r = Math.floor(i / cols);
+    it.home = new THREE.Vector3((c - (cols - 1) / 2) * 1.4, ((rows - 1) / 2 - r) * 1.55, 0);
+    if (focused !== it) it.mesh.position.copy(it.home);
+  });
+  const h = rows * 1.55, w = cols * 1.4;
+  const dist = Math.max(h / 2 / Math.tan(THREE.MathUtils.degToRad(15)), w / 2 / Math.tan(THREE.MathUtils.degToRad(15)) / camera.aspect) * 1.05;
+  overview = { pos: new THREE.Vector3(0, 0, dist), target: new THREE.Vector3() };
+}
+let overview;
+
+function frameOverview() { camera.position.copy(overview.pos); controls.target.copy(overview.target); }
+
+const manifest = await fetch(`${ROOT}manifest.json`, { cache: 'no-store' }).then(r => r.json());
+for (const m of manifest) {
+  const has = n => m.maps.includes(n);
+  // Masks shown as they would be used: roughness and normal break-up on polished steel.
+  const mat = m.kind === 'mask' ? new THREE.MeshStandardMaterial({
+    color: 0xb8babd, metalness: 1, roughness: 1, roughnessMap: tex(m.id, 'mask'),
+    normalMap: has('normal') ? tex(m.id, 'normal') : null,
+  }) : new THREE.MeshStandardMaterial({
+    map: tex(m.id, 'color', true),
+    normalMap: has('normal') ? tex(m.id, 'normal') : null,
+    roughnessMap: has('roughness') ? tex(m.id, 'roughness') : null,
+    metalnessMap: has('metalness') ? tex(m.id, 'metalness') : null,
+    displacementMap: has('height') ? tex(m.id, 'height') : null,
+    roughness: 1, metalness: has('metalness') ? 1 : 0, displacementScale: 0,
+  });
+  const mesh = new THREE.Mesh(geos.sphere, mat);
+  mesh.userData.id = m.id;
+  scene.add(mesh);
+  const tag = document.createElement('div');
+  tag.className = 'tag';
+  const [role, tint] = ROLES[m.id] ?? ['', 0xffffff];
+  tag.innerHTML = `<b>${m.id}</b><span>${role}</span>`;
+  document.body.append(tag);
+  items.push({ mesh, mat, tag, tint: new THREE.Color(tint), id: m.id, kind: m.kind ?? 'material' });
+}
+const state = { tiling: 1, disp: 0, tint: false, kind: 'material' };
+function showKind() {
+  focused = null;
+  for (const i of items) i.mesh.visible = i.kind === state.kind;
+  layout(); frameOverview();
+}
+showKind();
+
+function applyMats() {
+  for (const it of items) {
+    for (const k of ['map', 'normalMap', 'roughnessMap', 'metalnessMap', 'displacementMap']) {
+      const t = it.mat[k]; if (t) t.repeat.set(state.tiling, state.tiling);
+    }
+    it.mat.displacementScale = state.disp;
+    it.mat.displacementBias = -state.disp / 2;
+    if (it.kind === 'mask') continue;
+    it.mat.color.copy(state.tint ? it.tint : new THREE.Color(1, 1, 1));
+    // Tint replaces the scan's albedo so only its roughness/normal/height detail shows.
+    if (state.tint !== it.mat.userData.tinted) {
+      it.mat.userData.tinted = state.tint;
+      it.mat.userData.colorMap ??= it.mat.map;
+      it.mat.map = state.tint ? null : it.mat.userData.colorMap;
+      it.mat.needsUpdate = true;
+    }
+  }
+}
+
+function seg(id, fn) {
+  const el = document.getElementById(id);
+  el.onclick = e => {
+    if (!e.target.dataset.v) return;
+    for (const b of el.children) b.classList.toggle('on', b === e.target);
+    fn(e.target.dataset.v);
+  };
+}
+seg('kind', v => { state.kind = v; showKind(); });
+seg('shape', v => {
+  for (const it of items) { it.mesh.geometry = geos[v]; it.mesh.rotation.set(0, 0, 0); }
+  if (v === 'plane') document.getElementById('spin').checked = false;
+});
+seg('envsel', v => { scene.environment = envs[v]; });
+const bind = (id, fmt, fn) => document.getElementById(id).oninput = e => {
+  fn(+e.target.value); document.getElementById(id + '_v').textContent = fmt(+e.target.value);
+};
+bind('tiling', v => v.toFixed(2), v => { state.tiling = v; applyMats(); });
+bind('disp', v => v.toFixed(3), v => { state.disp = v; applyMats(); });
+bind('exposure', v => (2 ** v).toFixed(2), v => { renderer.toneMappingExposure = 2 ** v; });
+document.getElementById('tint').onchange = e => { state.tint = e.target.checked; applyMats(); };
+
+const ray = new THREE.Raycaster(), ptr = new THREE.Vector2();
+let down = null;
+renderer.domElement.addEventListener('pointerdown', e => { down = [e.clientX, e.clientY]; });
+renderer.domElement.addEventListener('pointerup', e => {
+  if (!down || Math.hypot(e.clientX - down[0], e.clientY - down[1]) > 4) return;
+  ptr.set(e.clientX / innerWidth * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
+  ray.setFromCamera(ptr, camera);
+  const hit = ray.intersectObjects(shown().map(i => i.mesh))[0];
+  const it = hit && items.find(i => i.mesh === hit.object);
+  if (focused || !it) {
+    showKind();
+  } else {
+    focused = it;
+    for (const i of items) i.mesh.visible = i === it;
+    it.mesh.position.set(0, 0, 0);
+    camera.position.set(0, 0, 2.2); controls.target.set(0, 0, 0);
+  }
+});
+
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+  layout(); if (!focused) frameOverview();
+});
+
+const v = new THREE.Vector3();
+renderer.setAnimationLoop(() => {
+  if (document.getElementById('spin').checked) for (const it of shown()) it.mesh.rotation.y += 0.004;
+  controls.update();
+  renderer.render(scene, camera);
+  for (const it of items) {
+    it.tag.style.display = it.mesh.visible ? '' : 'none';
+    v.copy(it.mesh.position).add(new THREE.Vector3(0, -0.55, 0)).project(camera);
+    it.tag.style.left = `${(v.x + 1) / 2 * innerWidth}px`;
+    it.tag.style.top = `${(1 - v.y) / 2 * innerHeight}px`;
+  }
+});
+</script>
+</body>
+</html>

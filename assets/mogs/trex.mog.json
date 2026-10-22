@@ -1,0 +1,1036 @@
+{
+ "mech": "trex",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\trex\\export",
+ "m_per_stud": 0.033122,
+ "atlases": 5,
+ "face_ranges": {
+  "Neck": [
+   "trex_a1",
+   0,
+   772
+  ],
+  "Neck2": [
+   "trex_a1",
+   772,
+   1544
+  ],
+  "Neck3": [
+   "trex_a1",
+   1544,
+   2260
+  ],
+  "Head": [
+   "trex_a1",
+   2260,
+   9760
+  ],
+  "Jaw": [
+   "trex_a1",
+   9760,
+   12020
+  ],
+  "EyeL": [
+   "trex_a1",
+   12020,
+   12180
+  ],
+  "EyeR": [
+   "trex_a1",
+   12180,
+   12340
+  ],
+  "jawRam_1": [
+   "trex_a1",
+   12340,
+   12416
+  ],
+  "jawRam_2": [
+   "trex_a1",
+   12416,
+   12456
+  ],
+  "jawRam_3": [
+   "trex_a1",
+   12456,
+   12496
+  ],
+  "Pelvis": [
+   "trex_a2",
+   0,
+   11588
+  ],
+  "Vent1": [
+   "trex_a2",
+   11588,
+   11632
+  ],
+  "Vent2": [
+   "trex_a2",
+   11632,
+   11676
+  ],
+  "Vent3": [
+   "trex_a2",
+   11676,
+   11720
+  ],
+  "Vent4": [
+   "trex_a2",
+   11720,
+   11764
+  ],
+  "Slide1": [
+   "trex_a2",
+   11764,
+   11788
+  ],
+  "neckRamL_1": [
+   "trex_a2",
+   11788,
+   11864
+  ],
+  "neckRamL_2": [
+   "trex_a2",
+   11864,
+   11904
+  ],
+  "neckRamL_3": [
+   "trex_a2",
+   11904,
+   11944
+  ],
+  "neckRamR_1": [
+   "trex_a2",
+   11944,
+   12020
+  ],
+  "neckRamR_2": [
+   "trex_a2",
+   12020,
+   12060
+  ],
+  "neckRamR_3": [
+   "trex_a2",
+   12060,
+   12100
+  ],
+  "ThighL": [
+   "trex_a3",
+   0,
+   750
+  ],
+  "ShinL": [
+   "trex_a3",
+   750,
+   1306
+  ],
+  "MetaL": [
+   "trex_a3",
+   1306,
+   1954
+  ],
+  "ToeL": [
+   "trex_a3",
+   1954,
+   3010
+  ],
+  "ThighR": [
+   "trex_a3",
+   3010,
+   3760
+  ],
+  "ShinR": [
+   "trex_a3",
+   3760,
+   4316
+  ],
+  "MetaR": [
+   "trex_a3",
+   4316,
+   4964
+  ],
+  "ToeR": [
+   "trex_a3",
+   4964,
+   6020
+  ],
+  "kneeL_1": [
+   "trex_a3",
+   6020,
+   6096
+  ],
+  "kneeL_2": [
+   "trex_a3",
+   6096,
+   6144
+  ],
+  "kneeL_3": [
+   "trex_a3",
+   6144,
+   6184
+  ],
+  "ankleL_1": [
+   "trex_a3",
+   6184,
+   6260
+  ],
+  "ankleL_2": [
+   "trex_a3",
+   6260,
+   6308
+  ],
+  "ankleL_3": [
+   "trex_a3",
+   6308,
+   6348
+  ],
+  "kneeR_1": [
+   "trex_a3",
+   6348,
+   6424
+  ],
+  "kneeR_2": [
+   "trex_a3",
+   6424,
+   6472
+  ],
+  "kneeR_3": [
+   "trex_a3",
+   6472,
+   6512
+  ],
+  "ankleR_1": [
+   "trex_a3",
+   6512,
+   6588
+  ],
+  "ankleR_2": [
+   "trex_a3",
+   6588,
+   6636
+  ],
+  "ankleR_3": [
+   "trex_a3",
+   6636,
+   6676
+  ],
+  "Tail1": [
+   "trex_a4",
+   0,
+   1120
+  ],
+  "Tail2": [
+   "trex_a4",
+   1120,
+   2240
+  ],
+  "Tail3": [
+   "trex_a4",
+   2240,
+   3360
+  ],
+  "Tail4": [
+   "trex_a4",
+   3360,
+   4452
+  ],
+  "Tail5": [
+   "trex_a4",
+   4452,
+   5520
+  ],
+  "Tail6": [
+   "trex_a4",
+   5520,
+   6044
+  ],
+  "Chest": [
+   "trex_a5",
+   0,
+   44
+  ],
+  "UpperArmL": [
+   "trex_a5",
+   44,
+   360
+  ],
+  "ForearmL": [
+   "trex_a5",
+   360,
+   640
+  ],
+  "HandL": [
+   "trex_a5",
+   640,
+   884
+  ],
+  "UpperArmR": [
+   "trex_a5",
+   884,
+   1200
+  ],
+  "ForearmR": [
+   "trex_a5",
+   1200,
+   1480
+  ],
+  "HandR": [
+   "trex_a5",
+   1480,
+   1724
+  ],
+  "armRamL_1": [
+   "trex_a5",
+   1724,
+   1800
+  ],
+  "armRamL_2": [
+   "trex_a5",
+   1800,
+   1840
+  ],
+  "armRamR_1": [
+   "trex_a5",
+   1840,
+   1916
+  ],
+  "armRamR_2": [
+   "trex_a5",
+   1916,
+   1956
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 2,
+  "Chest": 5,
+  "Neck": 1,
+  "Neck2": 1,
+  "Neck3": 1,
+  "Head": 1,
+  "Jaw": 1,
+  "Tail1": 4,
+  "Tail2": 4,
+  "Tail3": 4,
+  "Tail4": 4,
+  "Tail5": 4,
+  "Tail6": 4,
+  "ThighL": 3,
+  "ShinL": 3,
+  "MetaL": 3,
+  "ToeL": 3,
+  "UpperArmL": 5,
+  "ForearmL": 5,
+  "HandL": 5,
+  "ThighR": 3,
+  "ShinR": 3,
+  "MetaR": 3,
+  "ToeR": 3,
+  "UpperArmR": 5,
+  "ForearmR": 5,
+  "HandR": 5,
+  "EyeL": 1,
+  "EyeR": 1,
+  "Vent1": 2,
+  "Vent2": 2,
+  "Vent3": 2,
+  "Vent4": 2,
+  "Slide1": 2,
+  "neckRamL_1": 2,
+  "neckRamL_2": 2,
+  "neckRamL_3": 2,
+  "neckRamR_1": 2,
+  "neckRamR_2": 2,
+  "neckRamR_3": 2,
+  "jawRam_1": 1,
+  "jawRam_2": 1,
+  "jawRam_3": 1,
+  "kneeL_1": 3,
+  "kneeL_2": 3,
+  "kneeL_3": 3,
+  "ankleL_1": 3,
+  "ankleL_2": 3,
+  "ankleL_3": 3,
+  "armRamL_1": 5,
+  "armRamL_2": 5,
+  "kneeR_1": 3,
+  "kneeR_2": 3,
+  "kneeR_3": 3,
+  "ankleR_1": 3,
+  "ankleR_2": 3,
+  "ankleR_3": 3,
+  "armRamR_1": 5,
+  "armRamR_2": 5
+ },
+ "stacks": [
+  "MECH_copper",
+  "MECH_gunmetal",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MECH_steel",
+  "MOG_trex_arc",
+  "MOG_trex_bakelite",
+  "MOG_trex_cable",
+  "MOG_trex_gold",
+  "MOG_trex_gum",
+  "MOG_trex_porcelain",
+  "MOG_trex_shark",
+  "MOG_trex_white"
+ ],
+ "config": {
+  "m_per_stud": 0.033122,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_trex_white",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MOG_trex_shark",
+   "eye": "MOG_trex_arc",
+   "decal": "MOG_trex_white",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper"
+  },
+  "tint": [
+   {
+    "slot": "paint",
+    "stack": "MOG_trex_gold",
+    "near": [
+     [
+      -0.5754,
+      5.6114,
+      -2.991
+     ],
+     [
+      0.5754,
+      5.611,
+      -2.9889
+     ],
+     [
+      -1.3398,
+      3.1487,
+      -0.0345
+     ],
+     [
+      1.3398,
+      3.15,
+      -0.0375
+     ],
+     [
+      -1.2949,
+      1.7061,
+      0.069
+     ],
+     [
+      1.2949,
+      1.7118,
+      0.0717
+     ]
+    ],
+    "mirror_x": false,
+    "within_studs": 0.004
+   },
+   {
+    "slot": "gunmetal",
+    "stack": "MOG_trex_bakelite",
+    "near": [
+     [
+      0,
+      4.52,
+      0.66
+     ],
+     [
+      0,
+      4.1395,
+      0.65
+     ],
+     [
+      -0.64,
+      4.46,
+      0.39
+     ],
+     [
+      0.64,
+      4.46,
+      0.39
+     ],
+     [
+      -0.5,
+      4.5,
+      0.36
+     ],
+     [
+      -0.5,
+      4.5,
+      0.51
+     ],
+     [
+      -0.5,
+      4.5,
+      0.66
+     ],
+     [
+      -0.5,
+      4.5,
+      0.81
+     ],
+     [
+      -0.5,
+      4.5,
+      0.96
+     ],
+     [
+      0.5,
+      4.5,
+      0.36
+     ],
+     [
+      0.5,
+      4.5,
+      0.51
+     ],
+     [
+      0.5,
+      4.5,
+      0.66
+     ],
+     [
+      0.5,
+      4.5,
+      0.81
+     ],
+     [
+      0.5,
+      4.5,
+      0.96
+     ]
+    ],
+    "mirror_x": false,
+    "within_studs": 0.004
+   },
+   {
+    "slot": "gunmetal",
+    "stack": "MOG_trex_gum",
+    "near": [
+     [
+      -0.4808,
+      4.9371,
+      -3.31
+     ],
+     [
+      0.4808,
+      4.9371,
+      -3.31
+     ],
+     [
+      0,
+      4.965,
+      -4.225
+     ],
+     [
+      -0.2838,
+      4.3466,
+      -2.9437
+     ],
+     [
+      0.2838,
+      4.3466,
+      -2.9437
+     ]
+    ],
+    "mirror_x": false,
+    "within_studs": 0.004
+   },
+   {
+    "slot": "rubber",
+    "stack": "MOG_trex_porcelain",
+    "near": [
+     [
+      -0.3,
+      5.2342,
+      0.62
+     ],
+     [
+      -0.1,
+      5.2342,
+      0.62
+     ],
+     [
+      0.1,
+      5.2342,
+      0.62
+     ],
+     [
+      0.3,
+      5.2342,
+      0.62
+     ],
+     [
+      -0.0924,
+      4.0051,
+      1.61
+     ],
+     [
+      -0.0782,
+      3.7814,
+      2.43
+     ],
+     [
+      -0.064,
+      3.5957,
+      3.27
+     ],
+     [
+      -0.0516,
+      3.4542,
+      4.07
+     ],
+     [
+      -0.0409,
+      3.3598,
+      4.84
+     ]
+    ],
+    "mirror_x": false,
+    "within_studs": 0.004
+   },
+   {
+    "slot": "rubber",
+    "stack": "MOG_trex_cable",
+    "near": [
+     [
+      -0.7241,
+      4.0174,
+      -0.9078
+     ],
+     [
+      -0.8241,
+      4.0174,
+      -0.9078
+     ],
+     [
+      0.7241,
+      4.0174,
+      -0.9078
+     ],
+     [
+      0.8241,
+      4.0174,
+      -0.9078
+     ],
+     [
+      -0.08,
+      4.4609,
+      1.2237
+     ],
+     [
+      0,
+      4.4609,
+      1.2237
+     ],
+     [
+      0.08,
+      4.4609,
+      1.2237
+     ],
+     [
+      -0.63,
+      4.72,
+      0.68
+     ],
+     [
+      -0.63,
+      4.72,
+      0.94
+     ],
+     [
+      0.63,
+      4.72,
+      0.68
+     ],
+     [
+      0.63,
+      4.72,
+      0.94
+     ],
+     [
+      0.0854,
+      3.8908,
+      1.6299
+     ],
+     [
+      0.1707,
+      3.8908,
+      1.6299
+     ],
+     [
+      0.0711,
+      3.6935,
+      2.4499
+     ],
+     [
+      0.1422,
+      3.6935,
+      2.4499
+     ],
+     [
+      0.0578,
+      3.5344,
+      3.29
+     ],
+     [
+      0.1156,
+      3.5344,
+      3.29
+     ],
+     [
+      0.0462,
+      3.4157,
+      4.09
+     ],
+     [
+      0.0924,
+      3.4157,
+      4.09
+     ],
+     [
+      0.0364,
+      3.3282,
+      4.86
+     ],
+     [
+      0.0729,
+      3.3282,
+      4.86
+     ],
+     [
+      0.0196,
+      3.2853,
+      5.8222
+     ],
+     [
+      0.0391,
+      3.2853,
+      5.8222
+     ]
+    ],
+    "mirror_x": false,
+    "within_studs": 0.004
+   }
+  ],
+  "wear": [
+   {
+    "bone": "ToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "Jaw",
+    "weight": 0.3
+   },
+   {
+    "bone": "HandL",
+    "weight": 0.3
+   },
+   {
+    "bone": "HandR",
+    "weight": 0.3
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_trex_white": 1.0,
+    "MECH_gunmetal": 0.45,
+    "MOG_trex_bakelite": 1.0
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       0.6,
+       5.42,
+       -2.0
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "voltage"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       -0.25,
+       4.6,
+       0.16
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "voltage"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.74,
+       4.46,
+       0.39
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "arcflash"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       -0.74,
+       4.46,
+       0.39
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "earth"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.0,
+       5.12,
+       0.16
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "phase"
+      ],
+      "count": 1
+     }
+    ]
+   },
+   "scale": 1.2076612903225807
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.221,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_trex_white": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.74,
+      0.71,
+      0.62
+     ],
+     "primer": [
+      0.05,
+      0.06,
+      0.08
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.5
+    }
+   },
+   "MOG_trex_gold": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.55,
+      0.32,
+      0.045
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MECH_gunmetal": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.1,
+     "large_edges": 0.15,
+     "detail": 0.25,
+     "crease": 0.2,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.5
+    }
+   },
+   "MOG_trex_bakelite": {
+    "from": "MAT_polymer",
+    "color": [
+     0.012,
+     0.011,
+     0.01
+    ],
+    "rough": 0.3,
+    "weather": {
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.5
+    }
+   },
+   "MOG_trex_porcelain": {
+    "from": "MAT_polymer",
+    "color": [
+     0.2,
+     0.075,
+     0.03
+    ],
+    "rough": 0.12,
+    "weather": {
+     "dirt": 0.5,
+     "dust": 0.3,
+     "use": 0.3
+    }
+   },
+   "MOG_trex_cable": {
+    "from": "MECH_rubber",
+    "color": [
+     0.55,
+     0.11,
+     0.01
+    ]
+   },
+   "MOG_trex_arc": {
+    "from": "MECH_eye",
+    "color": [
+     0.1,
+     0.7,
+     1.0
+    ]
+   },
+   "MOG_trex_shark": {
+    "from": "MECH_glass",
+    "color": [
+     0.005,
+     0.005,
+     0.006
+    ]
+   },
+   "MOG_trex_gum": {
+    "from": "MECH_rubber",
+    "color": [
+     0.012,
+     0.011,
+     0.011
+    ]
+   }
+  },
+  "atlases": [
+   [
+    "Head",
+    "Jaw",
+    "Neck",
+    "Neck2",
+    "Neck3",
+    "EyeL",
+    "EyeR"
+   ],
+   [
+    "Root",
+    "Pelvis",
+    "Slide1",
+    "Vent1",
+    "Vent2",
+    "Vent3",
+    "Vent4"
+   ],
+   [
+    "ThighL",
+    "ShinL",
+    "MetaL",
+    "ToeL",
+    "ThighR",
+    "ShinR",
+    "MetaR",
+    "ToeR"
+   ],
+   [
+    "Tail1",
+    "Tail2",
+    "Tail3",
+    "Tail4",
+    "Tail5",
+    "Tail6"
+   ],
+   [
+    "Chest",
+    "UpperArmL",
+    "ForearmL",
+    "HandL",
+    "UpperArmR",
+    "ForearmR",
+    "HandR"
+   ]
+  ],
+  "patterns": []
+ }
+}

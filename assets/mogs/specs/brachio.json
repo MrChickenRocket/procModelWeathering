@@ -1,0 +1,381 @@
+{
+  "height": 27.85,
+  "stacks": {
+    "MOG_brachio_orange": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.36,
+          0.07,
+          0.012
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_brachio_rail": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.8,
+          0.5,
+          0.02
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    }
+  },
+  "slots": {
+    "paint": "MOG_brachio_orange",
+    "decal": "MOG_brachio_orange"
+  },
+  "tint": [
+    {
+      "slot": "paint",
+      "stack": "MOG_brachio_rail",
+      "max_radius_studs": 0.14
+    }
+  ],
+  "targets": {
+    "MOG_brachio_orange": 1.0,
+    "MECH_gunmetal": 0.45
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.15
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.15
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.15
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.15
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.1
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.1
+    },
+    {
+      "bone": "FMetaL",
+      "weight": 0.1
+    },
+    {
+      "bone": "FMetaR",
+      "weight": 0.1
+    },
+    {
+      "bone": "ShinL",
+      "weight": 0.1
+    },
+    {
+      "bone": "ShinR",
+      "weight": 0.1
+    },
+    {
+      "bone": "FShinL",
+      "weight": 0.1
+    },
+    {
+      "bone": "FShinR",
+      "weight": 0.1
+    },
+    {
+      "bone": "Jaw",
+      "weight": 0.15
+    },
+    {
+      "bone": "Tail7",
+      "weight": 0.1
+    },
+    {
+      "box": [
+        [
+          -4.6,
+          13.7,
+          -9.5
+        ],
+        [
+          4.6,
+          15.2,
+          9.5
+        ]
+      ],
+      "weight": 0.2
+    }
+  ],
+  "pinch": [
+    {
+      "at": [
+        5,
+        10.2,
+        6.6
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        5,
+        6.25,
+        5.95
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        5,
+        3.0,
+        6.76
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        5,
+        1.5,
+        6.58
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        5,
+        10.6,
+        -6.6
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        5,
+        6.25,
+        -6.05
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        5,
+        3.0,
+        -6.74
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        5,
+        1.5,
+        -6.59
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0,
+        12.4,
+        -9.8
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        15.3,
+        -11.2
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        18.2,
+        -12.3
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        21.0,
+        -13.2
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        23.6,
+        -14.1
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        25.6,
+        -15.4
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        24.5,
+        -15.7
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        12.5,
+        9.7
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        1.5,
+        24.5,
+        -18.0
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        1.5,
+        24.5,
+        -20.5
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    }
+  ],
+  "atlases": [
+    [
+      "Root",
+      "Pelvis",
+      "Tail1",
+      "Tail2",
+      "Tail3",
+      "Tail4",
+      "Tail5",
+      "Tail6",
+      "Tail7"
+    ],
+    [
+      "Chest",
+      "Neck",
+      "Neck2",
+      "Neck3",
+      "Neck4",
+      "Neck5",
+      "Head",
+      "Jaw"
+    ],
+    [
+      "ThighL",
+      "ThighR",
+      "ShinL",
+      "ShinR",
+      "MetaL",
+      "MetaR",
+      "ToeL",
+      "ToeR"
+    ],
+    [
+      "FThighL",
+      "FThighR",
+      "FShinL",
+      "FShinR",
+      "FMetaL",
+      "FMetaR",
+      "FToeL",
+      "FToeR"
+    ]
+  ],
+  "density": {
+    "install_scale": 2.0,
+    "full_below": 12,
+    "floor_at": 35,
+    "floor": 0.35,
+    "rider_boxes": [
+      [
+        [
+          -4.0,
+          13.4,
+          -10.5
+        ],
+        [
+          4.0,
+          17.6,
+          10.5
+        ]
+      ]
+    ]
+  },
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7
+}

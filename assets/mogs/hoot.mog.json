@@ -1,0 +1,420 @@
+{
+ "mech": "hoot",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\hoot\\export",
+ "m_per_stud": 0.094476,
+ "atlases": 1,
+ "face_ranges": {
+  "Pelvis": [
+   "hoot_a1",
+   0,
+   716
+  ],
+  "Chest": [
+   "hoot_a1",
+   716,
+   4012
+  ],
+  "Neck": [
+   "hoot_a1",
+   4012,
+   4348
+  ],
+  "Head": [
+   "hoot_a1",
+   4348,
+   9832
+  ],
+  "WingL": [
+   "hoot_a1",
+   9832,
+   11840
+  ],
+  "FanL": [
+   "hoot_a1",
+   11840,
+   12104
+  ],
+  "WingR": [
+   "hoot_a1",
+   12104,
+   14112
+  ],
+  "FanR": [
+   "hoot_a1",
+   14112,
+   14376
+  ],
+  "ThighL": [
+   "hoot_a1",
+   14376,
+   14812
+  ],
+  "ShinL": [
+   "hoot_a1",
+   14812,
+   15220
+  ],
+  "MetaL": [
+   "hoot_a1",
+   15220,
+   15592
+  ],
+  "ToeL": [
+   "hoot_a1",
+   15592,
+   16108
+  ],
+  "ThighR": [
+   "hoot_a1",
+   16108,
+   16544
+  ],
+  "ShinR": [
+   "hoot_a1",
+   16544,
+   16952
+  ],
+  "MetaR": [
+   "hoot_a1",
+   16952,
+   17324
+  ],
+  "ToeR": [
+   "hoot_a1",
+   17324,
+   17840
+  ],
+  "EyeL": [
+   "hoot_a1",
+   17840,
+   18368
+  ],
+  "EyeR": [
+   "hoot_a1",
+   18368,
+   18896
+  ],
+  "heelramL_1": [
+   "hoot_a1",
+   18896,
+   18956
+  ],
+  "heelramL_2": [
+   "hoot_a1",
+   18956,
+   18996
+  ],
+  "heelramL_3": [
+   "hoot_a1",
+   18996,
+   19036
+  ],
+  "heelramR_1": [
+   "hoot_a1",
+   19036,
+   19096
+  ],
+  "heelramR_2": [
+   "hoot_a1",
+   19096,
+   19136
+  ],
+  "heelramR_3": [
+   "hoot_a1",
+   19136,
+   19176
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 1,
+  "Neck": 1,
+  "Head": 1,
+  "WingL": 1,
+  "FanL": 1,
+  "WingR": 1,
+  "FanR": 1,
+  "ThighL": 1,
+  "ShinL": 1,
+  "MetaL": 1,
+  "ToeL": 1,
+  "ThighR": 1,
+  "ShinR": 1,
+  "MetaR": 1,
+  "ToeR": 1,
+  "EyeL": 1,
+  "EyeR": 1,
+  "heelramL_1": 1,
+  "heelramL_2": 1,
+  "heelramL_3": 1,
+  "heelramR_1": 1,
+  "heelramR_2": 1,
+  "heelramR_3": 1
+ },
+ "stacks": [
+  "MECH_eye",
+  "MECH_glass",
+  "MECH_gunmetal",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MECH_rubber_red",
+  "MECH_steel",
+  "MOG_hoot_face",
+  "MOG_hoot_sky"
+ ],
+ "config": {
+  "m_per_stud": 0.094476,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_hoot_sky",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MECH_eye",
+   "decal": "MOG_hoot_sky",
+   "yellow": "MECH_paint_yellow"
+  },
+  "tint": [
+   {
+    "slot": "rubber",
+    "stack": "MECH_rubber_red",
+    "fraction": 0.35,
+    "pick": "thinnest"
+   },
+   {
+    "slot": "paint",
+    "stack": "MOG_hoot_face",
+    "within_studs": 0.04,
+    "near": [
+     [
+      0,
+      1.43,
+      -0.36
+     ],
+     [
+      0,
+      1.63,
+      -0.43
+     ]
+    ]
+   }
+  ],
+  "wear": [
+   {
+    "bone": "ToeL",
+    "weight": 0.3
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.3
+   },
+   {
+    "bone": "MetaL",
+    "weight": 0.2
+   },
+   {
+    "bone": "MetaR",
+    "weight": 0.2
+   },
+   {
+    "bone": "WingL",
+    "weight": 0.15
+   },
+   {
+    "bone": "WingR",
+    "weight": 0.15
+   },
+   {
+    "bone": "FanL",
+    "weight": 0.15
+   },
+   {
+    "bone": "FanR",
+    "weight": 0.15
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_hoot_sky": 1.0,
+    "MECH_gunmetal": 0.45
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       0,
+       0.81,
+       -0.43
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       -0.33,
+       0.4635,
+       -0.0233
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -0.33,
+       0.323,
+       0.1774
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       0.33,
+       0.4635,
+       -0.0233
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       0.33,
+       0.323,
+       0.1774
+      ],
+      "mirror_x": false,
+      "count": 1
+     }
+    ]
+   },
+   "light_paint": [
+    "MOG_hoot_sky",
+    "MOG_hoot_face"
+   ],
+   "scale": 0.6
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.13,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_hoot_sky": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.17,
+      0.36,
+      0.6
+     ],
+     "primer": [
+      0.36,
+      0.36,
+      0.35
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.15,
+     "large_edges": 0.25,
+     "detail": 0.35,
+     "crease": 0.3,
+     "use": 0.3,
+     "dirt": 0.4,
+     "dust": 0.3
+    }
+   },
+   "MOG_hoot_face": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.45,
+      0.46,
+      0.46
+     ],
+     "primer": [
+      0.36,
+      0.36,
+      0.35
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.15,
+     "large_edges": 0.25,
+     "detail": 0.35,
+     "crease": 0.3,
+     "use": 0.3,
+     "dirt": 0.4,
+     "dust": 0.3
+    }
+   },
+   "MECH_gunmetal": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.15,
+     "large_edges": 0.25,
+     "detail": 0.35,
+     "crease": 0.3,
+     "use": 0.3,
+     "dirt": 0.4,
+     "dust": 0.3
+    }
+   }
+  },
+  "glow_through": {
+   "from": "MECH_glass",
+   "to": "MECH_eye",
+   "within_studs": 0.1,
+   "lateral_studs": 0.01
+  }
+ }
+}

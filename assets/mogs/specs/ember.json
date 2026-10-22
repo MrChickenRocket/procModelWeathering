@@ -1,0 +1,279 @@
+{
+  "height": 2.76,
+  "min_decal_scale": 0.6,
+  "stacks": {
+    "MOG_ember_tangerine": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.55,
+          0.16,
+          0.02
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_ember_cream": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.6,
+          0.52,
+          0.36
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_ember_blued": {
+      "from": "MAT_steel_blued",
+      "colors": {
+        "bluing": [
+          0.1,
+          0.09,
+          0.26
+        ]
+      }
+    },
+    "MOG_ember_pilot": {
+      "from": "MECH_eye",
+      "color": [
+        1.0,
+        0.42,
+        0.08
+      ]
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_glint": {
+      "from": "MECH_eye",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "slots": {
+    "paint": "MOG_ember_tangerine",
+    "decal": "MOG_ember_tangerine"
+  },
+  "tint": [
+    {
+      "slot": "eye",
+      "stack": "MOG_glint",
+      "near": [
+        [
+          -0.2672,
+          2.3293,
+          -0.8337
+        ],
+        [
+          -0.2047,
+          2.2558,
+          -0.8618
+        ],
+        [
+          0.1884,
+          2.3293,
+          -0.8654
+        ],
+        [
+          0.2529,
+          2.2558,
+          -0.8424
+        ]
+      ],
+      "mirror_x": false,
+      "within_studs": 0.004
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_ember_cream",
+      "bones": [
+        "Jaw"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_ember_cream",
+      "within_studs": 0.04,
+      "near": [
+        [
+          0,
+          1.58,
+          -0.55
+        ],
+        [
+          0,
+          1.69,
+          -0.51
+        ],
+        [
+          0,
+          1.77,
+          -0.48
+        ],
+        [
+          0,
+          1.44,
+          -0.62
+        ],
+        [
+          0,
+          1.11,
+          -0.46
+        ],
+        [
+          0,
+          1.28,
+          -0.53
+        ],
+        [
+          0,
+          1.05,
+          0.04
+        ]
+      ]
+    },
+    {
+      "slot": "steel",
+      "stack": "MOG_ember_blued",
+      "within_studs": 0.06,
+      "mirror_x": true,
+      "near": [
+        [
+          0.38,
+          1.88,
+          0.44
+        ],
+        [
+          0.37,
+          1.82,
+          0.41
+        ],
+        [
+          0.38,
+          1.86,
+          0.43
+        ],
+        [
+          0.38,
+          1.89,
+          0.45
+        ]
+      ]
+    },
+    {
+      "slot": "steel",
+      "stack": "MOG_ember_blued",
+      "bones": [
+        "Tail6"
+      ]
+    },
+    {
+      "slot": "eye",
+      "stack": "MOG_ember_pilot",
+      "bones": [
+        "Flame"
+      ]
+    }
+  ],
+  "decals": {
+    "light_paint": [
+      "MOG_ember_cream"
+    ]
+  },
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MECH_eye",
+    "within_studs": 0.1,
+    "lateral_studs": 0.01
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.15
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.15
+    },
+    {
+      "bone": "HandL",
+      "weight": 0.15
+    },
+    {
+      "bone": "HandR",
+      "weight": 0.15
+    }
+  ],
+  "pinch": [
+    {
+      "at": [
+        0.495,
+        2.16,
+        -0.12
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    }
+  ],
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7
+}

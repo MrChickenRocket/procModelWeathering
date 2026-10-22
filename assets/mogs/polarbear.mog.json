@@ -1,0 +1,773 @@
+{
+ "mech": "polarbear",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\polarbear\\export",
+ "m_per_stud": 0.03226,
+ "atlases": 2,
+ "face_ranges": {
+  "Pelvis": [
+   "polarbear_a1",
+   0,
+   4830
+  ],
+  "Chest": [
+   "polarbear_a1",
+   4830,
+   9484
+  ],
+  "Neck": [
+   "polarbear_a1",
+   9484,
+   10084
+  ],
+  "Neck2": [
+   "polarbear_a1",
+   10084,
+   10684
+  ],
+  "Head": [
+   "polarbear_a1",
+   10684,
+   14460
+  ],
+  "Jaw": [
+   "polarbear_a1",
+   14460,
+   15624
+  ],
+  "Vent1": [
+   "polarbear_a1",
+   15624,
+   15668
+  ],
+  "Vent2": [
+   "polarbear_a1",
+   15668,
+   15712
+  ],
+  "Vent3": [
+   "polarbear_a1",
+   15712,
+   15756
+  ],
+  "Vent4": [
+   "polarbear_a1",
+   15756,
+   15800
+  ],
+  "Slide1": [
+   "polarbear_a1",
+   15800,
+   15824
+  ],
+  "ThighL": [
+   "polarbear_a2",
+   0,
+   1020
+  ],
+  "ShinL": [
+   "polarbear_a2",
+   1020,
+   1924
+  ],
+  "MetaL": [
+   "polarbear_a2",
+   1924,
+   2436
+  ],
+  "ToeL": [
+   "polarbear_a2",
+   2436,
+   3280
+  ],
+  "ThighR": [
+   "polarbear_a2",
+   3280,
+   4300
+  ],
+  "ShinR": [
+   "polarbear_a2",
+   4300,
+   5204
+  ],
+  "MetaR": [
+   "polarbear_a2",
+   5204,
+   5716
+  ],
+  "ToeR": [
+   "polarbear_a2",
+   5716,
+   6560
+  ],
+  "FThighL": [
+   "polarbear_a2",
+   6560,
+   7580
+  ],
+  "FShinL": [
+   "polarbear_a2",
+   7580,
+   8484
+  ],
+  "FMetaL": [
+   "polarbear_a2",
+   8484,
+   8996
+  ],
+  "FToeL": [
+   "polarbear_a2",
+   8996,
+   9840
+  ],
+  "FThighR": [
+   "polarbear_a2",
+   9840,
+   10860
+  ],
+  "FShinR": [
+   "polarbear_a2",
+   10860,
+   11764
+  ],
+  "FMetaR": [
+   "polarbear_a2",
+   11764,
+   12276
+  ],
+  "FToeR": [
+   "polarbear_a2",
+   12276,
+   13120
+  ],
+  "jawRamL_1": [
+   "polarbear_a2",
+   13120,
+   13196
+  ],
+  "jawRamL_2": [
+   "polarbear_a2",
+   13196,
+   13236
+  ],
+  "jawRamR_1": [
+   "polarbear_a2",
+   13236,
+   13312
+  ],
+  "jawRamR_2": [
+   "polarbear_a2",
+   13312,
+   13352
+  ],
+  "kneeL_1": [
+   "polarbear_a2",
+   13352,
+   13428
+  ],
+  "kneeL_2": [
+   "polarbear_a2",
+   13428,
+   13484
+  ],
+  "kneeL_3": [
+   "polarbear_a2",
+   13484,
+   13524
+  ],
+  "ankleL_1": [
+   "polarbear_a2",
+   13524,
+   13600
+  ],
+  "ankleL_2": [
+   "polarbear_a2",
+   13600,
+   13640
+  ],
+  "kneeR_1": [
+   "polarbear_a2",
+   13640,
+   13716
+  ],
+  "kneeR_2": [
+   "polarbear_a2",
+   13716,
+   13772
+  ],
+  "kneeR_3": [
+   "polarbear_a2",
+   13772,
+   13812
+  ],
+  "ankleR_1": [
+   "polarbear_a2",
+   13812,
+   13888
+  ],
+  "ankleR_2": [
+   "polarbear_a2",
+   13888,
+   13928
+  ],
+  "fkneeL_1": [
+   "polarbear_a2",
+   13928,
+   14004
+  ],
+  "fkneeL_2": [
+   "polarbear_a2",
+   14004,
+   14060
+  ],
+  "fkneeL_3": [
+   "polarbear_a2",
+   14060,
+   14100
+  ],
+  "fankleL_1": [
+   "polarbear_a2",
+   14100,
+   14176
+  ],
+  "fankleL_2": [
+   "polarbear_a2",
+   14176,
+   14216
+  ],
+  "fkneeR_1": [
+   "polarbear_a2",
+   14216,
+   14292
+  ],
+  "fkneeR_2": [
+   "polarbear_a2",
+   14292,
+   14348
+  ],
+  "fkneeR_3": [
+   "polarbear_a2",
+   14348,
+   14388
+  ],
+  "fankleR_1": [
+   "polarbear_a2",
+   14388,
+   14464
+  ],
+  "fankleR_2": [
+   "polarbear_a2",
+   14464,
+   14504
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 1,
+  "Neck": 1,
+  "Neck2": 1,
+  "Head": 1,
+  "Jaw": 1,
+  "ThighL": 2,
+  "ShinL": 2,
+  "MetaL": 2,
+  "ToeL": 2,
+  "ThighR": 2,
+  "ShinR": 2,
+  "MetaR": 2,
+  "ToeR": 2,
+  "FThighL": 2,
+  "FShinL": 2,
+  "FMetaL": 2,
+  "FToeL": 2,
+  "FThighR": 2,
+  "FShinR": 2,
+  "FMetaR": 2,
+  "FToeR": 2,
+  "Vent1": 1,
+  "Vent2": 1,
+  "Vent3": 1,
+  "Vent4": 1,
+  "Slide1": 1,
+  "jawRamL_1": 2,
+  "jawRamL_2": 2,
+  "jawRamR_1": 2,
+  "jawRamR_2": 2,
+  "kneeL_1": 2,
+  "kneeL_2": 2,
+  "kneeL_3": 2,
+  "ankleL_1": 2,
+  "ankleL_2": 2,
+  "kneeR_1": 2,
+  "kneeR_2": 2,
+  "kneeR_3": 2,
+  "ankleR_1": 2,
+  "ankleR_2": 2,
+  "fkneeL_1": 2,
+  "fkneeL_2": 2,
+  "fkneeL_3": 2,
+  "fankleL_1": 2,
+  "fankleL_2": 2,
+  "fkneeR_1": 2,
+  "fkneeR_2": 2,
+  "fkneeR_3": 2,
+  "fankleR_1": 2,
+  "fankleR_2": 2
+ },
+ "stacks": [
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MECH_steel",
+  "MOG_pb_chrome",
+  "MOG_pb_galv",
+  "MOG_pb_ice",
+  "MOG_pb_peri",
+  "MOG_pb_white"
+ ],
+ "config": {
+  "m_per_stud": 0.03226,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_pb_white",
+   "gunmetal": "MOG_pb_galv",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MOG_pb_peri",
+   "decal": "MOG_pb_white",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper"
+  },
+  "tint": [
+   {
+    "slot": "paint",
+    "stack": "MOG_pb_ice",
+    "near": [
+     [
+      0,
+      3.6,
+      -0.84
+     ],
+     [
+      0,
+      3.58,
+      2.11
+     ],
+     [
+      0,
+      3.59,
+      -2.25
+     ],
+     [
+      1.33,
+      3.35,
+      0.52
+     ],
+     [
+      1.33,
+      3.35,
+      -2.26
+     ],
+     [
+      0,
+      3.45,
+      2.7
+     ],
+     [
+      0.8,
+      3.37,
+      -4.54
+     ],
+     [
+      0.81,
+      3.37,
+      -4.13
+     ],
+     [
+      1.16,
+      4.85,
+      -2.84
+     ]
+    ],
+    "mirror_x": true,
+    "within_studs": 0.03
+   },
+   {
+    "slot": "paint",
+    "stack": "MOG_pb_ice",
+    "bones": [
+     "ShinL",
+     "ShinR",
+     "FShinL",
+     "FShinR"
+    ]
+   },
+   {
+    "slot": "steel",
+    "stack": "MOG_pb_chrome",
+    "near": [
+     [
+      1.62,
+      4.85,
+      -0.5
+     ],
+     [
+      1.74,
+      4.83,
+      -0.02
+     ]
+    ],
+    "mirror_x": true,
+    "within_studs": 0.03
+   }
+  ],
+  "wear": [
+   {
+    "bone": "ToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "FToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "FToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "MetaL",
+    "weight": 0.2
+   },
+   {
+    "bone": "MetaR",
+    "weight": 0.2
+   },
+   {
+    "bone": "FMetaL",
+    "weight": 0.2
+   },
+   {
+    "bone": "FMetaR",
+    "weight": 0.2
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_pb_white": 1.0,
+    "MOG_pb_ice": 0.5,
+    "MOG_pb_galv": 0.3
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       1.84,
+       2.05,
+       2.0
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       1.84,
+       2.05,
+       -2.4
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.3,
+       2.8,
+       -4.5
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.9,
+       5.2,
+       2.8
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "cold"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       1.1,
+       4.28,
+       -2.78
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "refband"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       1.16,
+       4.85,
+       -3.12
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "plate"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       1.55,
+       4.8,
+       0.5
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "coldstripe"
+      ],
+      "count": 1
+     }
+    ]
+   },
+   "light_paint": [
+    "MOG_pb_white",
+    "MOG_pb_ice"
+   ],
+   "scale": 1.2399193548387097
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.221,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_pb_white": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.78,
+      0.78,
+      0.75
+     ],
+     "primer": [
+      0.05,
+      0.06,
+      0.08
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.32
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.15,
+     "large_edges": 0.25,
+     "detail": 0.35,
+     "crease": 0.3,
+     "use": 0.3,
+     "dirt": 0.4,
+     "dust": 0.3
+    }
+   },
+   "MOG_pb_ice": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.24,
+      0.35,
+      0.58
+     ],
+     "primer": [
+      0.05,
+      0.06,
+      0.08
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.32
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.15,
+     "large_edges": 0.25,
+     "detail": 0.35,
+     "crease": 0.3,
+     "use": 0.3,
+     "dirt": 0.4,
+     "dust": 0.3
+    }
+   },
+   "MOG_pb_galv": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "topcoat": [
+      0.3,
+      0.31,
+      0.31
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "metal": 0.7,
+      "rough": 0.55
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.1,
+     "large_edges": 0.15,
+     "detail": 0.25,
+     "crease": 0.2,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.5
+    }
+   },
+   "MOG_pb_chrome": {
+    "from": "MAT_anodized_alu",
+    "colors": {
+     "anodize": [
+      0.9,
+      0.9,
+      0.92
+     ]
+    },
+    "layers": {
+     "anodize": {
+      "metal": 1.0,
+      "rough": 0.1
+     }
+    }
+   },
+   "MOG_pb_peri": {
+    "from": "MECH_eye",
+    "color": [
+     0.3,
+     0.34,
+     0.85
+    ]
+   }
+  },
+  "atlases": [
+   [
+    "Pelvis",
+    "Chest",
+    "Neck",
+    "Neck2",
+    "Head",
+    "Jaw",
+    "Vent1",
+    "Vent2",
+    "Vent3",
+    "Vent4",
+    "Slide1"
+   ],
+   [
+    "ThighL",
+    "ShinL",
+    "MetaL",
+    "ToeL",
+    "ThighR",
+    "ShinR",
+    "MetaR",
+    "ToeR",
+    "FThighL",
+    "FShinL",
+    "FMetaL",
+    "FToeL",
+    "FThighR",
+    "FShinR",
+    "FMetaR",
+    "FToeR",
+    "jawRamL_1",
+    "jawRamL_2",
+    "jawRamR_1",
+    "jawRamR_2",
+    "kneeL_1",
+    "kneeL_2",
+    "kneeL_3",
+    "ankleL_1",
+    "ankleL_2",
+    "kneeR_1",
+    "kneeR_2",
+    "kneeR_3",
+    "ankleR_1",
+    "ankleR_2",
+    "fkneeL_1",
+    "fkneeL_2",
+    "fkneeL_3",
+    "fankleL_1",
+    "fankleL_2",
+    "fkneeR_1",
+    "fkneeR_2",
+    "fkneeR_3",
+    "fankleR_1",
+    "fankleR_2"
+   ]
+  ]
+ }
+}

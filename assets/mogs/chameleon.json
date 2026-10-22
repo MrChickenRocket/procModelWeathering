@@ -1,0 +1,345 @@
+{
+  "m_per_stud": 0.053913,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MOG_cham_indigo",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MOG_cham_rail",
+    "rubber": "MECH_rubber",
+    "glass": "MOG_cham_screen",
+    "eye": "MOG_cham_uv",
+    "decal": "MOG_cham_indigo",
+    "yellow": "MECH_paint_yellow",
+    "copper": "MECH_copper"
+  },
+  "tint": [
+    {
+      "slot": "paint",
+      "stack": "MOG_cham_putty",
+      "near": [
+        [
+          0,
+          3.57,
+          -1.12
+        ],
+        [
+          0.73,
+          1.41,
+          1.37
+        ],
+        [
+          0.73,
+          1.33,
+          -1.11
+        ],
+        [
+          0.56,
+          0.71,
+          1.42
+        ],
+        [
+          0.56,
+          0.67,
+          -1.48
+        ]
+      ],
+      "mirror_x": true,
+      "within_studs": 0.03
+    },
+    {
+      "slot": "rubber",
+      "stack": "MOG_cham_ribbon",
+      "bones": [
+        "Pelvis"
+      ]
+    }
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.4
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.4
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.4
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.4
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.2
+    },
+    {
+      "bone": "FMetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "FMetaR",
+      "weight": 0.2
+    }
+  ],
+  "decals": {
+    "count": 60,
+    "mirror": 0.6,
+    "targets": {
+      "MOG_cham_indigo": 1.0,
+      "MOG_cham_putty": 0.6,
+      "MECH_gunmetal": 0.45
+    },
+    "pinch": {
+      "radius_studs": 0.35,
+      "per_point": 2,
+      "kinds": [
+        "hazard",
+        "warning"
+      ],
+      "points": [
+        {
+          "at": [
+            0.73,
+            1.41,
+            1.37
+          ],
+          "mirror_x": true,
+          "kinds": [
+            "radiation"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            0.45,
+            1.95,
+            0.48
+          ],
+          "mirror_x": true,
+          "kinds": [
+            "rf"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            0.45,
+            2.0,
+            -0.66
+          ],
+          "mirror_x": true,
+          "kinds": [
+            "rf"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    "light_paint": [
+      "MOG_cham_putty"
+    ],
+    "scale": 1.0
+  },
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.221,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "MOG_cham_indigo": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.035,
+          0.035,
+          0.15
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.35
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_cham_putty": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.45,
+          0.42,
+          0.34
+        ],
+        "primer": [
+          0.05,
+          0.06,
+          0.08
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.45
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.1,
+        "large_edges": 0.15,
+        "detail": 0.25,
+        "crease": 0.2,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.5
+      }
+    },
+    "MOG_cham_rail": {
+      "from": "MAT_anodized_alu",
+      "layers": {
+        "anodize": {
+          "rough": 0.6
+        }
+      }
+    },
+    "MOG_cham_ribbon": {
+      "from": "MECH_rubber",
+      "color": [
+        0.13,
+        0.13,
+        0.14
+      ]
+    },
+    "MOG_cham_uv": {
+      "from": "MECH_eye",
+      "color": [
+        0.35,
+        0.05,
+        0.9
+      ]
+    },
+    "MOG_cham_screen": {
+      "from": "MECH_eye",
+      "color": [
+        0.005,
+        0.009,
+        0.007
+      ],
+      "rough": 0.7
+    },
+    "MOG_cham_screen2": {
+      "from": "MECH_eye",
+      "color": [
+        0.011,
+        0.018,
+        0.013
+      ],
+      "rough": 0.7
+    },
+    "MOG_cham_scan": {
+      "from": "MECH_eye",
+      "color": [
+        0.016,
+        0.01,
+        0.03
+      ],
+      "rough": 0.7
+    }
+  },
+  "patterns": [
+    {
+      "from": [
+        "MOG_cham_screen"
+      ],
+      "to": "MOG_cham_screen2",
+      "mode": "spots",
+      "period_studs": 0.12,
+      "fill": 0.45,
+      "octaves": 1,
+      "seed": 3
+    },
+    {
+      "from": [
+        "MOG_cham_screen",
+        "MOG_cham_screen2"
+      ],
+      "to": "MOG_cham_scan",
+      "mode": "bands",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "period_studs": 0.05,
+      "fill": 0.18,
+      "seed": 5
+    }
+  ]
+}

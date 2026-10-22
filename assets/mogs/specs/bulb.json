@@ -1,0 +1,189 @@
+{
+  "height": 10.65,
+  "stacks": {
+    "MOG_bulb_coral": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.6,
+          0.17,
+          0.12
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 1.0,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 1.0,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_bulb_blued": {
+      "from": "MAT_steel_blued",
+      "colors": {
+        "bluing": [
+          0.1,
+          0.09,
+          0.26
+        ]
+      }
+    }
+  },
+  "slots": {
+    "paint": "MOG_bulb_coral",
+    "decal": "MOG_bulb_coral"
+  },
+  "decals": {
+    "light_paint": [
+      "MOG_bulb_coral"
+    ]
+  },
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MECH_eye",
+    "within_studs": 0.6,
+    "lateral_studs": 0.02
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.15
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.15
+    },
+    {
+      "bone": "HandL",
+      "weight": 0.15
+    },
+    {
+      "bone": "HandR",
+      "weight": 0.15
+    },
+    {
+      "bone": "Turret",
+      "weight": 0.4
+    }
+  ],
+  "pinch": [],
+  "atlases": [
+    [
+      "Head",
+      "Eye",
+      "Neck"
+    ],
+    [
+      "Pelvis",
+      "Chest",
+      "Turret",
+      "Gun",
+      "BarrelL",
+      "BarrelR",
+      "UpperArmL",
+      "UpperArmR",
+      "ForearmL",
+      "ForearmR",
+      "HandL",
+      "HandR"
+    ],
+    [
+      "ThighL",
+      "ThighR",
+      "ShinL",
+      "ShinR",
+      "MetaL",
+      "MetaR",
+      "ToeL",
+      "ToeR"
+    ]
+  ],
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7,
+  "tint": [
+    {
+      "slot": "gunmetal",
+      "stack": "MOG_bulb_blued",
+      "within_studs": 0.05,
+      "mirror_x": true,
+      "near": [
+        [
+          1.13,
+          11.9,
+          -4.63
+        ],
+        [
+          1.24,
+          12.09,
+          -4.63
+        ],
+        [
+          1.46,
+          12.09,
+          -4.63
+        ],
+        [
+          1.57,
+          11.9,
+          -4.63
+        ],
+        [
+          1.46,
+          11.71,
+          -4.63
+        ],
+        [
+          1.24,
+          11.71,
+          -4.63
+        ],
+        [
+          1.35,
+          11.9,
+          -4.45
+        ],
+        [
+          1.35,
+          11.9,
+          -3.9
+        ]
+      ]
+    }
+  ]
+}

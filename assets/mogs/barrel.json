@@ -1,0 +1,336 @@
+{
+  "m_per_stud": 0.017794,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MOG_barrel_teal",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MECH_steel",
+    "rubber": "MECH_rubber",
+    "glass": "MECH_glass",
+    "eye": "MOG_barrel_eye",
+    "decal": "MOG_barrel_teal",
+    "yellow": "MECH_paint_yellow"
+  },
+  "tint": [
+    {
+      "slot": "rubber",
+      "stack": "MECH_rubber_red",
+      "fraction": 0.35,
+      "pick": "thinnest"
+    }
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.15
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.15
+    },
+    {
+      "bone": "HandL",
+      "weight": 0.15
+    },
+    {
+      "bone": "HandR",
+      "weight": 0.15
+    }
+  ],
+  "decals": {
+    "count": 60,
+    "mirror": 0.6,
+    "targets": {
+      "MOG_barrel_teal": 1.0,
+      "MECH_gunmetal": 0.45
+    },
+    "pinch": {
+      "radius_studs": 0.35,
+      "per_point": 2,
+      "kinds": [
+        "hazard",
+        "warning"
+      ],
+      "points": [
+        {
+          "at": [
+            -3.4,
+            4.7338,
+            -0.3529
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -3.4,
+            2.1017,
+            -0.5063
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -2.55,
+            1.98,
+            1.08
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -2.55,
+            0.88,
+            1.6
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.85,
+            1.98,
+            1.08
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.85,
+            0.88,
+            1.6
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -5.8,
+            8.1,
+            0.8
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -5.9,
+            6.15,
+            0.65
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            3.4,
+            4.7338,
+            -0.3529
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            3.4,
+            2.1017,
+            -0.5063
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.85,
+            1.98,
+            1.08
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.85,
+            0.88,
+            1.6
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            2.55,
+            1.98,
+            1.08
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            2.55,
+            0.88,
+            1.6
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            5.8,
+            8.1,
+            0.8
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            5.9,
+            6.15,
+            0.65
+          ],
+          "mirror_x": false,
+          "count": 1
+        }
+      ]
+    },
+    "scale": 2.247983870967742
+  },
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.221,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "MOG_barrel_teal": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.025,
+          0.2,
+          0.18
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 1.0,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 1.0,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_barrel_eye": {
+      "from": "MECH_eye",
+      "color": [
+        0.45,
+        1.0,
+        0.92
+      ]
+    }
+  },
+  "atlases": [
+    [
+      "Chest",
+      "Pelvis",
+      "Neck",
+      "Head",
+      "EyeL",
+      "EyeR"
+    ],
+    [
+      "Turret",
+      "Gun",
+      "UpperArmL",
+      "UpperArmR",
+      "ForearmL",
+      "ForearmR",
+      "HandL",
+      "HandR"
+    ],
+    [
+      "ThighL",
+      "ThighR",
+      "ShinL",
+      "ShinR",
+      "MetaL",
+      "MetaR",
+      "ToeL",
+      "ToeR"
+    ]
+  ],
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MOG_barrel_eye",
+    "within_studs": 0.1,
+    "lateral_studs": 0.01
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "height": 8.31,
+  "stacks": {
+    "MOG_trice_plum": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.13,
+          0.025,
+          0.09
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_trice_walnut": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.14,
+          0.06,
+          0.022
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.28
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.1,
+        "large_edges": 0.15,
+        "detail": 0.25,
+        "crease": 0.2,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.5
+      }
+    },
+    "MOG_trice_uv": {
+      "from": "MECH_eye",
+      "color": [
+        0.32,
+        0.06,
+        1.0
+      ]
+    },
+    "MOG_glint": {
+      "from": "MECH_eye",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "slots": {
+    "paint": "MOG_trice_plum",
+    "decal": "MOG_trice_plum",
+    "eye": "MOG_trice_uv",
+    "copper": "MECH_copper"
+  },
+  "tint": [
+    {
+      "slot": "eye",
+      "stack": "MOG_glint",
+      "near": [
+        [
+          -1.1248,
+          4.1987,
+          -5.8421
+        ],
+        [
+          -1.0876,
+          4.1247,
+          -5.9262
+        ],
+        [
+          1.0571,
+          4.1987,
+          -5.9081
+        ],
+        [
+          1.142,
+          4.1247,
+          -5.8731
+        ]
+      ],
+      "mirror_x": false,
+      "within_studs": 0.004
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_trice_walnut",
+      "bones": [
+        "Petal1",
+        "Petal2",
+        "Petal3",
+        "Petal4",
+        "Petal5",
+        "Petal6",
+        "Petal7",
+        "Petal8",
+        "Petal9"
+      ]
+    },
+    {
+      "slot": "copper",
+      "stack": "MECH_brass",
+      "bones": [
+        "Petal1",
+        "Petal2",
+        "Petal3",
+        "Petal4",
+        "Petal5",
+        "Petal6",
+        "Petal7",
+        "Petal8",
+        "Petal9",
+        "Chest",
+        "Pelvis"
+      ]
+    }
+  ],
+  "targets": {
+    "MOG_trice_plum": 1.0,
+    "MECH_gunmetal": 0.45
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.4
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.4
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.4
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.4
+    },
+    {
+      "bone": "Jaw",
+      "weight": 0.3
+    },
+    {
+      "bone": "Head",
+      "weight": 0.2
+    }
+  ],
+  "pinch": [
+    {
+      "at": [
+        2.42,
+        5.4,
+        -0.45
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "radiation"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        2.33,
+        5.4,
+        4.05
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "rf"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        2.42,
+        4.45,
+        0.96
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "papertape"
+      ],
+      "count": 1
+    }
+  ],
+  "rams": false,
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7,
+  "base_tint": false,
+  "atlases": [
+    [
+      "Head",
+      "Jaw",
+      "Neck",
+      "EyeL",
+      "EyeR",
+      "EyeLidL",
+      "EyeLidLowL",
+      "EyeLidR",
+      "EyeLidLowR"
+    ],
+    [
+      "Petal1",
+      "Petal2",
+      "Petal3",
+      "Petal4",
+      "Petal5",
+      "Petal6",
+      "Petal7",
+      "Petal8",
+      "Petal9"
+    ],
+    [
+      "Root",
+      "Pelvis",
+      "Chest",
+      "Tail1",
+      "Tail2",
+      "Tail3",
+      "Vent1",
+      "Vent2"
+    ],
+    [
+      "ThighL",
+      "ShinL",
+      "MetaL",
+      "ToeL",
+      "ThighR",
+      "ShinR",
+      "MetaR",
+      "ToeR",
+      "FThighL",
+      "FShinL",
+      "FMetaL",
+      "FToeL",
+      "FThighR",
+      "FShinR",
+      "FMetaR",
+      "FToeR"
+    ]
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "height": 3.92,
+  "stacks": {
+    "MOG_mantis_green": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.75,
+          0.12,
+          0.006
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.42
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.1,
+        "large_edges": 0.15,
+        "detail": 0.25,
+        "crease": 0.2,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.5
+      }
+    },
+    "MOG_mantis_lamp": {
+      "from": "MECH_eye",
+      "color": [
+        0.78,
+        0.76,
+        0.68
+      ]
+    },
+    "MOG_mantis_braid": {
+      "from": "MECH_steel",
+      "color": [
+        0.3,
+        0.31,
+        0.32
+      ]
+    }
+  },
+  "slots": {
+    "paint": "MOG_mantis_green",
+    "decal": "MOG_mantis_green",
+    "eye": "MOG_mantis_lamp"
+  },
+  "tint": [
+    {
+      "slot": "rubber",
+      "stack": "MOG_mantis_braid",
+      "bones": [
+        "Pelvis"
+      ]
+    }
+  ],
+  "targets": {
+    "MOG_mantis_green": 1.0,
+    "MECH_gunmetal": 0.45
+  },
+  "wear": [
+    {
+      "bone": "FToeL",
+      "weight": 0.6
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.6
+    },
+    {
+      "bone": "MToeL",
+      "weight": 0.4
+    },
+    {
+      "bone": "MToeR",
+      "weight": 0.4
+    },
+    {
+      "bone": "ToeL",
+      "weight": 0.4
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.4
+    },
+    {
+      "bone": "FMetaL",
+      "weight": 0.3
+    },
+    {
+      "bone": "FMetaR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MMetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "MMetaR",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.2
+    }
+  ],
+  "pinch": [
+    {
+      "at": [
+        0.98,
+        0.66,
+        -2.78
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "chevron"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        1.23,
+        0.9,
+        -2.03
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "gear"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        0.75,
+        2.0,
+        -1.2
+      ],
+      "mirror_x": false,
+      "kinds": [
+        "plate"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        1.71,
+        1.0,
+        -0.66
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        1.71,
+        1.0,
+        1.39
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    }
+  ],
+  "rams": false,
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7,
+  "base_tint": false
+}

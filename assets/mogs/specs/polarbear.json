@@ -1,0 +1,400 @@
+{
+  "height": 6.15,
+  "stacks": {
+    "MOG_pb_white": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.78,
+          0.78,
+          0.75
+        ],
+        "primer": [
+          0.05,
+          0.06,
+          0.08
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.32
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_pb_ice": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.24,
+          0.35,
+          0.58
+        ],
+        "primer": [
+          0.05,
+          0.06,
+          0.08
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.32
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_pb_galv": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "topcoat": [
+          0.3,
+          0.31,
+          0.31
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "metal": 0.7,
+          "rough": 0.55
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.1,
+        "large_edges": 0.15,
+        "detail": 0.25,
+        "crease": 0.2,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.5
+      }
+    },
+    "MOG_pb_chrome": {
+      "from": "MAT_anodized_alu",
+      "colors": {
+        "anodize": [
+          0.9,
+          0.9,
+          0.92
+        ]
+      },
+      "layers": {
+        "anodize": {
+          "metal": 1.0,
+          "rough": 0.1
+        }
+      }
+    },
+    "MOG_pb_peri": {
+      "from": "MECH_eye",
+      "color": [
+        0.3,
+        0.34,
+        0.85
+      ]
+    }
+  },
+  "slots": {
+    "paint": "MOG_pb_white",
+    "decal": "MOG_pb_white",
+    "gunmetal": "MOG_pb_galv",
+    "eye": "MOG_pb_peri"
+  },
+  "tint": [
+    {
+      "slot": "paint",
+      "stack": "MOG_pb_ice",
+      "near": [
+        [
+          0,
+          3.6,
+          -0.84
+        ],
+        [
+          0,
+          3.58,
+          2.11
+        ],
+        [
+          0,
+          3.59,
+          -2.25
+        ],
+        [
+          1.33,
+          3.35,
+          0.52
+        ],
+        [
+          1.33,
+          3.35,
+          -2.26
+        ],
+        [
+          0,
+          3.45,
+          2.7
+        ],
+        [
+          0.8,
+          3.37,
+          -4.54
+        ],
+        [
+          0.81,
+          3.37,
+          -4.13
+        ],
+        [
+          1.16,
+          4.85,
+          -2.84
+        ]
+      ],
+      "mirror_x": true,
+      "within_studs": 0.03
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_pb_ice",
+      "bones": [
+        "ShinL",
+        "ShinR",
+        "FShinL",
+        "FShinR"
+      ]
+    },
+    {
+      "slot": "steel",
+      "stack": "MOG_pb_chrome",
+      "near": [
+        [
+          1.62,
+          4.85,
+          -0.5
+        ],
+        [
+          1.74,
+          4.83,
+          -0.02
+        ]
+      ],
+      "mirror_x": true,
+      "within_studs": 0.03
+    }
+  ],
+  "targets": {
+    "MOG_pb_white": 1.0,
+    "MOG_pb_ice": 0.5,
+    "MOG_pb_galv": 0.3
+  },
+  "decals": {
+    "light_paint": [
+      "MOG_pb_white",
+      "MOG_pb_ice"
+    ]
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.4
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.4
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.4
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.4
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.2
+    },
+    {
+      "bone": "FMetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "FMetaR",
+      "weight": 0.2
+    }
+  ],
+  "pinch": [
+    {
+      "at": [
+        1.84,
+        2.05,
+        2.0
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        1.84,
+        2.05,
+        -2.4
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        0.3,
+        2.8,
+        -4.5
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        0.9,
+        5.2,
+        2.8
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "cold"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        1.1,
+        4.28,
+        -2.78
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "refband"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        1.16,
+        4.85,
+        -3.12
+      ],
+      "mirror_x": false,
+      "kinds": [
+        "plate"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        1.55,
+        4.8,
+        0.5
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "coldstripe"
+      ],
+      "count": 1
+    }
+  ],
+  "rams": false,
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7,
+  "base_tint": false,
+  "atlases": [
+    [
+      "Pelvis",
+      "Chest",
+      "Neck",
+      "Neck2",
+      "Head",
+      "Jaw",
+      "Vent1",
+      "Vent2",
+      "Vent3",
+      "Vent4",
+      "Slide1"
+    ],
+    [
+      "ThighL",
+      "ShinL",
+      "MetaL",
+      "ToeL",
+      "ThighR",
+      "ShinR",
+      "MetaR",
+      "ToeR",
+      "FThighL",
+      "FShinL",
+      "FMetaL",
+      "FToeL",
+      "FThighR",
+      "FShinR",
+      "FMetaR",
+      "FToeR",
+      "jawRamL_1",
+      "jawRamL_2",
+      "jawRamR_1",
+      "jawRamR_2",
+      "kneeL_1",
+      "kneeL_2",
+      "kneeL_3",
+      "ankleL_1",
+      "ankleL_2",
+      "kneeR_1",
+      "kneeR_2",
+      "kneeR_3",
+      "ankleR_1",
+      "ankleR_2",
+      "fkneeL_1",
+      "fkneeL_2",
+      "fkneeL_3",
+      "fankleL_1",
+      "fankleL_2",
+      "fkneeR_1",
+      "fkneeR_2",
+      "fkneeR_3",
+      "fankleR_1",
+      "fankleR_2"
+    ]
+  ]
+}

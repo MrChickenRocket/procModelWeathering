@@ -1,0 +1,253 @@
+{
+  "height": 6.92,
+  "stacks": {
+    "MOG_bulldog_od": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.04,
+          0.045,
+          0.022
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    }
+  },
+  "slots": {
+    "paint": "MOG_bulldog_od",
+    "decal": "MOG_bulldog_od"
+  },
+  "decals": {
+    "mix": {
+      "paint": {
+        "stencil": 0.4,
+        "numbers": 0.2,
+        "plate": 0.15,
+        "roundel": 0.1,
+        "triangle": 0.05,
+        "warning": 0.05,
+        "hazard": 0.05
+      }
+    }
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.15
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.15
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.15
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.15
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.1
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.1
+    },
+    {
+      "bone": "FMetaL",
+      "weight": 0.1
+    },
+    {
+      "bone": "FMetaR",
+      "weight": 0.1
+    },
+    {
+      "bone": "ShinL",
+      "weight": 0.1
+    },
+    {
+      "bone": "ShinR",
+      "weight": 0.1
+    },
+    {
+      "bone": "FShinL",
+      "weight": 0.1
+    },
+    {
+      "bone": "FShinR",
+      "weight": 0.1
+    },
+    {
+      "bone": "Jaw",
+      "weight": 0.6
+    }
+  ],
+  "pinch": [
+    {
+      "at": [
+        2.3,
+        4.5,
+        3.4
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        2.38,
+        2.95,
+        2.72
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        2.44,
+        1.42,
+        3.45
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        2.45,
+        0.66,
+        3.12
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        2.42,
+        4.45,
+        -3.35
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        2.48,
+        2.8,
+        -2.72
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        2.5,
+        1.32,
+        -3.18
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        2.5,
+        0.66,
+        -2.98
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0,
+        4.3,
+        -4.05
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        3.95,
+        -4.85
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        3.05,
+        -4.9
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        4.15,
+        5.45
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        4.7,
+        -0.3
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0.8,
+        2.2,
+        -6.8
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    }
+  ],
+  "atlases": [
+    [
+      "Root",
+      "Pelvis",
+      "Tail1",
+      "ThighL",
+      "ThighR"
+    ],
+    [
+      "Chest",
+      "Neck",
+      "Head",
+      "Jaw"
+    ],
+    [
+      "ShinL",
+      "ShinR",
+      "MetaL",
+      "MetaR",
+      "ToeL",
+      "ToeR",
+      "FThighL",
+      "FThighR",
+      "FShinL",
+      "FShinR",
+      "FMetaL",
+      "FMetaR",
+      "FToeL",
+      "FToeR"
+    ]
+  ],
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7
+}

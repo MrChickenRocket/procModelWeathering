@@ -1,0 +1,677 @@
+{
+ "mech": "trice",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\trice\\export",
+ "m_per_stud": 0.023875,
+ "atlases": 4,
+ "face_ranges": {
+  "Neck": [
+   "trice_a1",
+   0,
+   424
+  ],
+  "Head": [
+   "trice_a1",
+   424,
+   10572
+  ],
+  "Jaw": [
+   "trice_a1",
+   10572,
+   11320
+  ],
+  "EyeL": [
+   "trice_a1",
+   11320,
+   12142
+  ],
+  "EyeR": [
+   "trice_a1",
+   12142,
+   12964
+  ],
+  "EyeLidL": [
+   "trice_a1",
+   12964,
+   13296
+  ],
+  "EyeLidLowL": [
+   "trice_a1",
+   13296,
+   13404
+  ],
+  "EyeLidR": [
+   "trice_a1",
+   13404,
+   13736
+  ],
+  "EyeLidLowR": [
+   "trice_a1",
+   13736,
+   13844
+  ],
+  "jawRamL_1": [
+   "trice_a1",
+   13844,
+   13920
+  ],
+  "jawRamL_2": [
+   "trice_a1",
+   13920,
+   13960
+  ],
+  "jawRamR_1": [
+   "trice_a1",
+   13960,
+   14036
+  ],
+  "jawRamR_2": [
+   "trice_a1",
+   14036,
+   14076
+  ],
+  "Petal1": [
+   "trice_a2",
+   0,
+   300
+  ],
+  "Petal2": [
+   "trice_a2",
+   300,
+   600
+  ],
+  "Petal3": [
+   "trice_a2",
+   600,
+   900
+  ],
+  "Petal4": [
+   "trice_a2",
+   900,
+   1200
+  ],
+  "Petal5": [
+   "trice_a2",
+   1200,
+   1500
+  ],
+  "Petal6": [
+   "trice_a2",
+   1500,
+   1800
+  ],
+  "Petal7": [
+   "trice_a2",
+   1800,
+   2100
+  ],
+  "Petal8": [
+   "trice_a2",
+   2100,
+   2400
+  ],
+  "Petal9": [
+   "trice_a2",
+   2400,
+   2700
+  ],
+  "Pelvis": [
+   "trice_a3",
+   0,
+   5896
+  ],
+  "Chest": [
+   "trice_a3",
+   5896,
+   11552
+  ],
+  "Tail1": [
+   "trice_a3",
+   11552,
+   11850
+  ],
+  "Tail2": [
+   "trice_a3",
+   11850,
+   12148
+  ],
+  "Tail3": [
+   "trice_a3",
+   12148,
+   12452
+  ],
+  "Vent1": [
+   "trice_a3",
+   12452,
+   12496
+  ],
+  "Vent2": [
+   "trice_a3",
+   12496,
+   12540
+  ],
+  "ThighL": [
+   "trice_a4",
+   0,
+   780
+  ],
+  "ShinL": [
+   "trice_a4",
+   780,
+   1304
+  ],
+  "MetaL": [
+   "trice_a4",
+   1304,
+   1768
+  ],
+  "ToeL": [
+   "trice_a4",
+   1768,
+   2548
+  ],
+  "ThighR": [
+   "trice_a4",
+   2548,
+   3328
+  ],
+  "ShinR": [
+   "trice_a4",
+   3328,
+   3852
+  ],
+  "MetaR": [
+   "trice_a4",
+   3852,
+   4316
+  ],
+  "ToeR": [
+   "trice_a4",
+   4316,
+   5096
+  ],
+  "FThighL": [
+   "trice_a4",
+   5096,
+   5876
+  ],
+  "FShinL": [
+   "trice_a4",
+   5876,
+   6400
+  ],
+  "FMetaL": [
+   "trice_a4",
+   6400,
+   6864
+  ],
+  "FToeL": [
+   "trice_a4",
+   6864,
+   7644
+  ],
+  "FThighR": [
+   "trice_a4",
+   7644,
+   8424
+  ],
+  "FShinR": [
+   "trice_a4",
+   8424,
+   8948
+  ],
+  "FMetaR": [
+   "trice_a4",
+   8948,
+   9412
+  ],
+  "FToeR": [
+   "trice_a4",
+   9412,
+   10192
+  ],
+  "kneeL_1": [
+   "trice_a4",
+   10192,
+   10268
+  ],
+  "kneeL_2": [
+   "trice_a4",
+   10268,
+   10308
+  ],
+  "kneeR_1": [
+   "trice_a4",
+   10308,
+   10384
+  ],
+  "kneeR_2": [
+   "trice_a4",
+   10384,
+   10424
+  ],
+  "fkneeL_1": [
+   "trice_a4",
+   10424,
+   10500
+  ],
+  "fkneeL_2": [
+   "trice_a4",
+   10500,
+   10540
+  ],
+  "fkneeR_1": [
+   "trice_a4",
+   10540,
+   10616
+  ],
+  "fkneeR_2": [
+   "trice_a4",
+   10616,
+   10656
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 3,
+  "Chest": 3,
+  "Neck": 1,
+  "Head": 1,
+  "Jaw": 1,
+  "Tail1": 3,
+  "Tail2": 3,
+  "Tail3": 3,
+  "Petal1": 2,
+  "Petal2": 2,
+  "Petal3": 2,
+  "Petal4": 2,
+  "Petal5": 2,
+  "Petal6": 2,
+  "Petal7": 2,
+  "Petal8": 2,
+  "Petal9": 2,
+  "ThighL": 4,
+  "ShinL": 4,
+  "MetaL": 4,
+  "ToeL": 4,
+  "ThighR": 4,
+  "ShinR": 4,
+  "MetaR": 4,
+  "ToeR": 4,
+  "FThighL": 4,
+  "FShinL": 4,
+  "FMetaL": 4,
+  "FToeL": 4,
+  "FThighR": 4,
+  "FShinR": 4,
+  "FMetaR": 4,
+  "FToeR": 4,
+  "Vent1": 3,
+  "Vent2": 3,
+  "EyeL": 1,
+  "EyeR": 1,
+  "EyeLidL": 1,
+  "EyeLidLowL": 1,
+  "EyeLidR": 1,
+  "EyeLidLowR": 1,
+  "jawRamL_1": 1,
+  "jawRamL_2": 1,
+  "jawRamR_1": 1,
+  "jawRamR_2": 1,
+  "kneeL_1": 4,
+  "kneeL_2": 4,
+  "kneeR_1": 4,
+  "kneeR_2": 4,
+  "fkneeL_1": 4,
+  "fkneeL_2": 4,
+  "fkneeR_1": 4,
+  "fkneeR_2": 4
+ },
+ "stacks": [
+  "MECH_brass",
+  "MECH_copper",
+  "MECH_glass",
+  "MECH_gunmetal",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MECH_steel",
+  "MOG_glint",
+  "MOG_trice_plum",
+  "MOG_trice_uv",
+  "MOG_trice_walnut"
+ ],
+ "config": {
+  "m_per_stud": 0.023875,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_trice_plum",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MOG_trice_uv",
+   "decal": "MOG_trice_plum",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper"
+  },
+  "tint": [
+   {
+    "slot": "eye",
+    "stack": "MOG_glint",
+    "near": [
+     [
+      -1.1248,
+      4.1987,
+      -5.8421
+     ],
+     [
+      -1.0876,
+      4.1247,
+      -5.9262
+     ],
+     [
+      1.0571,
+      4.1987,
+      -5.9081
+     ],
+     [
+      1.142,
+      4.1247,
+      -5.8731
+     ]
+    ],
+    "mirror_x": false,
+    "within_studs": 0.004
+   },
+   {
+    "slot": "paint",
+    "stack": "MOG_trice_walnut",
+    "bones": [
+     "Petal1",
+     "Petal2",
+     "Petal3",
+     "Petal4",
+     "Petal5",
+     "Petal6",
+     "Petal7",
+     "Petal8",
+     "Petal9"
+    ]
+   },
+   {
+    "slot": "copper",
+    "stack": "MECH_brass",
+    "bones": [
+     "Petal1",
+     "Petal2",
+     "Petal3",
+     "Petal4",
+     "Petal5",
+     "Petal6",
+     "Petal7",
+     "Petal8",
+     "Petal9",
+     "Chest",
+     "Pelvis"
+    ]
+   }
+  ],
+  "wear": [
+   {
+    "bone": "ToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "FToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "FToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "Jaw",
+    "weight": 0.3
+   },
+   {
+    "bone": "Head",
+    "weight": 0.2
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_trice_plum": 1.0,
+    "MECH_gunmetal": 0.45
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       2.42,
+       5.4,
+       -0.45
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "radiation"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       2.33,
+       5.4,
+       4.05
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "rf"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       2.42,
+       4.45,
+       0.96
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "papertape"
+      ],
+      "count": 1
+     }
+    ]
+   },
+   "scale": 1.6754032258064517
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.221,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_trice_plum": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.13,
+      0.025,
+      0.09
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MOG_trice_walnut": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.14,
+      0.06,
+      0.022
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.28
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MECH_gunmetal": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.1,
+     "large_edges": 0.15,
+     "detail": 0.25,
+     "crease": 0.2,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.5
+    }
+   },
+   "MOG_trice_uv": {
+    "from": "MECH_eye",
+    "color": [
+     0.32,
+     0.06,
+     1.0
+    ]
+   },
+   "MOG_glint": {
+    "from": "MECH_eye",
+    "color": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "atlases": [
+   [
+    "Head",
+    "Jaw",
+    "Neck",
+    "EyeL",
+    "EyeR",
+    "EyeLidL",
+    "EyeLidLowL",
+    "EyeLidR",
+    "EyeLidLowR"
+   ],
+   [
+    "Petal1",
+    "Petal2",
+    "Petal3",
+    "Petal4",
+    "Petal5",
+    "Petal6",
+    "Petal7",
+    "Petal8",
+    "Petal9"
+   ],
+   [
+    "Root",
+    "Pelvis",
+    "Chest",
+    "Tail1",
+    "Tail2",
+    "Tail3",
+    "Vent1",
+    "Vent2"
+   ],
+   [
+    "ThighL",
+    "ShinL",
+    "MetaL",
+    "ToeL",
+    "ThighR",
+    "ShinR",
+    "MetaR",
+    "ToeR",
+    "FThighL",
+    "FShinL",
+    "FMetaL",
+    "FToeL",
+    "FThighR",
+    "FShinR",
+    "FMetaR",
+    "FToeR"
+   ]
+  ]
+ }
+}

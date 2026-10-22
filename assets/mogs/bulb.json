@@ -1,0 +1,376 @@
+{
+  "m_per_stud": 0.018629,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MOG_bulb_coral",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MECH_steel",
+    "rubber": "MECH_rubber",
+    "glass": "MECH_glass",
+    "eye": "MECH_eye",
+    "decal": "MOG_bulb_coral",
+    "yellow": "MECH_paint_yellow"
+  },
+  "tint": [
+    {
+      "slot": "rubber",
+      "stack": "MECH_rubber_red",
+      "fraction": 0.35,
+      "pick": "thinnest"
+    },
+    {
+      "slot": "gunmetal",
+      "stack": "MOG_bulb_blued",
+      "within_studs": 0.05,
+      "mirror_x": true,
+      "near": [
+        [
+          1.13,
+          11.9,
+          -4.63
+        ],
+        [
+          1.24,
+          12.09,
+          -4.63
+        ],
+        [
+          1.46,
+          12.09,
+          -4.63
+        ],
+        [
+          1.57,
+          11.9,
+          -4.63
+        ],
+        [
+          1.46,
+          11.71,
+          -4.63
+        ],
+        [
+          1.24,
+          11.71,
+          -4.63
+        ],
+        [
+          1.35,
+          11.9,
+          -4.45
+        ],
+        [
+          1.35,
+          11.9,
+          -3.9
+        ]
+      ]
+    }
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.15
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.15
+    },
+    {
+      "bone": "HandL",
+      "weight": 0.15
+    },
+    {
+      "bone": "HandR",
+      "weight": 0.15
+    },
+    {
+      "bone": "Turret",
+      "weight": 0.4
+    }
+  ],
+  "decals": {
+    "count": 60,
+    "mirror": 0.6,
+    "targets": {
+      "MOG_bulb_coral": 1.0,
+      "MECH_gunmetal": 0.45
+    },
+    "pinch": {
+      "radius_studs": 0.35,
+      "per_point": 2,
+      "kinds": [
+        "hazard",
+        "warning"
+      ],
+      "points": [
+        {
+          "at": [
+            -1.84,
+            2.2749,
+            0.0623
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.84,
+            1.6685,
+            0.7519
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.25,
+            1.3413,
+            -0.1315
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.25,
+            0.7642,
+            -0.7866
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -4.82,
+            6.897,
+            0.8667
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -4.82,
+            5.7552,
+            0.579
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.84,
+            2.2749,
+            0.0623
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.84,
+            1.6685,
+            0.7519
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.25,
+            1.3413,
+            -0.1315
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.25,
+            0.7642,
+            -0.7866
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            4.82,
+            6.897,
+            0.8667
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            4.82,
+            5.7552,
+            0.579
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.0,
+            11.07,
+            -1.2
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.0,
+            11.38,
+            -0.62
+          ],
+          "mirror_x": false,
+          "count": 1
+        }
+      ]
+    },
+    "light_paint": [
+      "MOG_bulb_coral"
+    ],
+    "scale": 2.147177419354839
+  },
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.221,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "MOG_bulb_coral": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.6,
+          0.17,
+          0.12
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 1.0,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 1.0,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_bulb_blued": {
+      "from": "MAT_steel_blued",
+      "colors": {
+        "bluing": [
+          0.1,
+          0.09,
+          0.26
+        ]
+      }
+    }
+  },
+  "atlases": [
+    [
+      "Head",
+      "Eye",
+      "Neck"
+    ],
+    [
+      "Pelvis",
+      "Chest",
+      "Turret",
+      "Gun",
+      "BarrelL",
+      "BarrelR",
+      "UpperArmL",
+      "UpperArmR",
+      "ForearmL",
+      "ForearmR",
+      "HandL",
+      "HandR"
+    ],
+    [
+      "ThighL",
+      "ThighR",
+      "ShinL",
+      "ShinR",
+      "MetaL",
+      "MetaR",
+      "ToeL",
+      "ToeR"
+    ]
+  ],
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MECH_eye",
+    "within_studs": 0.6,
+    "lateral_studs": 0.02
+  }
+}

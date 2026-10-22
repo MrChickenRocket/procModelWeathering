@@ -1,0 +1,162 @@
+{
+  "m_per_stud": 0.050872,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MECH_paint_red",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MECH_steel",
+    "rubber": "MECH_rubber",
+    "glass": "MECH_glass",
+    "eye": "MECH_eye",
+    "decal": "MECH_paint_red",
+    "yellow": "MECH_paint_yellow",
+    "copper": "MECH_copper",
+    "gcuff": "ARC_gcuff",
+    "glove": "ARC_glove",
+    "gpalm": "ARC_gpalm",
+    "gplate": "ARC_gplate"
+  },
+  "tint": [],
+  "wear": [
+    {
+      "bone": "glove_Open_R",
+      "weight": 0.8
+    },
+    {
+      "bone": "glove_Open_R__lod1",
+      "weight": 0.8
+    },
+    {
+      "bone": "glove_Open_L",
+      "weight": 0.8
+    },
+    {
+      "bone": "glove_Open_L__lod1",
+      "weight": 0.8
+    }
+  ],
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.0,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "ARC_gcuff": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.1706,
+        0.1706,
+        0.1873
+      ],
+      "weather": {
+        "flat_impacts": 0.2,
+        "large_edges": 0.35,
+        "detail": 0.8,
+        "crease": 0.6,
+        "dirt": 0.4,
+        "dust": 0.1,
+        "use": 0.5,
+        "streaks": 0.0
+      }
+    },
+    "ARC_glove": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.3185,
+        0.3185,
+        0.3931
+      ],
+      "weather": {
+        "flat_impacts": 0.2,
+        "large_edges": 0.35,
+        "detail": 0.8,
+        "crease": 0.6,
+        "dirt": 0.4,
+        "dust": 0.1,
+        "use": 0.5,
+        "streaks": 0.0
+      }
+    },
+    "ARC_gpalm": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "weather": {
+        "flat_impacts": 0.2,
+        "large_edges": 0.35,
+        "detail": 0.8,
+        "crease": 0.6,
+        "dirt": 0.4,
+        "dust": 0.1,
+        "use": 0.5,
+        "streaks": 0.0
+      }
+    },
+    "ARC_gplate": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.89,
+        0.89,
+        1.0
+      ],
+      "weather": {
+        "flat_impacts": 0.2,
+        "large_edges": 0.35,
+        "detail": 0.8,
+        "crease": 0.6,
+        "dirt": 0.4,
+        "dust": 0.1,
+        "use": 0.5,
+        "streaks": 0.0
+      }
+    }
+  },
+  "atlases": [
+    [
+      "glove_Open_R",
+      "glove_Open_R__lod1"
+    ],
+    [
+      "glove_Open_L",
+      "glove_Open_L__lod1"
+    ]
+  ]
+}

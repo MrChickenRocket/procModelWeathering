@@ -1,0 +1,665 @@
+{
+  "m_per_stud": 0.031693,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MOG_vulture_fern",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MECH_steel",
+    "rubber": "MECH_rubber",
+    "glass": "MECH_glass",
+    "eye": "MOG_vulture_sight",
+    "decal": "MOG_vulture_fern",
+    "yellow": "MECH_paint_yellow",
+    "copper": "MECH_copper"
+  },
+  "tint": [
+    {
+      "slot": "rubber",
+      "stack": "MECH_rubber_red",
+      "fraction": 0.35,
+      "pick": "thinnest"
+    },
+    {
+      "slot": "eye",
+      "stack": "MOG_glint",
+      "near": [
+        [
+          -0.3144,
+          5.5554,
+          -2.1076
+        ],
+        [
+          -0.3107,
+          5.481,
+          -2.1809
+        ],
+        [
+          0.2887,
+          5.5554,
+          -2.1923
+        ],
+        [
+          0.326,
+          5.481,
+          -2.1291
+        ]
+      ],
+      "mirror_x": false,
+      "within_studs": 0.004
+    },
+    {
+      "slot": "copper",
+      "stack": "MECH_brass",
+      "bones": [
+        "Head"
+      ]
+    },
+    {
+      "slot": "copper",
+      "stack": "MECH_brass",
+      "within_studs": 0.05,
+      "near": [
+        [
+          -0.08,
+          4.96,
+          1.71
+        ]
+      ]
+    },
+    {
+      "slot": "eye",
+      "stack": "MOG_vulture_gauge",
+      "within_studs": 0.05,
+      "near": [
+        [
+          -0.56,
+          3.92,
+          -0.78
+        ]
+      ]
+    },
+    {
+      "slot": "eye",
+      "stack": "MOG_vulture_amber",
+      "bones": [
+        "EyeL",
+        "EyeR"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_vulture_covert",
+      "bones": [
+        "WingL",
+        "WingR"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_vulture_feather",
+      "bones": [
+        "FeatherL1",
+        "FeatherL2",
+        "FeatherL3",
+        "FeatherL4",
+        "FeatherL5",
+        "FeatherL6",
+        "FeatherL7",
+        "FeatherR1",
+        "FeatherR2",
+        "FeatherR3",
+        "FeatherR4",
+        "FeatherR5",
+        "FeatherR6",
+        "FeatherR7"
+      ]
+    },
+    {
+      "slot": "gunmetal",
+      "stack": "MOG_vulture_shaft",
+      "bones": [
+        "FeatherL1",
+        "FeatherL2",
+        "FeatherL3",
+        "FeatherL4",
+        "FeatherL5",
+        "FeatherL6",
+        "FeatherL7",
+        "FeatherR1",
+        "FeatherR2",
+        "FeatherR3",
+        "FeatherR4",
+        "FeatherR5",
+        "FeatherR6",
+        "FeatherR7"
+      ]
+    }
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.4
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.4
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.2
+    },
+    {
+      "bone": "Lever",
+      "weight": 0.5
+    }
+  ],
+  "decals": {
+    "count": 60,
+    "mirror": 0.6,
+    "targets": {
+      "MOG_vulture_fern": 1.0,
+      "MECH_gunmetal": 0.45,
+      "MECH_copper": 0.01,
+      "MOG_vulture_covert": 0.3
+    },
+    "pinch": {
+      "radius_studs": 0.35,
+      "per_point": 2,
+      "kinds": [
+        "hazard",
+        "warning"
+      ],
+      "points": [
+        {
+          "at": [
+            -0.69,
+            3.1,
+            -0.64
+          ],
+          "mirror_x": false,
+          "kinds": [
+            "biohazard"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            0.69,
+            3.1,
+            -0.64
+          ],
+          "mirror_x": false,
+          "kinds": [
+            "corrosive"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            0,
+            4.45,
+            -0.66
+          ],
+          "mirror_x": false,
+          "kinds": [
+            "hazard"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            0,
+            4.84,
+            -0.88
+          ],
+          "mirror_x": false,
+          "kinds": [
+            "hazard"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            0,
+            5.22,
+            -0.98
+          ],
+          "mirror_x": false,
+          "kinds": [
+            "hazard"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            0.93,
+            1.92,
+            -0.3
+          ],
+          "mirror_x": true,
+          "kinds": [
+            "hazard"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            -0.3,
+            3.92,
+            1.8
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.3,
+            4.52,
+            1.93
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.4,
+            4.02,
+            -0.96
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.4,
+            4.6645,
+            -0.831
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.4,
+            4.02,
+            -0.96
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.4,
+            4.6645,
+            -0.831
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.0,
+            5.03,
+            -0.51
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.0,
+            5.78,
+            -0.56
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.12,
+            3.62,
+            0.92
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.5196,
+            4.3656,
+            0.9006
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.12,
+            3.62,
+            0.92
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.5196,
+            4.3656,
+            0.9006
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.93,
+            2.2559,
+            0.1207
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.93,
+            1.5884,
+            0.3363
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.63,
+            1.7016,
+            0.015
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.63,
+            0.905,
+            0.1475
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.18,
+            1.04,
+            0.23
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.18,
+            0.36,
+            0.22
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.93,
+            2.2559,
+            0.1207
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.93,
+            1.5884,
+            0.3363
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.63,
+            1.7016,
+            0.015
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.63,
+            0.905,
+            0.1475
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.18,
+            1.04,
+            0.23
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.18,
+            0.36,
+            0.22
+          ],
+          "mirror_x": false,
+          "count": 1
+        }
+      ]
+    },
+    "scale": 1.2620967741935483
+  },
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.221,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "MOG_vulture_fern": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.078,
+          0.195,
+          0.042
+        ],
+        "primer": [
+          0.7,
+          0.7,
+          0.68
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.1,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_vulture_sight": {
+      "from": "MECH_eye",
+      "color": [
+        0.47,
+        0.89,
+        0.04
+      ]
+    },
+    "MOG_vulture_gauge": {
+      "from": "MECH_eye",
+      "color": [
+        1.0,
+        0.85,
+        0.6
+      ]
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_vulture_amber": {
+      "from": "MECH_eye",
+      "color": [
+        0.55,
+        0.2,
+        0.02
+      ]
+    },
+    "MOG_vulture_feather": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.078,
+          0.195,
+          0.042
+        ],
+        "primer": [
+          0.7,
+          0.7,
+          0.68
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.1,
+        "large_edges": 0.1,
+        "detail": 0.5,
+        "crease": 0.05,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.5,
+        "edge_band": 0.35
+      }
+    },
+    "MOG_vulture_shaft": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_vulture_covert": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.078,
+          0.195,
+          0.042
+        ],
+        "primer": [
+          0.7,
+          0.7,
+          0.68
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.1,
+        "large_edges": 0.1,
+        "detail": 0.5,
+        "crease": 0.05,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.5,
+        "edge_band": 0.35
+      }
+    },
+    "MOG_glint": {
+      "from": "MECH_eye",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "glow_through": [
+    {
+      "from": "MECH_glass",
+      "to": "MOG_vulture_sight",
+      "within_studs": 0.1,
+      "lateral_studs": 0.01
+    },
+    {
+      "from": "MECH_glass",
+      "to": "MOG_vulture_amber",
+      "within_studs": 0.1,
+      "lateral_studs": 0.01
+    }
+  ]
+}

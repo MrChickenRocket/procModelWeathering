@@ -1,0 +1,365 @@
+{
+  "height": 2.81,
+  "min_decal_scale": 0.6,
+  "stacks": {
+    "MOG_roller_brick": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.2,
+          0.045,
+          0.025
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_roller_black": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.014,
+          0.014,
+          0.016
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_roller_band1": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.2,
+          0.045,
+          0.025
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_roller_band2": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.2,
+          0.045,
+          0.025
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_roller_band3": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.2,
+          0.045,
+          0.025
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_roller_band4": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.2,
+          0.045,
+          0.025
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_roller_band5": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.2,
+          0.045,
+          0.025
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_roller_band6": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.2,
+          0.045,
+          0.025
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_glint": {
+      "from": "MECH_eye",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "slots": {
+    "paint": "MOG_roller_brick",
+    "decal": "MOG_roller_brick"
+  },
+  "tint": [
+    {
+      "slot": "eye",
+      "stack": "MOG_glint",
+      "near": [
+        [
+          -0.3408,
+          1.1996,
+          -1.7257
+        ],
+        [
+          -0.2861,
+          1.1191,
+          -1.7777
+        ],
+        [
+          0.2678,
+          1.1996,
+          -1.7837
+        ],
+        [
+          0.3308,
+          1.1191,
+          -1.7422
+        ]
+      ],
+      "mirror_x": false,
+      "within_studs": 0.004
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_roller_band1",
+      "bones": [
+        "Band1"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_roller_band2",
+      "bones": [
+        "Band2"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_roller_band3",
+      "bones": [
+        "Band3"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_roller_band4",
+      "bones": [
+        "Band4"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_roller_band5",
+      "bones": [
+        "Band5"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_roller_band6",
+      "bones": [
+        "Band6"
+      ]
+    }
+  ],
+  "stripes": [
+    {
+      "from": [
+        "MOG_roller_band1",
+        "MOG_roller_band2",
+        "MOG_roller_band3",
+        "MOG_roller_band4",
+        "MOG_roller_band5",
+        "MOG_roller_band6"
+      ],
+      "to": "MOG_roller_black",
+      "width_studs": 0.09,
+      "toward": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MECH_eye",
+    "within_studs": 0.1,
+    "lateral_studs": 0.01
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.6
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.6
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.6
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.6
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.3
+    },
+    {
+      "bone": "FMetaL",
+      "weight": 0.3
+    },
+    {
+      "bone": "FMetaR",
+      "weight": 0.3
+    }
+  ],
+  "pinch": [],
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7
+}

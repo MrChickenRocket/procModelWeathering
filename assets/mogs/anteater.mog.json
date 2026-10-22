@@ -1,0 +1,825 @@
+{
+ "mech": "anteater",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\anteater\\export",
+ "m_per_stud": 0.056045,
+ "atlases": 1,
+ "face_ranges": {
+  "Pelvis": [
+   "anteater_a1",
+   0,
+   5966
+  ],
+  "Chest": [
+   "anteater_a1",
+   5966,
+   8970
+  ],
+  "Neck": [
+   "anteater_a1",
+   8970,
+   9650
+  ],
+  "Neck2": [
+   "anteater_a1",
+   9650,
+   10330
+  ],
+  "Neck3": [
+   "anteater_a1",
+   10330,
+   11010
+  ],
+  "Head": [
+   "anteater_a1",
+   11010,
+   12126
+  ],
+  "Fan": [
+   "anteater_a1",
+   12126,
+   12286
+  ],
+  "Petal1": [
+   "anteater_a1",
+   12286,
+   12554
+  ],
+  "Petal2": [
+   "anteater_a1",
+   12554,
+   12822
+  ],
+  "Petal3": [
+   "anteater_a1",
+   12822,
+   13090
+  ],
+  "Petal4": [
+   "anteater_a1",
+   13090,
+   13358
+  ],
+  "Petal5": [
+   "anteater_a1",
+   13358,
+   13626
+  ],
+  "Petal6": [
+   "anteater_a1",
+   13626,
+   13894
+  ],
+  "Petal7": [
+   "anteater_a1",
+   13894,
+   14162
+  ],
+  "Petal8": [
+   "anteater_a1",
+   14162,
+   14430
+  ],
+  "Petal9": [
+   "anteater_a1",
+   14430,
+   14698
+  ],
+  "Petal10": [
+   "anteater_a1",
+   14698,
+   14966
+  ],
+  "Petal11": [
+   "anteater_a1",
+   14966,
+   15234
+  ],
+  "ThighL": [
+   "anteater_a1",
+   15234,
+   16150
+  ],
+  "ShinL": [
+   "anteater_a1",
+   16150,
+   16654
+  ],
+  "MetaL": [
+   "anteater_a1",
+   16654,
+   16994
+  ],
+  "ToeL": [
+   "anteater_a1",
+   16994,
+   17394
+  ],
+  "ThighR": [
+   "anteater_a1",
+   17394,
+   18310
+  ],
+  "ShinR": [
+   "anteater_a1",
+   18310,
+   18814
+  ],
+  "MetaR": [
+   "anteater_a1",
+   18814,
+   19154
+  ],
+  "ToeR": [
+   "anteater_a1",
+   19154,
+   19554
+  ],
+  "FThighL": [
+   "anteater_a1",
+   19554,
+   20470
+  ],
+  "FShinL": [
+   "anteater_a1",
+   20470,
+   21018
+  ],
+  "FMetaL": [
+   "anteater_a1",
+   21018,
+   21402
+  ],
+  "FToeL": [
+   "anteater_a1",
+   21402,
+   21766
+  ],
+  "FThighR": [
+   "anteater_a1",
+   21766,
+   22682
+  ],
+  "FShinR": [
+   "anteater_a1",
+   22682,
+   23230
+  ],
+  "FMetaR": [
+   "anteater_a1",
+   23230,
+   23614
+  ],
+  "FToeR": [
+   "anteater_a1",
+   23614,
+   23978
+  ],
+  "kneeL_1": [
+   "anteater_a1",
+   23978,
+   24054
+  ],
+  "kneeL_2": [
+   "anteater_a1",
+   24054,
+   24094
+  ],
+  "kneeL_3": [
+   "anteater_a1",
+   24094,
+   24134
+  ],
+  "kneeR_1": [
+   "anteater_a1",
+   24134,
+   24210
+  ],
+  "kneeR_2": [
+   "anteater_a1",
+   24210,
+   24250
+  ],
+  "kneeR_3": [
+   "anteater_a1",
+   24250,
+   24290
+  ],
+  "fkneeL_1": [
+   "anteater_a1",
+   24290,
+   24366
+  ],
+  "fkneeL_2": [
+   "anteater_a1",
+   24366,
+   24406
+  ],
+  "fkneeL_3": [
+   "anteater_a1",
+   24406,
+   24446
+  ],
+  "fankleL_1": [
+   "anteater_a1",
+   24446,
+   24514
+  ],
+  "fankleL_2": [
+   "anteater_a1",
+   24514,
+   24554
+  ],
+  "fkneeR_1": [
+   "anteater_a1",
+   24554,
+   24630
+  ],
+  "fkneeR_2": [
+   "anteater_a1",
+   24630,
+   24670
+  ],
+  "fkneeR_3": [
+   "anteater_a1",
+   24670,
+   24710
+  ],
+  "fankleR_1": [
+   "anteater_a1",
+   24710,
+   24778
+  ],
+  "fankleR_2": [
+   "anteater_a1",
+   24778,
+   24818
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 1,
+  "Neck": 1,
+  "Neck2": 1,
+  "Neck3": 1,
+  "Head": 1,
+  "Fan": 1,
+  "Petal1": 1,
+  "Petal2": 1,
+  "Petal3": 1,
+  "Petal4": 1,
+  "Petal5": 1,
+  "Petal6": 1,
+  "Petal7": 1,
+  "Petal8": 1,
+  "Petal9": 1,
+  "Petal10": 1,
+  "Petal11": 1,
+  "ThighL": 1,
+  "ShinL": 1,
+  "MetaL": 1,
+  "ToeL": 1,
+  "ThighR": 1,
+  "ShinR": 1,
+  "MetaR": 1,
+  "ToeR": 1,
+  "FThighL": 1,
+  "FShinL": 1,
+  "FMetaL": 1,
+  "FToeL": 1,
+  "FThighR": 1,
+  "FShinR": 1,
+  "FMetaR": 1,
+  "FToeR": 1,
+  "kneeL_1": 1,
+  "kneeL_2": 1,
+  "kneeL_3": 1,
+  "kneeR_1": 1,
+  "kneeR_2": 1,
+  "kneeR_3": 1,
+  "fkneeL_1": 1,
+  "fkneeL_2": 1,
+  "fkneeL_3": 1,
+  "fankleL_1": 1,
+  "fankleL_2": 1,
+  "fkneeR_1": 1,
+  "fkneeR_2": 1,
+  "fkneeR_3": 1,
+  "fankleR_1": 1,
+  "fankleR_2": 1
+ },
+ "stacks": [
+  "MECH_glass",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MOG_ant_alu",
+  "MOG_ant_blue",
+  "MOG_ant_chrome",
+  "MOG_ant_frame",
+  "MOG_ant_nav",
+  "MOG_ant_white"
+ ],
+ "config": {
+  "m_per_stud": 0.056045,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_ant_white",
+   "gunmetal": "MOG_ant_frame",
+   "steel": "MOG_ant_alu",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MOG_ant_nav",
+   "decal": "MOG_ant_white",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper"
+  },
+  "tint": [
+   {
+    "slot": "paint",
+    "stack": "MOG_ant_blue",
+    "near": [
+     [
+      0,
+      2.19,
+      0.18
+     ],
+     [
+      0,
+      2.19,
+      0.52
+     ],
+     [
+      0,
+      2.19,
+      1.37
+     ],
+     [
+      0,
+      2.21,
+      -0.73
+     ],
+     [
+      0,
+      1.7,
+      -1.99
+     ],
+     [
+      0,
+      1.13,
+      -2.22
+     ],
+     [
+      0,
+      0.53,
+      -2.35
+     ],
+     [
+      0,
+      0.2,
+      -2.37
+     ],
+     [
+      1.0,
+      1.56,
+      2.69
+     ],
+     [
+      1.21,
+      2.05,
+      2.69
+     ],
+     [
+      1.18,
+      2.58,
+      2.69
+     ],
+     [
+      0.94,
+      3.05,
+      2.69
+     ],
+     [
+      0.52,
+      3.37,
+      2.69
+     ],
+     [
+      0,
+      3.48,
+      2.69
+     ]
+    ],
+    "mirror_x": true,
+    "within_studs": 0.012
+   },
+   {
+    "slot": "steel",
+    "stack": "MOG_ant_chrome",
+    "near": [
+     [
+      0.66,
+      2.38,
+      0.28
+     ],
+     [
+      0.66,
+      2.38,
+      0.63
+     ],
+     [
+      0.65,
+      2.38,
+      1.08
+     ],
+     [
+      0.66,
+      2.18,
+      0.28
+     ],
+     [
+      0.66,
+      2.18,
+      0.62
+     ],
+     [
+      0.65,
+      2.18,
+      1.08
+     ],
+     [
+      0.66,
+      1.98,
+      0.28
+     ],
+     [
+      0.66,
+      1.98,
+      0.62
+     ],
+     [
+      0.65,
+      1.98,
+      1.08
+     ],
+     [
+      0.52,
+      2.39,
+      -1.21
+     ],
+     [
+      0.6,
+      2.41,
+      -0.75
+     ],
+     [
+      0.63,
+      2.4,
+      -0.48
+     ],
+     [
+      0.65,
+      2.4,
+      -0.16
+     ],
+     [
+      0.52,
+      2.19,
+      -1.21
+     ],
+     [
+      0.6,
+      2.21,
+      -0.75
+     ],
+     [
+      0.63,
+      2.2,
+      -0.48
+     ],
+     [
+      0.65,
+      2.2,
+      -0.16
+     ],
+     [
+      0.52,
+      1.99,
+      -1.21
+     ],
+     [
+      0.6,
+      2.01,
+      -0.75
+     ],
+     [
+      0.63,
+      2.0,
+      -0.48
+     ],
+     [
+      0.65,
+      2.0,
+      -0.16
+     ]
+    ],
+    "mirror_x": true,
+    "within_studs": 0.02
+   }
+  ],
+  "wear": [
+   {
+    "bone": "Head",
+    "weight": 0.6
+   },
+   {
+    "bone": "ToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "FToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "FToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "MetaL",
+    "weight": 0.2
+   },
+   {
+    "bone": "MetaR",
+    "weight": 0.2
+   },
+   {
+    "bone": "FMetaL",
+    "weight": 0.2
+   },
+   {
+    "bone": "FMetaR",
+    "weight": 0.2
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_ant_white": 1.0,
+    "MOG_ant_frame": 0.3
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       0.25,
+       0.26,
+       -2.65
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.64,
+       2.15,
+       1.56
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.64,
+       1.85,
+       0.87
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "arrow"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.3,
+       2.95,
+       0.88
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "nostep"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       -0.3,
+       2.95,
+       -0.4
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "nostep"
+      ],
+      "count": 1
+     }
+    ]
+   },
+   "light_paint": [
+    "MOG_ant_white"
+   ],
+   "mix": {
+    "paint": {
+     "stencil": 0.3,
+     "numbers": 0.1,
+     "plate": 0.12,
+     "warning": 0.1,
+     "triangle": 0.1,
+     "roundel": 0.08
+    }
+   },
+   "scale": 1.0
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.221,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_ant_white": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.78,
+      0.78,
+      0.75
+     ],
+     "primer": [
+      0.05,
+      0.06,
+      0.08
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.3
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.15,
+     "large_edges": 0.25,
+     "detail": 0.35,
+     "crease": 0.3,
+     "use": 0.3,
+     "dirt": 0.4,
+     "dust": 0.3
+    }
+   },
+   "MOG_ant_blue": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.05,
+      0.09,
+      0.3
+     ],
+     "primer": [
+      0.05,
+      0.06,
+      0.08
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.3
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MOG_ant_frame": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "topcoat": [
+      0.1,
+      0.13,
+      0.05
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "metal": 0.0,
+      "rough": 0.6
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.1,
+     "large_edges": 0.15,
+     "detail": 0.25,
+     "crease": 0.2,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.5
+    }
+   },
+   "MOG_ant_alu": {
+    "from": "MAT_anodized_alu",
+    "colors": {
+     "anodize": [
+      0.72,
+      0.73,
+      0.74
+     ]
+    },
+    "layers": {
+     "anodize": {
+      "metal": 0.9,
+      "rough": 0.34
+     }
+    }
+   },
+   "MOG_ant_nav": {
+    "from": "MECH_eye",
+    "color": [
+     0.03,
+     0.55,
+     0.1
+    ]
+   },
+   "MOG_ant_chrome": {
+    "from": "MAT_anodized_alu",
+    "colors": {
+     "anodize": [
+      0.9,
+      0.9,
+      0.92
+     ]
+    },
+    "layers": {
+     "anodize": {
+      "metal": 1.0,
+      "rough": 0.1
+     }
+    }
+   }
+  }
+ }
+}

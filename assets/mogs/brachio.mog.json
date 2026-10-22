@@ -1,0 +1,1132 @@
+{
+ "mech": "brachio",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\brachio\\export",
+ "m_per_stud": 0.007124,
+ "atlases": 4,
+ "face_ranges": {
+  "Pelvis": [
+   "brachio_a1",
+   0,
+   6016
+  ],
+  "Tail1": [
+   "brachio_a1",
+   6016,
+   6328
+  ],
+  "Tail2": [
+   "brachio_a1",
+   6328,
+   6640
+  ],
+  "Tail3": [
+   "brachio_a1",
+   6640,
+   6952
+  ],
+  "Tail4": [
+   "brachio_a1",
+   6952,
+   7264
+  ],
+  "Tail5": [
+   "brachio_a1",
+   7264,
+   7576
+  ],
+  "Tail6": [
+   "brachio_a1",
+   7576,
+   7888
+  ],
+  "Tail7": [
+   "brachio_a1",
+   7888,
+   8236
+  ],
+  "Chest": [
+   "brachio_a2",
+   0,
+   5672
+  ],
+  "Neck": [
+   "brachio_a2",
+   5672,
+   6486
+  ],
+  "Neck2": [
+   "brachio_a2",
+   6486,
+   7092
+  ],
+  "Neck3": [
+   "brachio_a2",
+   7092,
+   7818
+  ],
+  "Neck4": [
+   "brachio_a2",
+   7818,
+   8424
+  ],
+  "Neck5": [
+   "brachio_a2",
+   8424,
+   9150
+  ],
+  "Head": [
+   "brachio_a2",
+   9150,
+   12166
+  ],
+  "Jaw": [
+   "brachio_a2",
+   12166,
+   12790
+  ],
+  "neckRamL_1": [
+   "brachio_a2",
+   12790,
+   12866
+  ],
+  "neckRamL_2": [
+   "brachio_a2",
+   12866,
+   12922
+  ],
+  "neckRamL_3": [
+   "brachio_a2",
+   12922,
+   12962
+  ],
+  "neckRamR_1": [
+   "brachio_a2",
+   12962,
+   13038
+  ],
+  "neckRamR_2": [
+   "brachio_a2",
+   13038,
+   13094
+  ],
+  "neckRamR_3": [
+   "brachio_a2",
+   13094,
+   13134
+  ],
+  "ThighL": [
+   "brachio_a3",
+   0,
+   1620
+  ],
+  "ShinL": [
+   "brachio_a3",
+   1620,
+   2580
+  ],
+  "MetaL": [
+   "brachio_a3",
+   2580,
+   3052
+  ],
+  "ToeL": [
+   "brachio_a3",
+   3052,
+   4226
+  ],
+  "ThighR": [
+   "brachio_a3",
+   4226,
+   5846
+  ],
+  "ShinR": [
+   "brachio_a3",
+   5846,
+   6806
+  ],
+  "MetaR": [
+   "brachio_a3",
+   6806,
+   7278
+  ],
+  "ToeR": [
+   "brachio_a3",
+   7278,
+   8452
+  ],
+  "kneeLo_1": [
+   "brachio_a3",
+   8452,
+   8528
+  ],
+  "kneeLo_2": [
+   "brachio_a3",
+   8528,
+   8584
+  ],
+  "kneeLo_3": [
+   "brachio_a3",
+   8584,
+   8624
+  ],
+  "kneeLi_1": [
+   "brachio_a3",
+   8624,
+   8700
+  ],
+  "kneeLi_2": [
+   "brachio_a3",
+   8700,
+   8756
+  ],
+  "kneeLi_3": [
+   "brachio_a3",
+   8756,
+   8796
+  ],
+  "ankleL_1": [
+   "brachio_a3",
+   8796,
+   8872
+  ],
+  "ankleL_2": [
+   "brachio_a3",
+   8872,
+   8912
+  ],
+  "kneeRi_1": [
+   "brachio_a3",
+   8912,
+   8988
+  ],
+  "kneeRi_2": [
+   "brachio_a3",
+   8988,
+   9044
+  ],
+  "kneeRi_3": [
+   "brachio_a3",
+   9044,
+   9084
+  ],
+  "kneeRo_1": [
+   "brachio_a3",
+   9084,
+   9160
+  ],
+  "kneeRo_2": [
+   "brachio_a3",
+   9160,
+   9216
+  ],
+  "kneeRo_3": [
+   "brachio_a3",
+   9216,
+   9256
+  ],
+  "ankleR_1": [
+   "brachio_a3",
+   9256,
+   9332
+  ],
+  "ankleR_2": [
+   "brachio_a3",
+   9332,
+   9372
+  ],
+  "FThighL": [
+   "brachio_a4",
+   0,
+   1620
+  ],
+  "FShinL": [
+   "brachio_a4",
+   1620,
+   2580
+  ],
+  "FMetaL": [
+   "brachio_a4",
+   2580,
+   3052
+  ],
+  "FToeL": [
+   "brachio_a4",
+   3052,
+   4226
+  ],
+  "FThighR": [
+   "brachio_a4",
+   4226,
+   5846
+  ],
+  "FShinR": [
+   "brachio_a4",
+   5846,
+   6806
+  ],
+  "FMetaR": [
+   "brachio_a4",
+   6806,
+   7278
+  ],
+  "FToeR": [
+   "brachio_a4",
+   7278,
+   8452
+  ],
+  "fkneeLo_1": [
+   "brachio_a4",
+   8452,
+   8528
+  ],
+  "fkneeLo_2": [
+   "brachio_a4",
+   8528,
+   8584
+  ],
+  "fkneeLo_3": [
+   "brachio_a4",
+   8584,
+   8624
+  ],
+  "fkneeLi_1": [
+   "brachio_a4",
+   8624,
+   8700
+  ],
+  "fkneeLi_2": [
+   "brachio_a4",
+   8700,
+   8756
+  ],
+  "fkneeLi_3": [
+   "brachio_a4",
+   8756,
+   8796
+  ],
+  "fankleL_1": [
+   "brachio_a4",
+   8796,
+   8872
+  ],
+  "fankleL_2": [
+   "brachio_a4",
+   8872,
+   8912
+  ],
+  "fkneeRi_1": [
+   "brachio_a4",
+   8912,
+   8988
+  ],
+  "fkneeRi_2": [
+   "brachio_a4",
+   8988,
+   9044
+  ],
+  "fkneeRi_3": [
+   "brachio_a4",
+   9044,
+   9084
+  ],
+  "fkneeRo_1": [
+   "brachio_a4",
+   9084,
+   9160
+  ],
+  "fkneeRo_2": [
+   "brachio_a4",
+   9160,
+   9216
+  ],
+  "fkneeRo_3": [
+   "brachio_a4",
+   9216,
+   9256
+  ],
+  "fankleR_1": [
+   "brachio_a4",
+   9256,
+   9332
+  ],
+  "fankleR_2": [
+   "brachio_a4",
+   9332,
+   9372
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 2,
+  "Neck": 2,
+  "Neck2": 2,
+  "Neck3": 2,
+  "Neck4": 2,
+  "Neck5": 2,
+  "Head": 2,
+  "Jaw": 2,
+  "Tail1": 1,
+  "Tail2": 1,
+  "Tail3": 1,
+  "Tail4": 1,
+  "Tail5": 1,
+  "Tail6": 1,
+  "Tail7": 1,
+  "ThighL": 3,
+  "ShinL": 3,
+  "MetaL": 3,
+  "ToeL": 3,
+  "ThighR": 3,
+  "ShinR": 3,
+  "MetaR": 3,
+  "ToeR": 3,
+  "FThighL": 4,
+  "FShinL": 4,
+  "FMetaL": 4,
+  "FToeL": 4,
+  "FThighR": 4,
+  "FShinR": 4,
+  "FMetaR": 4,
+  "FToeR": 4,
+  "neckRamL_1": 2,
+  "neckRamL_2": 2,
+  "neckRamL_3": 2,
+  "neckRamR_1": 2,
+  "neckRamR_2": 2,
+  "neckRamR_3": 2,
+  "kneeLo_1": 3,
+  "kneeLo_2": 3,
+  "kneeLo_3": 3,
+  "kneeLi_1": 3,
+  "kneeLi_2": 3,
+  "kneeLi_3": 3,
+  "ankleL_1": 3,
+  "ankleL_2": 3,
+  "kneeRi_1": 3,
+  "kneeRi_2": 3,
+  "kneeRi_3": 3,
+  "kneeRo_1": 3,
+  "kneeRo_2": 3,
+  "kneeRo_3": 3,
+  "ankleR_1": 3,
+  "ankleR_2": 3,
+  "fkneeLo_1": 4,
+  "fkneeLo_2": 4,
+  "fkneeLo_3": 4,
+  "fkneeLi_1": 4,
+  "fkneeLi_2": 4,
+  "fkneeLi_3": 4,
+  "fankleL_1": 4,
+  "fankleL_2": 4,
+  "fkneeRi_1": 4,
+  "fkneeRi_2": 4,
+  "fkneeRi_3": 4,
+  "fkneeRo_1": 4,
+  "fkneeRo_2": 4,
+  "fkneeRo_3": 4,
+  "fankleR_1": 4,
+  "fankleR_2": 4
+ },
+ "stacks": [
+  "MECH_eye",
+  "MECH_glass",
+  "MECH_gunmetal",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MECH_rubber_red",
+  "MECH_steel",
+  "MOG_brachio_orange",
+  "MOG_brachio_rail"
+ ],
+ "config": {
+  "m_per_stud": 0.007124,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_brachio_orange",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MECH_eye",
+   "decal": "MOG_brachio_orange",
+   "yellow": "MECH_paint_yellow"
+  },
+  "tint": [
+   {
+    "slot": "rubber",
+    "stack": "MECH_rubber_red",
+    "fraction": 0.35,
+    "pick": "thinnest"
+   },
+   {
+    "slot": "paint",
+    "stack": "MOG_brachio_rail",
+    "max_radius_studs": 0.14
+   }
+  ],
+  "wear": [
+   {
+    "bone": "ToeL",
+    "weight": 0.15
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.15
+   },
+   {
+    "bone": "FToeL",
+    "weight": 0.15
+   },
+   {
+    "bone": "FToeR",
+    "weight": 0.15
+   },
+   {
+    "bone": "MetaL",
+    "weight": 0.1
+   },
+   {
+    "bone": "MetaR",
+    "weight": 0.1
+   },
+   {
+    "bone": "FMetaL",
+    "weight": 0.1
+   },
+   {
+    "bone": "FMetaR",
+    "weight": 0.1
+   },
+   {
+    "bone": "ShinL",
+    "weight": 0.1
+   },
+   {
+    "bone": "ShinR",
+    "weight": 0.1
+   },
+   {
+    "bone": "FShinL",
+    "weight": 0.1
+   },
+   {
+    "bone": "FShinR",
+    "weight": 0.1
+   },
+   {
+    "bone": "Jaw",
+    "weight": 0.15
+   },
+   {
+    "bone": "Tail7",
+    "weight": 0.1
+   },
+   {
+    "box": [
+     [
+      -4.6,
+      13.7,
+      -9.5
+     ],
+     [
+      4.6,
+      15.2,
+      9.5
+     ]
+    ],
+    "weight": 0.2
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_brachio_orange": 1.0,
+    "MECH_gunmetal": 0.45
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       5,
+       10.2,
+       6.6
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       5,
+       6.25,
+       5.95
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       5,
+       3.0,
+       6.76
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       5,
+       1.5,
+       6.58
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       5,
+       10.6,
+       -6.6
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       5,
+       6.25,
+       -6.05
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       5,
+       3.0,
+       -6.74
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       5,
+       1.5,
+       -6.59
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       0,
+       12.4,
+       -9.8
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       15.3,
+       -11.2
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       18.2,
+       -12.3
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       21.0,
+       -13.2
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       23.6,
+       -14.1
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       25.6,
+       -15.4
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       24.5,
+       -15.7
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       12.5,
+       9.7
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       1.5,
+       24.5,
+       -18.0
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       1.5,
+       24.5,
+       -20.5
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       -1.3,
+       10.2,
+       -11.0
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -1.3,
+       13.5099,
+       -13.0564
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.3,
+       10.2,
+       -11.0
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.3,
+       13.5099,
+       -13.0564
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -7.35,
+       8.4208,
+       6.7072
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -7.35,
+       4.3097,
+       6.8351
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -2.65,
+       8.4208,
+       6.7072
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -2.65,
+       4.3097,
+       6.8351
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -7.0,
+       4.6977,
+       5.4881
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -7.0,
+       2.0566,
+       5.8009
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       2.65,
+       8.4208,
+       6.7072
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       2.65,
+       4.3097,
+       6.8351
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       7.35,
+       8.4208,
+       6.7072
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       7.35,
+       4.3097,
+       6.8351
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       7.0,
+       4.6977,
+       5.4881
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       7.0,
+       2.0566,
+       5.8009
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -7.35,
+       8.4326,
+       -5.926
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -7.35,
+       4.2933,
+       -6.0639
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -2.65,
+       8.4326,
+       -5.926
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -2.65,
+       4.2933,
+       -6.0639
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -7.0,
+       4.7121,
+       -7.2253
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -7.0,
+       2.0543,
+       -7.4977
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       2.65,
+       8.4326,
+       -5.926
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       2.65,
+       4.2933,
+       -6.0639
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       7.35,
+       8.4326,
+       -5.926
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       7.35,
+       4.2933,
+       -6.0639
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       7.0,
+       4.7121,
+       -7.2253
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       7.0,
+       2.0543,
+       -7.4977
+      ],
+      "mirror_x": false,
+      "count": 1
+     }
+    ]
+   },
+   "scale": 5.61491935483871
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.221,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_brachio_orange": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.36,
+      0.07,
+      0.012
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MOG_brachio_rail": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.8,
+      0.5,
+      0.02
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MECH_gunmetal": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   }
+  },
+  "atlases": [
+   [
+    "Root",
+    "Pelvis",
+    "Tail1",
+    "Tail2",
+    "Tail3",
+    "Tail4",
+    "Tail5",
+    "Tail6",
+    "Tail7"
+   ],
+   [
+    "Chest",
+    "Neck",
+    "Neck2",
+    "Neck3",
+    "Neck4",
+    "Neck5",
+    "Head",
+    "Jaw"
+   ],
+   [
+    "ThighL",
+    "ThighR",
+    "ShinL",
+    "ShinR",
+    "MetaL",
+    "MetaR",
+    "ToeL",
+    "ToeR"
+   ],
+   [
+    "FThighL",
+    "FThighR",
+    "FShinL",
+    "FShinR",
+    "FMetaL",
+    "FMetaR",
+    "FToeL",
+    "FToeR"
+   ]
+  ],
+  "density": {
+   "install_scale": 2.0,
+   "full_below": 12,
+   "floor_at": 35,
+   "floor": 0.35,
+   "rider_boxes": [
+    [
+     [
+      -4.0,
+      13.4,
+      -10.5
+     ],
+     [
+      4.0,
+      17.6,
+      10.5
+     ]
+    ]
+   ]
+  }
+ }
+}

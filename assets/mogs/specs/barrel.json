@@ -1,0 +1,128 @@
+{
+  "height": 11.15,
+  "stacks": {
+    "MOG_barrel_teal": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.025,
+          0.2,
+          0.18
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 1.0,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 1.0,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_barrel_eye": {
+      "from": "MECH_eye",
+      "color": [
+        0.45,
+        1.0,
+        0.92
+      ]
+    }
+  },
+  "slots": {
+    "paint": "MOG_barrel_teal",
+    "decal": "MOG_barrel_teal",
+    "eye": "MOG_barrel_eye"
+  },
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MOG_barrel_eye",
+    "within_studs": 0.1,
+    "lateral_studs": 0.01
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.15
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.15
+    },
+    {
+      "bone": "HandL",
+      "weight": 0.15
+    },
+    {
+      "bone": "HandR",
+      "weight": 0.15
+    }
+  ],
+  "pinch": [],
+  "atlases": [
+    [
+      "Chest",
+      "Pelvis",
+      "Neck",
+      "Head",
+      "EyeL",
+      "EyeR"
+    ],
+    [
+      "Turret",
+      "Gun",
+      "UpperArmL",
+      "UpperArmR",
+      "ForearmL",
+      "ForearmR",
+      "HandL",
+      "HandR"
+    ],
+    [
+      "ThighL",
+      "ThighR",
+      "ShinL",
+      "ShinR",
+      "MetaL",
+      "MetaR",
+      "ToeL",
+      "ToeR"
+    ]
+  ],
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7
+}

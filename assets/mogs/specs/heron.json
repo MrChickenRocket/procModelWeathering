@@ -1,0 +1,254 @@
+{
+  "height": 12.94,
+  "stacks": {
+    "MOG_heron_white": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.6,
+          0.6,
+          0.57
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "chip": 0.45
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "detail": 0.5,
+        "crease": 0.3,
+        "use": 0.5,
+        "dirt": 0.6,
+        "large_edges": 0.35
+      }
+    },
+    "MOG_heron_blue": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.015,
+          0.045,
+          0.22
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    }
+  },
+  "slots": {
+    "paint": "MOG_heron_white",
+    "decal": "MOG_heron_white"
+  },
+  "tint": [
+    {
+      "slot": "paint",
+      "stack": "MOG_heron_blue",
+      "fraction": 0.3,
+      "pick": "symmetric",
+      "seed": 3
+    }
+  ],
+  "targets": {
+    "MOG_heron_white": 1.0,
+    "MOG_heron_blue": 0.6,
+    "MECH_gunmetal": 0.45
+  },
+  "decals": {
+    "accent": [
+      0.015,
+      0.045,
+      0.22
+    ],
+    "light_paint": [
+      "MOG_heron_white"
+    ],
+    "mix": {
+      "paint": {
+        "stencil": 0.25,
+        "numbers": 0.1,
+        "plate": 0.1,
+        "stripe": 0.3,
+        "triangle": 0.1,
+        "roundel": 0.05
+      }
+    }
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.2
+    },
+    {
+      "bone": "ShinL",
+      "weight": 0.15
+    },
+    {
+      "bone": "ShinR",
+      "weight": 0.15
+    },
+    {
+      "bone": "Jaw",
+      "weight": 0.2
+    },
+    {
+      "bone": "WingL",
+      "weight": 0.1
+    },
+    {
+      "bone": "WingR",
+      "weight": 0.1
+    }
+  ],
+  "pinch": [
+    {
+      "at": [
+        1.38,
+        8.3,
+        0.0
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        1.45,
+        6.95,
+        -0.95
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        1.5,
+        3.95,
+        0.12
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        1.5,
+        0.78,
+        -0.78
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0,
+        8.75,
+        -2.2
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        11.72,
+        -4.82
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        11.68,
+        -5.38
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        1.05,
+        10.22,
+        -2.15
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0.5,
+        11.7,
+        -4.9
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    },
+    {
+      "at": [
+        0.5,
+        11.7,
+        -5.4
+      ],
+      "mirror_x": true,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    }
+  ],
+  "atlases": [
+    [
+      "Root",
+      "Chest",
+      "Neck",
+      "Neck2",
+      "Neck3",
+      "Neck4",
+      "Neck5",
+      "Neck6",
+      "Head",
+      "Jaw",
+      "WingL",
+      "WingR"
+    ],
+    [
+      "Pelvis",
+      "ThighL",
+      "ThighR",
+      "ShinL",
+      "ShinR",
+      "MetaL",
+      "MetaR",
+      "ToeL",
+      "ToeR"
+    ]
+  ],
+  "tier_scale": {
+    "scorch": 0.17
+  },
+  "min_feature_px": 7
+}

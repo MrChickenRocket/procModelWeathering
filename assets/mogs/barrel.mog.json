@@ -1,0 +1,620 @@
+{
+ "mech": "barrel",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\barrel\\export",
+ "m_per_stud": 0.017794,
+ "atlases": 3,
+ "face_ranges": {
+  "Pelvis": [
+   "barrel_a1",
+   0,
+   440
+  ],
+  "Chest": [
+   "barrel_a1",
+   440,
+   5358
+  ],
+  "Neck": [
+   "barrel_a1",
+   5358,
+   5570
+  ],
+  "Head": [
+   "barrel_a1",
+   5570,
+   8576
+  ],
+  "EyeL": [
+   "barrel_a1",
+   8576,
+   9104
+  ],
+  "EyeR": [
+   "barrel_a1",
+   9104,
+   9632
+  ],
+  "Turret": [
+   "barrel_a2",
+   0,
+   1018
+  ],
+  "Gun": [
+   "barrel_a2",
+   1018,
+   5978
+  ],
+  "UpperArmL": [
+   "barrel_a2",
+   5978,
+   7276
+  ],
+  "ForearmL": [
+   "barrel_a2",
+   7276,
+   7796
+  ],
+  "HandL": [
+   "barrel_a2",
+   7796,
+   8508
+  ],
+  "UpperArmR": [
+   "barrel_a2",
+   8508,
+   9806
+  ],
+  "ForearmR": [
+   "barrel_a2",
+   9806,
+   10326
+  ],
+  "HandR": [
+   "barrel_a2",
+   10326,
+   11038
+  ],
+  "elbowL_1": [
+   "barrel_a2",
+   11038,
+   11114
+  ],
+  "elbowL_2": [
+   "barrel_a2",
+   11114,
+   11154
+  ],
+  "elbowR_1": [
+   "barrel_a2",
+   11154,
+   11230
+  ],
+  "elbowR_2": [
+   "barrel_a2",
+   11230,
+   11270
+  ],
+  "ThighL": [
+   "barrel_a3",
+   0,
+   1074
+  ],
+  "ShinL": [
+   "barrel_a3",
+   1074,
+   1914
+  ],
+  "MetaL": [
+   "barrel_a3",
+   1914,
+   2672
+  ],
+  "ToeL": [
+   "barrel_a3",
+   2672,
+   3068
+  ],
+  "ThighR": [
+   "barrel_a3",
+   3068,
+   4142
+  ],
+  "ShinR": [
+   "barrel_a3",
+   4142,
+   4982
+  ],
+  "MetaR": [
+   "barrel_a3",
+   4982,
+   5740
+  ],
+  "ToeR": [
+   "barrel_a3",
+   5740,
+   6136
+  ],
+  "kneeL_1": [
+   "barrel_a3",
+   6136,
+   6212
+  ],
+  "kneeL_2": [
+   "barrel_a3",
+   6212,
+   6268
+  ],
+  "kneeL_3": [
+   "barrel_a3",
+   6268,
+   6308
+  ],
+  "heelLo_1": [
+   "barrel_a3",
+   6308,
+   6384
+  ],
+  "heelLo_2": [
+   "barrel_a3",
+   6384,
+   6440
+  ],
+  "heelLo_3": [
+   "barrel_a3",
+   6440,
+   6480
+  ],
+  "heelLi_1": [
+   "barrel_a3",
+   6480,
+   6556
+  ],
+  "heelLi_2": [
+   "barrel_a3",
+   6556,
+   6612
+  ],
+  "heelLi_3": [
+   "barrel_a3",
+   6612,
+   6652
+  ],
+  "kneeR_1": [
+   "barrel_a3",
+   6652,
+   6728
+  ],
+  "kneeR_2": [
+   "barrel_a3",
+   6728,
+   6784
+  ],
+  "kneeR_3": [
+   "barrel_a3",
+   6784,
+   6824
+  ],
+  "heelRi_1": [
+   "barrel_a3",
+   6824,
+   6900
+  ],
+  "heelRi_2": [
+   "barrel_a3",
+   6900,
+   6956
+  ],
+  "heelRi_3": [
+   "barrel_a3",
+   6956,
+   6996
+  ],
+  "heelRo_1": [
+   "barrel_a3",
+   6996,
+   7072
+  ],
+  "heelRo_2": [
+   "barrel_a3",
+   7072,
+   7128
+  ],
+  "heelRo_3": [
+   "barrel_a3",
+   7128,
+   7168
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 1,
+  "Neck": 1,
+  "Head": 1,
+  "Turret": 2,
+  "Gun": 2,
+  "ThighL": 3,
+  "ShinL": 3,
+  "MetaL": 3,
+  "ToeL": 3,
+  "ThighR": 3,
+  "ShinR": 3,
+  "MetaR": 3,
+  "ToeR": 3,
+  "UpperArmL": 2,
+  "ForearmL": 2,
+  "HandL": 2,
+  "UpperArmR": 2,
+  "ForearmR": 2,
+  "HandR": 2,
+  "EyeL": 1,
+  "EyeR": 1,
+  "kneeL_1": 3,
+  "kneeL_2": 3,
+  "kneeL_3": 3,
+  "heelLo_1": 3,
+  "heelLo_2": 3,
+  "heelLo_3": 3,
+  "heelLi_1": 3,
+  "heelLi_2": 3,
+  "heelLi_3": 3,
+  "elbowL_1": 2,
+  "elbowL_2": 2,
+  "kneeR_1": 3,
+  "kneeR_2": 3,
+  "kneeR_3": 3,
+  "heelRi_1": 3,
+  "heelRi_2": 3,
+  "heelRi_3": 3,
+  "heelRo_1": 3,
+  "heelRo_2": 3,
+  "heelRo_3": 3,
+  "elbowR_1": 2,
+  "elbowR_2": 2
+ },
+ "stacks": [
+  "MECH_glass",
+  "MECH_gunmetal",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MECH_rubber_red",
+  "MECH_steel",
+  "MOG_barrel_eye",
+  "MOG_barrel_teal"
+ ],
+ "config": {
+  "m_per_stud": 0.017794,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_barrel_teal",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MOG_barrel_eye",
+   "decal": "MOG_barrel_teal",
+   "yellow": "MECH_paint_yellow"
+  },
+  "tint": [
+   {
+    "slot": "rubber",
+    "stack": "MECH_rubber_red",
+    "fraction": 0.35,
+    "pick": "thinnest"
+   }
+  ],
+  "wear": [
+   {
+    "bone": "ToeL",
+    "weight": 0.3
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.3
+   },
+   {
+    "bone": "MetaL",
+    "weight": 0.15
+   },
+   {
+    "bone": "MetaR",
+    "weight": 0.15
+   },
+   {
+    "bone": "HandL",
+    "weight": 0.15
+   },
+   {
+    "bone": "HandR",
+    "weight": 0.15
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_barrel_teal": 1.0,
+    "MECH_gunmetal": 0.45
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       -3.4,
+       4.7338,
+       -0.3529
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -3.4,
+       2.1017,
+       -0.5063
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -2.55,
+       1.98,
+       1.08
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -2.55,
+       0.88,
+       1.6
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -1.85,
+       1.98,
+       1.08
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -1.85,
+       0.88,
+       1.6
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -5.8,
+       8.1,
+       0.8
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       -5.9,
+       6.15,
+       0.65
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       3.4,
+       4.7338,
+       -0.3529
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       3.4,
+       2.1017,
+       -0.5063
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.85,
+       1.98,
+       1.08
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       1.85,
+       0.88,
+       1.6
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       2.55,
+       1.98,
+       1.08
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       2.55,
+       0.88,
+       1.6
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       5.8,
+       8.1,
+       0.8
+      ],
+      "mirror_x": false,
+      "count": 1
+     },
+     {
+      "at": [
+       5.9,
+       6.15,
+       0.65
+      ],
+      "mirror_x": false,
+      "count": 1
+     }
+    ]
+   },
+   "scale": 2.247983870967742
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.221,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_barrel_teal": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.025,
+      0.2,
+      0.18
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 1.0,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MECH_gunmetal": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 1.0,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MOG_barrel_eye": {
+    "from": "MECH_eye",
+    "color": [
+     0.45,
+     1.0,
+     0.92
+    ]
+   }
+  },
+  "atlases": [
+   [
+    "Chest",
+    "Pelvis",
+    "Neck",
+    "Head",
+    "EyeL",
+    "EyeR"
+   ],
+   [
+    "Turret",
+    "Gun",
+    "UpperArmL",
+    "UpperArmR",
+    "ForearmL",
+    "ForearmR",
+    "HandL",
+    "HandR"
+   ],
+   [
+    "ThighL",
+    "ThighR",
+    "ShinL",
+    "ShinR",
+    "MetaL",
+    "MetaR",
+    "ToeL",
+    "ToeR"
+   ]
+  ],
+  "glow_through": {
+   "from": "MECH_glass",
+   "to": "MOG_barrel_eye",
+   "within_studs": 0.1,
+   "lateral_studs": 0.01
+  }
+ }
+}

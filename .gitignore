@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.blend1
+build/
+previews/
+assets/materials/
+assets/masks/
+assets/materials.zip
+assets/mogs/*.blend

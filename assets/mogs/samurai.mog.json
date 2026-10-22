@@ -1,0 +1,372 @@
+{
+ "mech": "samurai",
+ "src": "C:\\Repos\\ArcRoyale\\tools\\out\\weather\\samurai\\export",
+ "m_per_stud": 0.050872,
+ "atlases": 3,
+ "face_ranges": {
+  "torso": [
+   "samurai_a1",
+   0,
+   716
+  ],
+  "torso__lod1": [
+   "samurai_a1",
+   716,
+   1004
+  ],
+  "vest": [
+   "samurai_a1",
+   1004,
+   1304
+  ],
+  "vestpads": [
+   "samurai_a1",
+   1304,
+   1392
+  ],
+  "upper": [
+   "samurai_a2",
+   0,
+   1752
+  ],
+  "fore": [
+   "samurai_a2",
+   1752,
+   2592
+  ],
+  "fore__lod1": [
+   "samurai_a2",
+   2592,
+   3040
+  ],
+  "thigh_L": [
+   "samurai_a3",
+   0,
+   1048
+  ],
+  "thigh_R": [
+   "samurai_a3",
+   1048,
+   2096
+  ],
+  "shin": [
+   "samurai_a3",
+   2096,
+   3428
+  ],
+  "shin__lod1": [
+   "samurai_a3",
+   3428,
+   4520
+  ],
+  "boot": [
+   "samurai_a3",
+   4520,
+   5032
+  ],
+  "boot__lod1": [
+   "samurai_a3",
+   5032,
+   5300
+  ]
+ },
+ "atlas_of": {
+  "torso": 1,
+  "torso__lod1": 1,
+  "vest": 1,
+  "vestpads": 1,
+  "upper": 2,
+  "fore": 2,
+  "fore__lod1": 2,
+  "thigh_L": 3,
+  "thigh_R": 3,
+  "shin": 3,
+  "shin__lod1": 3,
+  "boot": 3,
+  "boot__lod1": 3
+ },
+ "stacks": [
+  "ARC_boot",
+  "ARC_sm_gold",
+  "ARC_sm_red",
+  "ARC_sm_redhi",
+  "ARC_sm_sole",
+  "ARC_sm_tie"
+ ],
+ "config": {
+  "m_per_stud": 0.050872,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MECH_paint_red",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MECH_eye",
+   "decal": "MECH_paint_red",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper",
+   "boot": "ARC_boot",
+   "sm_gold": "ARC_sm_gold",
+   "sm_red": "ARC_sm_red",
+   "sm_redhi": "ARC_sm_redhi",
+   "sm_sole": "ARC_sm_sole",
+   "sm_tie": "ARC_sm_tie"
+  },
+  "tint": [],
+  "wear": [
+   {
+    "bone": "upper",
+    "weight": 0.2
+   },
+   {
+    "bone": "fore",
+    "weight": 0.35
+   },
+   {
+    "bone": "fore__lod1",
+    "weight": 0.35
+   },
+   {
+    "bone": "thigh_L",
+    "weight": 0.3
+   },
+   {
+    "bone": "thigh_R",
+    "weight": 0.3
+   },
+   {
+    "bone": "shin",
+    "weight": 0.5
+   },
+   {
+    "bone": "shin__lod1",
+    "weight": 0.5
+   },
+   {
+    "bone": "boot",
+    "weight": 0.5
+   },
+   {
+    "bone": "boot__lod1",
+    "weight": 0.5
+   }
+  ],
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.0,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "ARC_boot": {
+    "from": "MAT_polymer",
+    "overlay": "base",
+    "color": [
+     0.7874,
+     0.7874,
+     0.7678
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_sm_gold": {
+    "from": "MECH_paint_red",
+    "overlay": "topcoat",
+    "colors": {
+     "topcoat": [
+      0.8276,
+      0.42,
+      0.0397
+     ],
+     "primer": [
+      0.012,
+      0.011,
+      0.011
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "tex": null,
+      "metal": 1.0,
+      "rough": 0.3
+     },
+     "primer": {
+      "thickness_um": 90
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.6,
+     "large_edges": 0.8,
+     "detail": 0.7,
+     "crease": 0.6,
+     "dirt": 0.5,
+     "dust": 0.3,
+     "use": 1.3
+    }
+   },
+   "ARC_sm_red": {
+    "from": "MECH_paint_red",
+    "overlay": "topcoat",
+    "colors": {
+     "topcoat": [
+      0.2633,
+      0.0031,
+      0.0027
+     ],
+     "primer": [
+      0.012,
+      0.011,
+      0.011
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "tex": null,
+      "thickness_um": 35
+     },
+     "primer": {
+      "thickness_um": 90
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.6,
+     "large_edges": 0.8,
+     "detail": 0.7,
+     "crease": 0.6,
+     "dirt": 0.5,
+     "dust": 0.3,
+     "use": 1.0
+    }
+   },
+   "ARC_sm_redhi": {
+    "from": "MECH_paint_red",
+    "overlay": "topcoat",
+    "colors": {
+     "topcoat": [
+      0.448,
+      0.006,
+      0.0039
+     ],
+     "primer": [
+      0.012,
+      0.011,
+      0.011
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "tex": null,
+      "thickness_um": 35
+     },
+     "primer": {
+      "thickness_um": 90
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.6,
+     "large_edges": 0.8,
+     "detail": 0.7,
+     "crease": 0.6,
+     "dirt": 0.5,
+     "dust": 0.3,
+     "use": 1.0
+    }
+   },
+   "ARC_sm_sole": {
+    "from": "MECH_rubber",
+    "overlay": "base",
+    "color": [
+     0.0072,
+     0.006,
+     0.0049
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "ARC_sm_tie": {
+    "from": "MAT_polymer",
+    "overlay": "base",
+    "color": [
+     0.0039,
+     0.0035,
+     0.0039
+    ],
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   }
+  },
+  "atlases": [
+   [
+    "torso",
+    "torso__lod1",
+    "vest",
+    "vestpads"
+   ],
+   [
+    "upper",
+    "fore",
+    "fore__lod1"
+   ],
+   [
+    "thigh_L",
+    "thigh_R",
+    "shin",
+    "shin__lod1",
+    "boot",
+    "boot__lod1"
+   ]
+  ]
+ }
+}

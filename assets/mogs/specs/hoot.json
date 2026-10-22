@@ -1,0 +1,160 @@
+{
+  "height": 2.1,
+  "min_decal_scale": 0.6,
+  "stacks": {
+    "MOG_hoot_sky": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.17,
+          0.36,
+          0.6
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_hoot_face": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.45,
+          0.46,
+          0.46
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    }
+  },
+  "slots": {
+    "paint": "MOG_hoot_sky",
+    "decal": "MOG_hoot_sky"
+  },
+  "tint": [
+    {
+      "slot": "paint",
+      "stack": "MOG_hoot_face",
+      "within_studs": 0.04,
+      "near": [
+        [
+          0,
+          1.43,
+          -0.36
+        ],
+        [
+          0,
+          1.63,
+          -0.43
+        ]
+      ]
+    }
+  ],
+  "decals": {
+    "light_paint": [
+      "MOG_hoot_sky",
+      "MOG_hoot_face"
+    ]
+  },
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MECH_eye",
+    "within_studs": 0.1,
+    "lateral_studs": 0.01
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.2
+    },
+    {
+      "bone": "WingL",
+      "weight": 0.15
+    },
+    {
+      "bone": "WingR",
+      "weight": 0.15
+    },
+    {
+      "bone": "FanL",
+      "weight": 0.15
+    },
+    {
+      "bone": "FanR",
+      "weight": 0.15
+    }
+  ],
+  "pinch": [
+    {
+      "at": [
+        0,
+        0.81,
+        -0.43
+      ],
+      "mirror_x": false,
+      "kinds": [
+        "hazard"
+      ],
+      "count": 1
+    }
+  ],
+  "tier_scale": {
+    "scorch": 0.1
+  },
+  "min_feature_px": 7
+}

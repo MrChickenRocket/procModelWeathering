@@ -1,0 +1,628 @@
+{
+ "mech": "raptor",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\raptor\\export",
+ "m_per_stud": 0.04,
+ "atlases": 2,
+ "face_ranges": {
+  "Pelvis": [
+   "raptor_a1",
+   0,
+   3040
+  ],
+  "Chest": [
+   "raptor_a1",
+   3040,
+   4648
+  ],
+  "Neck": [
+   "raptor_a1",
+   4648,
+   6068
+  ],
+  "Head": [
+   "raptor_a1",
+   6068,
+   9290
+  ],
+  "Jaw": [
+   "raptor_a1",
+   9290,
+   9606
+  ],
+  "UpperArmL": [
+   "raptor_a1",
+   9606,
+   9906
+  ],
+  "ForearmL": [
+   "raptor_a1",
+   9906,
+   10174
+  ],
+  "HandL": [
+   "raptor_a1",
+   10174,
+   10542
+  ],
+  "UpperArmR": [
+   "raptor_a1",
+   10542,
+   10842
+  ],
+  "ForearmR": [
+   "raptor_a1",
+   10842,
+   11110
+  ],
+  "HandR": [
+   "raptor_a1",
+   11110,
+   11478
+  ],
+  "piston0_1": [
+   "raptor_a1",
+   11478,
+   11554
+  ],
+  "piston0_2": [
+   "raptor_a1",
+   11554,
+   11594
+  ],
+  "piston1_1": [
+   "raptor_a1",
+   11594,
+   11670
+  ],
+  "piston1_2": [
+   "raptor_a1",
+   11670,
+   11710
+  ],
+  "piston2_1": [
+   "raptor_a1",
+   11710,
+   11778
+  ],
+  "piston2_2": [
+   "raptor_a1",
+   11778,
+   11818
+  ],
+  "piston3_1": [
+   "raptor_a1",
+   11818,
+   11886
+  ],
+  "piston3_2": [
+   "raptor_a1",
+   11886,
+   11926
+  ],
+  "piston6_1": [
+   "raptor_a1",
+   11926,
+   11986
+  ],
+  "piston6_2": [
+   "raptor_a1",
+   11986,
+   12026
+  ],
+  "piston9_1": [
+   "raptor_a1",
+   12026,
+   12086
+  ],
+  "piston9_2": [
+   "raptor_a1",
+   12086,
+   12126
+  ],
+  "Tail1": [
+   "raptor_a2",
+   0,
+   330
+  ],
+  "Tail2": [
+   "raptor_a2",
+   330,
+   660
+  ],
+  "Tail3": [
+   "raptor_a2",
+   660,
+   990
+  ],
+  "Tail4": [
+   "raptor_a2",
+   990,
+   1320
+  ],
+  "Tail5": [
+   "raptor_a2",
+   1320,
+   1640
+  ],
+  "Tail6": [
+   "raptor_a2",
+   1640,
+   1960
+  ],
+  "Tail7": [
+   "raptor_a2",
+   1960,
+   2240
+  ],
+  "Tail8": [
+   "raptor_a2",
+   2240,
+   2520
+  ],
+  "ThighL": [
+   "raptor_a2",
+   2520,
+   3368
+  ],
+  "ShinL": [
+   "raptor_a2",
+   3368,
+   3928
+  ],
+  "MetaL": [
+   "raptor_a2",
+   3928,
+   4754
+  ],
+  "ToeL": [
+   "raptor_a2",
+   4754,
+   5886
+  ],
+  "ThighR": [
+   "raptor_a2",
+   5886,
+   6734
+  ],
+  "ShinR": [
+   "raptor_a2",
+   6734,
+   7294
+  ],
+  "MetaR": [
+   "raptor_a2",
+   7294,
+   8120
+  ],
+  "ToeR": [
+   "raptor_a2",
+   8120,
+   9252
+  ],
+  "ramLo_1": [
+   "raptor_a2",
+   9252,
+   9328
+  ],
+  "ramLo_2": [
+   "raptor_a2",
+   9328,
+   9384
+  ],
+  "ramLo_3": [
+   "raptor_a2",
+   9384,
+   9424
+  ],
+  "ramLi_1": [
+   "raptor_a2",
+   9424,
+   9500
+  ],
+  "ramLi_2": [
+   "raptor_a2",
+   9500,
+   9556
+  ],
+  "ramLi_3": [
+   "raptor_a2",
+   9556,
+   9596
+  ],
+  "ramRi_1": [
+   "raptor_a2",
+   9596,
+   9672
+  ],
+  "ramRi_2": [
+   "raptor_a2",
+   9672,
+   9728
+  ],
+  "ramRi_3": [
+   "raptor_a2",
+   9728,
+   9768
+  ],
+  "ramRo_1": [
+   "raptor_a2",
+   9768,
+   9844
+  ],
+  "ramRo_2": [
+   "raptor_a2",
+   9844,
+   9900
+  ],
+  "ramRo_3": [
+   "raptor_a2",
+   9900,
+   9940
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 1,
+  "Neck": 1,
+  "Head": 1,
+  "Jaw": 1,
+  "Tail1": 2,
+  "Tail2": 2,
+  "Tail3": 2,
+  "Tail4": 2,
+  "Tail5": 2,
+  "Tail6": 2,
+  "Tail7": 2,
+  "Tail8": 2,
+  "ThighL": 2,
+  "ShinL": 2,
+  "MetaL": 2,
+  "ToeL": 2,
+  "UpperArmL": 1,
+  "ForearmL": 1,
+  "HandL": 1,
+  "ThighR": 2,
+  "ShinR": 2,
+  "MetaR": 2,
+  "ToeR": 2,
+  "UpperArmR": 1,
+  "ForearmR": 1,
+  "HandR": 1,
+  "piston0_1": 1,
+  "piston0_2": 1,
+  "piston1_1": 1,
+  "piston1_2": 1,
+  "piston2_1": 1,
+  "piston2_2": 1,
+  "piston3_1": 1,
+  "piston3_2": 1,
+  "ramLo_1": 2,
+  "ramLo_2": 2,
+  "ramLo_3": 2,
+  "ramLi_1": 2,
+  "ramLi_2": 2,
+  "ramLi_3": 2,
+  "piston6_1": 1,
+  "piston6_2": 1,
+  "ramRi_1": 2,
+  "ramRi_2": 2,
+  "ramRi_3": 2,
+  "ramRo_1": 2,
+  "ramRo_2": 2,
+  "ramRo_3": 2,
+  "piston9_1": 1,
+  "piston9_2": 1
+ },
+ "stacks": [
+  "MECH_eye",
+  "MECH_glass",
+  "MECH_gunmetal",
+  "MECH_paint_red",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MECH_rubber_red",
+  "MECH_steel"
+ ],
+ "config": {
+  "m_per_stud": 0.04,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MECH_paint_red",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MECH_eye",
+   "decal": "MECH_paint_red",
+   "yellow": "MECH_paint_yellow"
+  },
+  "tint": [
+   {
+    "slot": "rubber",
+    "stack": "MECH_rubber_red",
+    "fraction": 0.35,
+    "pick": "thinnest"
+   }
+  ],
+  "wear": [
+   {
+    "bone": "ToeL",
+    "weight": 0.3
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.3
+   },
+   {
+    "bone": "MetaL",
+    "weight": 0.2
+   },
+   {
+    "bone": "MetaR",
+    "weight": 0.2
+   },
+   {
+    "bone": "ShinL",
+    "weight": 0.15
+   },
+   {
+    "bone": "ShinR",
+    "weight": 0.15
+   },
+   {
+    "bone": "HandL",
+    "weight": 0.5
+   },
+   {
+    "bone": "HandR",
+    "weight": 0.5
+   },
+   {
+    "bone": "ForearmL",
+    "weight": 0.2
+   },
+   {
+    "bone": "ForearmR",
+    "weight": 0.2
+   },
+   {
+    "bone": "Jaw",
+    "weight": 0.15
+   },
+   {
+    "bone": "Tail8",
+    "weight": 0.25
+   },
+   {
+    "bone": "Tail7",
+    "weight": 0.15
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MECH_paint_red": 1.0,
+    "MECH_gunmetal": 0.45
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       0.88,
+       2.28,
+       -0.39
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       0.92,
+       1.81,
+       0.17
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       0.8,
+       3.09,
+       0.0
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       0.95,
+       0.8,
+       -0.39
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       0,
+       3.84,
+       -1.45
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       3.42,
+       -0.9
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0,
+       4.08,
+       -1.35
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       0.42,
+       3.03,
+       -1.18
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       0.46,
+       2.8,
+       -1.36
+      ],
+      "mirror_x": true
+     },
+     {
+      "at": [
+       0,
+       3.5,
+       0.72
+      ],
+      "mirror_x": false
+     },
+     {
+      "at": [
+       1.22,
+       2.23,
+       -0.23
+      ],
+      "mirror_x": true,
+      "count": 1
+     },
+     {
+      "at": [
+       0.54,
+       2.23,
+       -0.23
+      ],
+      "mirror_x": true,
+      "count": 1
+     },
+     {
+      "at": [
+       1.29,
+       1.06,
+       -0.25
+      ],
+      "mirror_x": true,
+      "count": 1
+     },
+     {
+      "at": [
+       0.61,
+       1.06,
+       -0.25
+      ],
+      "mirror_x": true,
+      "count": 1
+     },
+     {
+      "at": [
+       0.12,
+       3.82,
+       -1.75
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.12,
+       3.8,
+       -2.05
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hazard"
+      ],
+      "count": 1
+     }
+    ]
+   }
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 1.3,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0
+   }
+  },
+  "atlases": [
+   [
+    "Root",
+    "Pelvis",
+    "Chest",
+    "Neck",
+    "Head",
+    "Jaw",
+    "UpperArmL",
+    "UpperArmR",
+    "ForearmL",
+    "ForearmR",
+    "HandL",
+    "HandR"
+   ],
+   [
+    "Tail1",
+    "Tail2",
+    "Tail3",
+    "Tail4",
+    "Tail5",
+    "Tail6",
+    "Tail7",
+    "Tail8",
+    "ThighL",
+    "ThighR",
+    "ShinL",
+    "ShinR",
+    "MetaL",
+    "MetaR",
+    "ToeL",
+    "ToeR"
+   ]
+  ]
+ }
+}

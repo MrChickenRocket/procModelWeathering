@@ -1,0 +1,222 @@
+{
+  "height": 2.16,
+  "min_decal_scale": 0.6,
+  "stacks": {
+    "MOG_lop_mint": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.2,
+          0.36,
+          0.28
+        ]
+      },
+      "weather": {}
+    }
+  },
+  "slots": {
+    "paint": "MOG_lop_mint",
+    "decal": "MOG_lop_mint"
+  },
+  "decals": {
+    "light_paint": [
+      "MOG_lop_mint"
+    ],
+    "pinch": {
+      "radius_studs": 0.35,
+      "per_point": 1,
+      "kinds": [
+        "hazard",
+        "warning"
+      ]
+    }
+  },
+  "atlases": [
+    [
+      "Head",
+      "EyeL",
+      "EyeR",
+      "Neck",
+      "EarL1",
+      "EarL2",
+      "EarL3",
+      "EarL4",
+      "EarL5",
+      "EarR1",
+      "EarR2",
+      "EarR3",
+      "EarR4",
+      "EarR5"
+    ],
+    [
+      "Root",
+      "Pelvis",
+      "Chest",
+      "Tail1",
+      "ThighL",
+      "ShinL",
+      "MetaL",
+      "ToeL",
+      "FThighL",
+      "FShinL",
+      "FMetaL",
+      "FToeL",
+      "ThighR",
+      "ShinR",
+      "MetaR",
+      "ToeR",
+      "FThighR",
+      "FShinR",
+      "FMetaR",
+      "FToeR"
+    ]
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.2
+    },
+    {
+      "bone": "FMetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "FMetaR",
+      "weight": 0.2
+    },
+    {
+      "bone": "EarL5",
+      "weight": 0.25
+    },
+    {
+      "bone": "EarR5",
+      "weight": 0.25
+    }
+  ],
+  "pinch": [
+    {
+      "at": [
+        0.64,
+        1.08,
+        0.72
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0.64,
+        0.64,
+        0.18
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0.64,
+        0.46,
+        0.86
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0.64,
+        0.17,
+        -0.22
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0.3,
+        0.92,
+        -0.5
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0.3,
+        0.6,
+        -0.4
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0.3,
+        0.28,
+        -0.6
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0,
+        1.36,
+        -0.3
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        1.45,
+        -1.14
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0,
+        1.24,
+        1.32
+      ],
+      "mirror_x": false
+    },
+    {
+      "at": [
+        0.32,
+        2.2,
+        -0.93
+      ],
+      "mirror_x": true
+    },
+    {
+      "at": [
+        0.99,
+        1.7,
+        -1.1
+      ],
+      "mirror_x": true
+    }
+  ],
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MECH_eye",
+    "within_studs": 0.06
+  },
+  "tier_scale": {
+    "scorch": 0.17
+  }
+}

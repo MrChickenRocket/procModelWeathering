@@ -1,0 +1,490 @@
+{
+  "m_per_stud": 0.015332,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MOG_heron_white",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MECH_steel",
+    "rubber": "MECH_rubber",
+    "glass": "MECH_glass",
+    "eye": "MECH_eye",
+    "decal": "MOG_heron_white",
+    "yellow": "MECH_paint_yellow"
+  },
+  "tint": [
+    {
+      "slot": "rubber",
+      "stack": "MECH_rubber_red",
+      "fraction": 0.35,
+      "pick": "thinnest"
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_heron_blue",
+      "fraction": 0.3,
+      "pick": "symmetric",
+      "seed": 3
+    }
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.3
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.3
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.2
+    },
+    {
+      "bone": "ShinL",
+      "weight": 0.15
+    },
+    {
+      "bone": "ShinR",
+      "weight": 0.15
+    },
+    {
+      "bone": "Jaw",
+      "weight": 0.2
+    },
+    {
+      "bone": "WingL",
+      "weight": 0.1
+    },
+    {
+      "bone": "WingR",
+      "weight": 0.1
+    }
+  ],
+  "decals": {
+    "count": 60,
+    "mirror": 0.6,
+    "targets": {
+      "MOG_heron_white": 1.0,
+      "MOG_heron_blue": 0.6,
+      "MECH_gunmetal": 0.45
+    },
+    "pinch": {
+      "radius_studs": 0.35,
+      "per_point": 2,
+      "kinds": [
+        "hazard",
+        "warning"
+      ],
+      "points": [
+        {
+          "at": [
+            1.38,
+            8.3,
+            0.0
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            1.45,
+            6.95,
+            -0.95
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            1.5,
+            3.95,
+            0.12
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            1.5,
+            0.78,
+            -0.78
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            0,
+            8.75,
+            -2.2
+          ],
+          "mirror_x": false
+        },
+        {
+          "at": [
+            0,
+            11.72,
+            -4.82
+          ],
+          "mirror_x": false
+        },
+        {
+          "at": [
+            0,
+            11.68,
+            -5.38
+          ],
+          "mirror_x": false
+        },
+        {
+          "at": [
+            1.05,
+            10.22,
+            -2.15
+          ],
+          "mirror_x": true
+        },
+        {
+          "at": [
+            0.5,
+            11.7,
+            -4.9
+          ],
+          "mirror_x": true,
+          "kinds": [
+            "hazard"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            0.5,
+            11.7,
+            -5.4
+          ],
+          "mirror_x": true,
+          "kinds": [
+            "hazard"
+          ],
+          "count": 1
+        },
+        {
+          "at": [
+            -0.62,
+            8.9151,
+            -2.0259
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.62,
+            7.972,
+            -3.28
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.6,
+            10.81,
+            -4.804
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.6,
+            12.0,
+            -5.24
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.62,
+            8.9151,
+            -2.0259
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.62,
+            7.972,
+            -3.28
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.6,
+            10.81,
+            -4.804
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.6,
+            12.0,
+            -5.24
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.974,
+            5.4697,
+            -0.5494
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -2.0,
+            2.2021,
+            -0.4802
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.974,
+            5.4697,
+            -0.5494
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -1.0,
+            2.2021,
+            -0.4802
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -2.2051,
+            8.152,
+            -0.389
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -2.0865,
+            5.8592,
+            -0.8794
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.974,
+            5.4697,
+            -0.5494
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.0,
+            2.2021,
+            -0.4802
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            1.974,
+            5.4697,
+            -0.5494
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            2.0,
+            2.2021,
+            -0.4802
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            2.2051,
+            8.152,
+            -0.389
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            2.0865,
+            5.8592,
+            -0.8794
+          ],
+          "mirror_x": false,
+          "count": 1
+        }
+      ]
+    },
+    "accent": [
+      0.015,
+      0.045,
+      0.22
+    ],
+    "light_paint": [
+      "MOG_heron_white"
+    ],
+    "mix": {
+      "paint": {
+        "stencil": 0.25,
+        "numbers": 0.1,
+        "plate": 0.1,
+        "stripe": 0.3,
+        "triangle": 0.1,
+        "roundel": 0.05
+      }
+    },
+    "scale": 2.6088709677419355
+  },
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.221,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "MOG_heron_white": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.6,
+          0.6,
+          0.57
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "chip": 0.45
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "detail": 0.5,
+        "crease": 0.3,
+        "use": 0.5,
+        "dirt": 0.6,
+        "large_edges": 0.35
+      }
+    },
+    "MOG_heron_blue": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.015,
+          0.045,
+          0.22
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    }
+  },
+  "atlases": [
+    [
+      "Root",
+      "Chest",
+      "Neck",
+      "Neck2",
+      "Neck3",
+      "Neck4",
+      "Neck5",
+      "Neck6",
+      "Head",
+      "Jaw",
+      "WingL",
+      "WingR"
+    ],
+    [
+      "Pelvis",
+      "ThighL",
+      "ThighR",
+      "ShinL",
+      "ShinR",
+      "MetaL",
+      "MetaR",
+      "ToeL",
+      "ToeR"
+    ]
+  ]
+}

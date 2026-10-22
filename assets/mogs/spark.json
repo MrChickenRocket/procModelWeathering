@@ -1,0 +1,447 @@
+{
+  "m_per_stud": 0.0992,
+  "bake": {
+    "ao_distance": 0.01
+  },
+  "slots": {
+    "paint": "MOG_spark_gold",
+    "gunmetal": "MECH_gunmetal",
+    "steel": "MECH_steel",
+    "rubber": "MECH_rubber",
+    "glass": "MECH_glass",
+    "eye": "MOG_spark_eye",
+    "decal": "MOG_spark_gold",
+    "yellow": "MECH_paint_yellow",
+    "copper": "MECH_copper"
+  },
+  "tint": [
+    {
+      "slot": "rubber",
+      "stack": "MECH_rubber_red",
+      "fraction": 0.35,
+      "pick": "thinnest"
+    },
+    {
+      "slot": "eye",
+      "stack": "MOG_glint",
+      "near": [
+        [
+          -0.2764,
+          1.2778,
+          -1.3532
+        ],
+        [
+          -0.2135,
+          1.1937,
+          -1.406
+        ],
+        [
+          0.1886,
+          1.2778,
+          -1.3976
+        ],
+        [
+          0.2683,
+          1.1937,
+          -1.3783
+        ]
+      ],
+      "mirror_x": false,
+      "within_studs": 0.004
+    },
+    {
+      "slot": "steel",
+      "stack": "MECH_copper",
+      "bones": [
+        "Tail1",
+        "Tail2",
+        "Tail3",
+        "Tail4",
+        "Tail5",
+        "Tail6",
+        "Tail7"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_spark_earL",
+      "bones": [
+        "EarL1"
+      ]
+    },
+    {
+      "slot": "paint",
+      "stack": "MOG_spark_earR",
+      "bones": [
+        "EarR1"
+      ]
+    }
+  ],
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.15
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.15
+    },
+    {
+      "bone": "FToeL",
+      "weight": 0.15
+    },
+    {
+      "bone": "FToeR",
+      "weight": 0.15
+    }
+  ],
+  "decals": {
+    "count": 60,
+    "mirror": 0.6,
+    "targets": {
+      "MOG_spark_gold": 1.0,
+      "MECH_gunmetal": 0.45
+    },
+    "pinch": {
+      "radius_studs": 0.35,
+      "per_point": 2,
+      "kinds": [
+        "hazard",
+        "warning"
+      ],
+      "points": [
+        {
+          "at": [
+            -0.4704,
+            0.4094,
+            0.1535
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.4704,
+            0.3283,
+            0.5129
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.3556,
+            0.3387,
+            0.1823
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.3556,
+            0.2289,
+            -0.2203
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.356,
+            0.5023,
+            -0.5218
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            -0.356,
+            0.2973,
+            -0.5546
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.4704,
+            0.4094,
+            0.1535
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.4704,
+            0.3283,
+            0.5129
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.3556,
+            0.3387,
+            0.1823
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.3556,
+            0.2289,
+            -0.2203
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.356,
+            0.5023,
+            -0.5218
+          ],
+          "mirror_x": false,
+          "count": 1
+        },
+        {
+          "at": [
+            0.356,
+            0.2973,
+            -0.5546
+          ],
+          "mirror_x": false,
+          "count": 1
+        }
+      ]
+    },
+    "light_paint": [
+      "MOG_spark_gold",
+      "MOG_spark_earL",
+      "MOG_spark_earR"
+    ],
+    "scale": 0.6
+  },
+  "tiers": {
+    "minimal": {
+      "age": 0.25,
+      "use": 0.3,
+      "humidity": 0.05,
+      "dirt": 0.15,
+      "dust": 0.05,
+      "detail": 0.5,
+      "scratch_cut": 0.0,
+      "scorch": 0.0,
+      "streaks": 0.1,
+      "crease": 0.3,
+      "edge_band": 0.15,
+      "edge_band_mm": 2.2,
+      "fine_edge": 0.35,
+      "min_feature_px": 7
+    },
+    "scarred": {
+      "age": 0.9,
+      "use": 0.75,
+      "humidity": 0.3,
+      "dirt": 0.5,
+      "dust": 0.2,
+      "detail": 1.4,
+      "scratch_cut": 1.0,
+      "scorch": 0.39,
+      "streaks": 0.8,
+      "crease": 1.0,
+      "edge_band": 0.5,
+      "edge_band_mm": 2.2,
+      "fine_edge": 1.0,
+      "min_feature_px": 7
+    }
+  },
+  "stacks": {
+    "MOG_spark_gold": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.45,
+          0.25,
+          0.025
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_spark_charcoal": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.03,
+          0.03,
+          0.032
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_spark_eye": {
+      "from": "MECH_eye",
+      "color": [
+        0.2,
+        0.85,
+        1.0
+      ]
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_spark_earL": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.45,
+          0.25,
+          0.025
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_spark_earR": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.45,
+          0.25,
+          0.025
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 0.4,
+        "dust": 0.3
+      }
+    },
+    "MOG_glint": {
+      "from": "MECH_eye",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MOG_spark_eye",
+    "within_studs": 0.1,
+    "lateral_studs": 0.01
+  },
+  "stripes": [
+    {
+      "from": [
+        "MOG_spark_earL",
+        "MOG_spark_earR"
+      ],
+      "to": "MOG_spark_charcoal",
+      "width_studs": 0.03,
+      "toward": [
+        0,
+        0,
+        -1
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "from": [
+        "MOG_spark_gold"
+      ],
+      "to": "MOG_spark_charcoal",
+      "mode": "bands",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "period_studs": 0.3,
+      "fill": 0.3,
+      "box": [
+        [
+          -0.45,
+          1.05,
+          -0.6
+        ],
+        [
+          0.45,
+          1.5,
+          0.6
+        ]
+      ],
+      "seed": 21
+    }
+  ]
+}

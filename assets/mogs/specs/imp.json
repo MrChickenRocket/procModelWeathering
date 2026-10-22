@@ -1,0 +1,200 @@
+{
+  "height": 3.0,
+  "min_decal_scale": 0.6,
+  "stacks": {
+    "MOG_imp_indigo": {
+      "from": "MECH_paint_yellow",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ],
+        "gunmetal": [
+          0.2,
+          0.08,
+          0.42
+        ],
+        "topcoat": [
+          0.03,
+          0.022,
+          0.1
+        ]
+      },
+      "layers": {
+        "gunmetal": {
+          "metal": 0.0,
+          "rough": 0.42,
+          "chip": 0.3
+        },
+        "topcoat": {
+          "rough": 0.42
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.6,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    },
+    "MOG_imp_teeth": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.6,
+          0.58,
+          0.53
+        ],
+        "primer": [
+          0.36,
+          0.36,
+          0.35
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.15,
+        "large_edges": 0.25,
+        "detail": 0.35,
+        "crease": 0.3,
+        "use": 0.3,
+        "dirt": 1.0,
+        "dust": 0.3
+      }
+    },
+    "MOG_imp_red_eye": {
+      "from": "MECH_eye",
+      "color": [
+        0.95,
+        0.04,
+        0.03
+      ]
+    },
+    "MECH_gunmetal": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.6,
+        "dust": 0.35,
+        "use": 0.8
+      }
+    }
+  },
+  "slots": {
+    "paint": "MOG_imp_indigo",
+    "decal": "MOG_imp_indigo",
+    "eye": "MOG_imp_red_eye"
+  },
+  "tint": [
+    {
+      "slot": "steel",
+      "stack": "MOG_imp_teeth",
+      "within_studs": 0.04,
+      "mirror_x": true,
+      "near": [
+        [
+          0.51,
+          1.95,
+          -0.7
+        ],
+        [
+          0.4,
+          1.87,
+          -0.76
+        ],
+        [
+          0.29,
+          1.8,
+          -0.78
+        ],
+        [
+          0.17,
+          1.75,
+          -0.8
+        ],
+        [
+          0.06,
+          1.72,
+          -0.8
+        ]
+      ]
+    }
+  ],
+  "glow_through": {
+    "from": "MECH_glass",
+    "to": "MOG_imp_red_eye",
+    "within_studs": 0.1,
+    "lateral_studs": 0.01
+  },
+  "wear": [
+    {
+      "bone": "ToeL",
+      "weight": 0.2
+    },
+    {
+      "bone": "ToeR",
+      "weight": 0.2
+    },
+    {
+      "bone": "MetaL",
+      "weight": 0.1
+    },
+    {
+      "bone": "MetaR",
+      "weight": 0.1
+    },
+    {
+      "bone": "HandL",
+      "weight": 0.2
+    },
+    {
+      "bone": "HandR",
+      "weight": 0.2
+    }
+  ],
+  "pinch": [],
+  "atlases": [
+    [
+      "Chest"
+    ],
+    [
+      "Jaw",
+      "EyeL",
+      "EyeR",
+      "Pelvis",
+      "UpperArmL",
+      "ForearmL",
+      "HandL",
+      "UpperArmR",
+      "ForearmR",
+      "HandR"
+    ],
+    [
+      "ThighL",
+      "ShinL",
+      "MetaL",
+      "ToeL",
+      "ThighR",
+      "ShinR",
+      "MetaR",
+      "ToeR"
+    ]
+  ],
+  "tier_scale": {
+    "scorch": 0.35
+  },
+  "min_feature_px": 7
+}

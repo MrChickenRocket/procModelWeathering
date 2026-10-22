@@ -1,0 +1,124 @@
+{
+  "height": 3.9,
+  "stacks": {
+    "ARC_gcuff": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.1706,
+        0.1706,
+        0.1873
+      ],
+      "weather": {
+        "flat_impacts": 0.2,
+        "large_edges": 0.35,
+        "detail": 0.8,
+        "crease": 0.6,
+        "dirt": 0.4,
+        "dust": 0.1,
+        "use": 0.5,
+        "streaks": 0.0
+      }
+    },
+    "ARC_glove": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.3185,
+        0.3185,
+        0.3931
+      ],
+      "weather": {
+        "flat_impacts": 0.2,
+        "large_edges": 0.35,
+        "detail": 0.8,
+        "crease": 0.6,
+        "dirt": 0.4,
+        "dust": 0.1,
+        "use": 0.5,
+        "streaks": 0.0
+      }
+    },
+    "ARC_gpalm": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "weather": {
+        "flat_impacts": 0.2,
+        "large_edges": 0.35,
+        "detail": 0.8,
+        "crease": 0.6,
+        "dirt": 0.4,
+        "dust": 0.1,
+        "use": 0.5,
+        "streaks": 0.0
+      }
+    },
+    "ARC_gplate": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.89,
+        0.89,
+        1.0
+      ],
+      "weather": {
+        "flat_impacts": 0.2,
+        "large_edges": 0.35,
+        "detail": 0.8,
+        "crease": 0.6,
+        "dirt": 0.4,
+        "dust": 0.1,
+        "use": 0.5,
+        "streaks": 0.0
+      }
+    }
+  },
+  "slots": {
+    "gcuff": "ARC_gcuff",
+    "glove": "ARC_glove",
+    "gpalm": "ARC_gpalm",
+    "gplate": "ARC_gplate"
+  },
+  "tint": [],
+  "base_tint": false,
+  "wear": [
+    {
+      "bone": "glove_Open_R",
+      "weight": 0.8
+    },
+    {
+      "bone": "glove_Open_R__lod1",
+      "weight": 0.8
+    },
+    {
+      "bone": "glove_Open_L",
+      "weight": 0.8
+    },
+    {
+      "bone": "glove_Open_L__lod1",
+      "weight": 0.8
+    }
+  ],
+  "pinch": [],
+  "rams": false,
+  "tier_scale": {
+    "scorch": 0.0
+  },
+  "min_feature_px": 7,
+  "atlases": [
+    [
+      "glove_Open_R",
+      "glove_Open_R__lod1"
+    ],
+    [
+      "glove_Open_L",
+      "glove_Open_L__lod1"
+    ]
+  ],
+  "targets": {}
+}

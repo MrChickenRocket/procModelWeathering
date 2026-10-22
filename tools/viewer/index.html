@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weapon Viewer</title>
+<style>
+  :root { --bg: #16181b; --panel: #202328ee; --fg: #d8dbe0; --dim: #8a9099; --accent: #6fa8dc; --line: #33373e; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 13px/1.4 system-ui, sans-serif; overflow: hidden; }
+  canvas { display: block; }
+  #panel { position: absolute; top: 12px; left: 12px; width: 220px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; }
+  #panel h1 { font-size: 13px; margin: 0 0 8px; font-weight: 600; }
+  .row { display: flex; gap: 6px; margin: 6px 0; flex-wrap: wrap; }
+  .seg button { flex: 1; background: transparent; color: var(--fg); border: 1px solid var(--line); padding: 4px 0; border-radius: 4px; cursor: pointer; font: inherit; }
+  .seg button.on { background: var(--accent); border-color: var(--accent); color: #111; }
+  label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+  .label { color: var(--dim); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; margin-top: 10px; }
+  #parts label span.tris { margin-left: auto; color: var(--dim); font-variant-numeric: tabular-nums; }
+  .slider { align-items: center; }
+  .slider span:first-child { width: 58px; color: var(--dim); }
+  .slider input { flex: 1; min-width: 0; }
+  .slider span:last-child { width: 32px; text-align: right; font-variant-numeric: tabular-nums; }
+  #status { position: absolute; bottom: 12px; left: 12px; color: var(--dim); }
+  #drop { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; background: #6fa8dc33; border: 2px dashed var(--accent); font-size: 18px; }
+</style>
+</head>
+<body>
+<div id="panel">
+  <h1 id="title">Weapon Viewer</h1>
+  <div class="row seg" id="lod"><button data-v="low" class="on">Low</button><button data-v="high">High</button></div>
+  <div class="row seg" id="mode"><button data-v="lit" class="on">Lit</button><button data-v="normals">Normals</button><button data-v="uv">UV</button></div>
+  <div class="row seg" id="envsel"><button data-v="sky" class="on">Sky</button><button data-v="room">Room</button></div>
+  <div class="row"><label><input type="checkbox" id="wire"> Wireframe</label></div>
+  <div class="row"><label><input type="checkbox" id="wear"> Wear volumes</label></div>
+  <div class="row slider"><span>Exposure</span><input type="range" id="exposure" min="-2" max="2" step="0.05" value="0"><span id="exposure_v">1.00</span></div>
+  <div class="row slider"><span>Env</span><input type="range" id="env" min="0" max="4" step="0.05" value="1"><span id="env_v">1.00</span></div>
+  <div class="label">Parts</div>
+  <div id="parts"></div>
+</div>
+<div id="status">Drop a .glb to load</div>
+<div id="drop">Drop .glb</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(devicePixelRatio);
+renderer.setSize(innerWidth, innerHeight);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+document.body.prepend(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x16181b);
+const pmrem = new THREE.PMREMGenerator(renderer);
+function skyEnvironment() {
+  // Bright sky over a mid-grey ground, roughly what Roblox reflects outdoors.
+  const s = new THREE.Scene();
+  s.add(new THREE.Mesh(new THREE.SphereGeometry(10, 64, 32), new THREE.ShaderMaterial({
+    side: THREE.BackSide,
+    vertexShader: 'varying vec3 d; void main() { d = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }',
+    fragmentShader: `varying vec3 d; void main() {
+      float y = d.y;
+      vec3 sky = mix(vec3(1.0, 1.0, 1.02), vec3(0.55, 0.68, 0.9), smoothstep(0.0, 0.8, y));
+      vec3 ground = mix(vec3(0.45, 0.43, 0.4), vec3(0.25, 0.24, 0.22), smoothstep(0.0, -0.6, y));
+      gl_FragColor = vec4(y > 0.0 ? sky : ground, 1.0);
+    }`,
+  })));
+  return pmrem.fromScene(s, 0.02).texture;
+}
+const envs = { sky: skyEnvironment(), room: pmrem.fromScene(new RoomEnvironment(), 0.04).texture };
+scene.environment = envs.sky;
+const key = new THREE.DirectionalLight(0xffffff, 1.5);
+key.position.set(1, 2, 1.5);
+scene.add(key);
+
+const camera = new THREE.PerspectiveCamera(35, innerWidth / innerHeight, 0.001, 100);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+const state = { lod: 'low', mode: 'lit', envName: 'sky', wire: false, wear: false, env: 1, hidden: new Set() };
+let root = null, parts = [], wearVols = [];
+
+const checker = (() => {
+  const c = document.createElement('canvas'); c.width = c.height = 1024;
+  const g = c.getContext('2d');
+  for (let y = 0; y < 16; y++) for (let x = 0; x < 16; x++) {
+    g.fillStyle = (x + y) % 2 ? '#d0d0d0' : `hsl(${(x * 16 + y) * 1.4},55%,45%)`;
+    g.fillRect(x * 64, y * 64, 64, 64);
+  }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.flipY = false;
+  return t;
+})();
+const modeMats = {
+  normals: new THREE.MeshNormalMaterial(),
+  uv: new THREE.MeshStandardMaterial({ map: checker, roughness: 0.8 }),
+};
+
+function triCount(geo) { return (geo.index ? geo.index.count : geo.attributes.position.count) / 3; }
+
+function load(buffer, name) {
+  new GLTFLoader().parse(buffer, '', gltf => {
+    if (root) scene.remove(root);
+    root = gltf.scene; parts = []; wearVols = []; state.hidden.clear();
+    root.traverse(o => {
+      if (o.isMesh) {
+        const owner = /_(low|high)$/.test(o.name) ? o : o.parent;
+        const m = owner.name.match(/^(.*)_(low|high)$/);
+        if (!m) return;
+        o.userData.orig = o.material;
+        parts.push({ obj: o, part: m[1], lod: m[2], tris: triCount(o.geometry) });
+      } else if (o.name.startsWith('WEAR_')) {
+        const w = o.userData.weight ?? 1;
+        const box = new THREE.LineSegments(
+          new THREE.EdgesGeometry(new THREE.BoxGeometry(2, 2, 2)),
+          new THREE.LineBasicMaterial({ color: new THREE.Color().setHSL(0.15 - 0.15 * w, 0.9, 0.55) }));
+        o.add(box); wearVols.push(box);
+      }
+    });
+    scene.add(root);
+    document.getElementById('title').textContent = name;
+    buildPartList(); apply(); frame();
+    document.getElementById('status').textContent = `${name} · drop a .glb to replace`;
+  }, err => { document.getElementById('status').textContent = `Load failed: ${err.message || err}`; });
+}
+
+function buildPartList() {
+  const el = document.getElementById('parts'); el.innerHTML = '';
+  for (const name of [...new Set(parts.map(p => p.part))]) {
+    const row = document.createElement('label');
+    row.innerHTML = `<input type="checkbox" checked> ${name} <span class="tris"></span>`;
+    row.querySelector('input').onchange = e => { e.target.checked ? state.hidden.delete(name) : state.hidden.add(name); apply(); };
+    row.dataset.part = name; el.append(row);
+  }
+}
+
+function apply() {
+  for (const p of parts) {
+    p.obj.visible = p.lod === state.lod && !state.hidden.has(p.part);
+    const mat = state.mode === 'lit' ? p.obj.userData.orig : modeMats[state.mode];
+    p.obj.material = mat;
+  }
+  for (const m of [...Object.values(modeMats), ...parts.map(p => p.obj.userData.orig)]) {
+    m.wireframe = state.wire;
+    if ('envMapIntensity' in m) m.envMapIntensity = state.env;
+  }
+  for (const b of wearVols) b.visible = state.wear;
+  scene.environment = envs[state.envName];
+  for (const row of document.querySelectorAll('#parts label')) {
+    const p = parts.find(p => p.part === row.dataset.part && p.lod === state.lod);
+    row.querySelector('.tris').textContent = p ? `${p.tris.toLocaleString()} tris` : '—';
+  }
+}
+
+function frame() {
+  const box = new THREE.Box3();
+  for (const p of parts) if (p.lod === 'low') box.expandByObject(p.obj);
+  const c = box.getCenter(new THREE.Vector3()), r = box.getSize(new THREE.Vector3()).length() / 2;
+  controls.target.copy(c);
+  camera.position.copy(c).add(new THREE.Vector3(1, 0.4, 0.6).normalize().multiplyScalar(r * 3.2));
+  controls.update();
+}
+
+function seg(id, keyName) {
+  const el = document.getElementById(id);
+  el.onclick = e => {
+    if (!e.target.dataset.v) return;
+    for (const b of el.children) b.classList.toggle('on', b === e.target);
+    state[keyName] = e.target.dataset.v; apply();
+  };
+}
+seg('lod', 'lod'); seg('mode', 'mode'); seg('envsel', 'envName');
+document.getElementById('wire').onchange = e => { state.wire = e.target.checked; apply(); };
+document.getElementById('wear').onchange = e => { state.wear = e.target.checked; apply(); };
+document.getElementById('exposure').oninput = e => {
+  renderer.toneMappingExposure = 2 ** +e.target.value;
+  document.getElementById('exposure_v').textContent = renderer.toneMappingExposure.toFixed(2);
+};
+document.getElementById('env').oninput = e => {
+  state.env = +e.target.value; apply();
+  document.getElementById('env_v').textContent = state.env.toFixed(2);
+};
+
+const drop = document.getElementById('drop');
+addEventListener('dragover', e => { e.preventDefault(); drop.style.display = 'flex'; });
+addEventListener('dragleave', e => { if (!e.relatedTarget) drop.style.display = 'none'; });
+addEventListener('drop', async e => {
+  e.preventDefault(); drop.style.display = 'none';
+  const f = e.dataTransfer.files[0]; if (f) load(await f.arrayBuffer(), f.name);
+});
+
+const model = new URLSearchParams(location.search).get('model') ?? '../../assets/test/pistol.glb';
+fetch(model).then(r => { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); })
+  .then(b => load(b, model.split('/').pop()))
+  .catch(() => {});
+
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+</script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+{
+  "height": 3.9,
+  "stacks": {
+    "ARC_boot": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.7874,
+        0.7874,
+        0.7678
+      ],
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.15,
+        "use": 0.4,
+        "streaks": 0.0
+      }
+    },
+    "ARC_buckle": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.0732,
+        0.0732,
+        0.0783
+      ],
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.15,
+        "use": 0.4,
+        "streaks": 0.0
+      }
+    },
+    "ARC_gear": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.0079,
+        0.0079,
+        0.0085
+      ],
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.15,
+        "use": 0.4,
+        "streaks": 0.0
+      }
+    },
+    "ARC_gearhi": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.022,
+        0.022,
+        0.0245
+      ],
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.15,
+        "use": 0.4,
+        "streaks": 0.0
+      }
+    },
+    "ARC_lining": {
+      "from": "MECH_rubber",
+      "overlay": "base",
+      "color": [
+        0.0027,
+        0.0027,
+        0.0031
+      ],
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.15,
+        "use": 0.4,
+        "streaks": 0.0
+      }
+    },
+    "ARC_neck": {
+      "from": "MECH_rubber",
+      "overlay": "base",
+      "color": [
+        0.0116,
+        0.0116,
+        0.0134
+      ],
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.15,
+        "use": 0.4,
+        "streaks": 0.0
+      }
+    },
+    "ARC_pad": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.0079,
+        0.0079,
+        0.0085
+      ],
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.15,
+        "use": 0.4,
+        "streaks": 0.0
+      }
+    },
+    "ARC_pockethi": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.022,
+        0.022,
+        0.0245
+      ],
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.15,
+        "use": 0.4,
+        "streaks": 0.0
+      }
+    },
+    "ARC_rubber": {
+      "from": "MECH_rubber",
+      "overlay": "base",
+      "color": [
+        0.0044,
+        0.0044,
+        0.0049
+      ],
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.15,
+        "use": 0.4,
+        "streaks": 0.0
+      }
+    },
+    "ARC_strap": {
+      "from": "MAT_polymer",
+      "overlay": "base",
+      "color": [
+        0.0783,
+        0.1005,
+        0.0301
+      ],
+      "weather": {
+        "flat_impacts": 0.3,
+        "large_edges": 0.35,
+        "detail": 0.5,
+        "crease": 0.5,
+        "dirt": 0.4,
+        "dust": 0.15,
+        "use": 0.4,
+        "streaks": 0.0
+      }
+    }
+  },
+  "slots": {
+    "boot": "ARC_boot",
+    "buckle": "ARC_buckle",
+    "gear": "ARC_gear",
+    "gearhi": "ARC_gearhi",
+    "lining": "ARC_lining",
+    "neck": "ARC_neck",
+    "pad": "ARC_pad",
+    "pockethi": "ARC_pockethi",
+    "rubber": "ARC_rubber",
+    "strap": "ARC_strap"
+  },
+  "tint": [],
+  "base_tint": false,
+  "wear": [
+    {
+      "bone": "pelvis",
+      "weight": 0.3
+    },
+    {
+      "bone": "fore",
+      "weight": 0.35
+    },
+    {
+      "bone": "thigh_L",
+      "weight": 0.3
+    },
+    {
+      "bone": "thigh_R",
+      "weight": 0.3
+    },
+    {
+      "bone": "shin",
+      "weight": 0.5
+    },
+    {
+      "bone": "shin__lod1",
+      "weight": 0.5
+    },
+    {
+      "bone": "boot",
+      "weight": 0.5
+    },
+    {
+      "bone": "boot__lod1",
+      "weight": 0.5
+    }
+  ],
+  "pinch": [],
+  "rams": false,
+  "tier_scale": {
+    "scorch": 0.0
+  },
+  "min_feature_px": 7,
+  "atlases": [
+    [
+      "vest",
+      "vestpads",
+      "neck",
+      "neck__lod1"
+    ],
+    [
+      "pelvis",
+      "fore"
+    ],
+    [
+      "thigh_L",
+      "thigh_R",
+      "shin",
+      "shin__lod1",
+      "boot",
+      "boot__lod1"
+    ]
+  ],
+  "targets": {}
+}

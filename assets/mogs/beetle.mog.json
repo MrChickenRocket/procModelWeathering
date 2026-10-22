@@ -1,0 +1,683 @@
+{
+ "mech": "beetle",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\beetle\\export",
+ "m_per_stud": 0.048988,
+ "atlases": 1,
+ "face_ranges": {
+  "Pelvis": [
+   "beetle_a1",
+   0,
+   4182
+  ],
+  "Chest": [
+   "beetle_a1",
+   4182,
+   10446
+  ],
+  "Neck": [
+   "beetle_a1",
+   10446,
+   10714
+  ],
+  "Head": [
+   "beetle_a1",
+   10714,
+   11650
+  ],
+  "Jaw": [
+   "beetle_a1",
+   11650,
+   12350
+  ],
+  "Jet": [
+   "beetle_a1",
+   12350,
+   14326
+  ],
+  "ElytraL": [
+   "beetle_a1",
+   14326,
+   15720
+  ],
+  "ElytraR": [
+   "beetle_a1",
+   15720,
+   17118
+  ],
+  "FThighL": [
+   "beetle_a1",
+   17118,
+   17590
+  ],
+  "FShinL": [
+   "beetle_a1",
+   17590,
+   18106
+  ],
+  "FMetaL": [
+   "beetle_a1",
+   18106,
+   18406
+  ],
+  "FToeL": [
+   "beetle_a1",
+   18406,
+   18822
+  ],
+  "FThighR": [
+   "beetle_a1",
+   18822,
+   19294
+  ],
+  "FShinR": [
+   "beetle_a1",
+   19294,
+   19810
+  ],
+  "FMetaR": [
+   "beetle_a1",
+   19810,
+   20110
+  ],
+  "FToeR": [
+   "beetle_a1",
+   20110,
+   20526
+  ],
+  "MThighL": [
+   "beetle_a1",
+   20526,
+   20998
+  ],
+  "MShinL": [
+   "beetle_a1",
+   20998,
+   21514
+  ],
+  "MMetaL": [
+   "beetle_a1",
+   21514,
+   21814
+  ],
+  "MToeL": [
+   "beetle_a1",
+   21814,
+   22230
+  ],
+  "MThighR": [
+   "beetle_a1",
+   22230,
+   22702
+  ],
+  "MShinR": [
+   "beetle_a1",
+   22702,
+   23218
+  ],
+  "MMetaR": [
+   "beetle_a1",
+   23218,
+   23518
+  ],
+  "MToeR": [
+   "beetle_a1",
+   23518,
+   23934
+  ],
+  "ThighL": [
+   "beetle_a1",
+   23934,
+   24406
+  ],
+  "ShinL": [
+   "beetle_a1",
+   24406,
+   24922
+  ],
+  "MetaL": [
+   "beetle_a1",
+   24922,
+   25222
+  ],
+  "ToeL": [
+   "beetle_a1",
+   25222,
+   25638
+  ],
+  "ThighR": [
+   "beetle_a1",
+   25638,
+   26110
+  ],
+  "ShinR": [
+   "beetle_a1",
+   26110,
+   26626
+  ],
+  "MetaR": [
+   "beetle_a1",
+   26626,
+   26926
+  ],
+  "ToeR": [
+   "beetle_a1",
+   26926,
+   27342
+  ],
+  "jetRam_1": [
+   "beetle_a1",
+   27342,
+   27418
+  ],
+  "jetRam_2": [
+   "beetle_a1",
+   27418,
+   27458
+  ],
+  "elytraRamL_1": [
+   "beetle_a1",
+   27458,
+   27534
+  ],
+  "elytraRamL_2": [
+   "beetle_a1",
+   27534,
+   27574
+  ],
+  "elytraRamR_1": [
+   "beetle_a1",
+   27574,
+   27650
+  ],
+  "elytraRamR_2": [
+   "beetle_a1",
+   27650,
+   27690
+  ],
+  "fkneeL_1": [
+   "beetle_a1",
+   27690,
+   27766
+  ],
+  "fkneeL_2": [
+   "beetle_a1",
+   27766,
+   27806
+  ],
+  "fkneeL_3": [
+   "beetle_a1",
+   27806,
+   27846
+  ],
+  "fkneeR_1": [
+   "beetle_a1",
+   27846,
+   27922
+  ],
+  "fkneeR_2": [
+   "beetle_a1",
+   27922,
+   27962
+  ],
+  "fkneeR_3": [
+   "beetle_a1",
+   27962,
+   28002
+  ],
+  "mkneeL_1": [
+   "beetle_a1",
+   28002,
+   28078
+  ],
+  "mkneeL_2": [
+   "beetle_a1",
+   28078,
+   28118
+  ],
+  "mkneeL_3": [
+   "beetle_a1",
+   28118,
+   28158
+  ],
+  "mkneeR_1": [
+   "beetle_a1",
+   28158,
+   28234
+  ],
+  "mkneeR_2": [
+   "beetle_a1",
+   28234,
+   28274
+  ],
+  "mkneeR_3": [
+   "beetle_a1",
+   28274,
+   28314
+  ],
+  "kneeL_1": [
+   "beetle_a1",
+   28314,
+   28390
+  ],
+  "kneeL_2": [
+   "beetle_a1",
+   28390,
+   28430
+  ],
+  "kneeL_3": [
+   "beetle_a1",
+   28430,
+   28470
+  ],
+  "kneeR_1": [
+   "beetle_a1",
+   28470,
+   28546
+  ],
+  "kneeR_2": [
+   "beetle_a1",
+   28546,
+   28586
+  ],
+  "kneeR_3": [
+   "beetle_a1",
+   28586,
+   28626
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 1,
+  "Neck": 1,
+  "Head": 1,
+  "Jaw": 1,
+  "Jet": 1,
+  "ElytraL": 1,
+  "ElytraR": 1,
+  "FThighL": 1,
+  "FShinL": 1,
+  "FMetaL": 1,
+  "FToeL": 1,
+  "FThighR": 1,
+  "FShinR": 1,
+  "FMetaR": 1,
+  "FToeR": 1,
+  "MThighL": 1,
+  "MShinL": 1,
+  "MMetaL": 1,
+  "MToeL": 1,
+  "MThighR": 1,
+  "MShinR": 1,
+  "MMetaR": 1,
+  "MToeR": 1,
+  "ThighL": 1,
+  "ShinL": 1,
+  "MetaL": 1,
+  "ToeL": 1,
+  "ThighR": 1,
+  "ShinR": 1,
+  "MetaR": 1,
+  "ToeR": 1,
+  "jetRam_1": 1,
+  "jetRam_2": 1,
+  "elytraRamL_1": 1,
+  "elytraRamL_2": 1,
+  "elytraRamR_1": 1,
+  "elytraRamR_2": 1,
+  "fkneeL_1": 1,
+  "fkneeL_2": 1,
+  "fkneeL_3": 1,
+  "fkneeR_1": 1,
+  "fkneeR_2": 1,
+  "fkneeR_3": 1,
+  "mkneeL_1": 1,
+  "mkneeL_2": 1,
+  "mkneeL_3": 1,
+  "mkneeR_1": 1,
+  "mkneeR_2": 1,
+  "mkneeR_3": 1,
+  "kneeL_1": 1,
+  "kneeL_2": 1,
+  "kneeL_3": 1,
+  "kneeR_1": 1,
+  "kneeR_2": 1,
+  "kneeR_3": 1
+ },
+ "stacks": [
+  "MECH_brass",
+  "MECH_gunmetal",
+  "MECH_paint_yellow",
+  "MECH_rubber",
+  "MECH_steel",
+  "MOG_beetle_blued",
+  "MOG_beetle_braid",
+  "MOG_beetle_flame",
+  "MOG_beetle_maroon",
+  "MOG_beetle_red",
+  "MOG_beetle_wrap"
+ ],
+ "config": {
+  "m_per_stud": 0.048988,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_beetle_red",
+   "gunmetal": "MECH_gunmetal",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MECH_glass",
+   "eye": "MOG_beetle_flame",
+   "decal": "MOG_beetle_red",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_brass"
+  },
+  "tint": [
+   {
+    "slot": "paint",
+    "stack": "MOG_beetle_maroon",
+    "bones": [
+     "Jaw"
+    ]
+   },
+   {
+    "slot": "paint",
+    "stack": "MOG_beetle_maroon",
+    "near": [
+     [
+      0.01,
+      2.02,
+      -0.75
+     ],
+     [
+      0.02,
+      2.42,
+      -1.65
+     ],
+     [
+      0,
+      1.27,
+      -2.72
+     ],
+     [
+      0.69,
+      2.1,
+      0.96
+     ]
+    ],
+    "mirror_x": true,
+    "within_studs": 0.03
+   },
+   {
+    "slot": "steel",
+    "stack": "MOG_beetle_blued",
+    "bones": [
+     "Jet"
+    ]
+   },
+   {
+    "slot": "gunmetal",
+    "stack": "MOG_beetle_blued",
+    "bones": [
+     "Jet"
+    ]
+   },
+   {
+    "slot": "rubber",
+    "stack": "MOG_beetle_wrap",
+    "bones": [
+     "Jet"
+    ]
+   },
+   {
+    "slot": "rubber",
+    "stack": "MOG_beetle_braid",
+    "bones": [
+     "Pelvis"
+    ]
+   }
+  ],
+  "wear": [
+   {
+    "bone": "FToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "FToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "MToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "MToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "Jaw",
+    "weight": 0.3
+   }
+  ],
+  "decals": {
+   "count": 60,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_beetle_red": 1.0,
+    "MECH_gunmetal": 0.45
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": [
+     {
+      "at": [
+       1.05,
+       2.0,
+       0.12
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "flame"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.98,
+       2.0,
+       0.98
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "hotsurface"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       1.19,
+       2.0,
+       -0.75
+      ],
+      "mirror_x": true,
+      "kinds": [
+       "redhatch"
+      ],
+      "count": 1
+     },
+     {
+      "at": [
+       0.48,
+       2.07,
+       1.27
+      ],
+      "mirror_x": false,
+      "kinds": [
+       "refband"
+      ],
+      "count": 1
+     }
+    ]
+   },
+   "scale": 1.0
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.25,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.9,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 1.0,
+    "scorch": 0.221,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_beetle_red": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.4,
+      0.03,
+      0.022
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MOG_beetle_maroon": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.14,
+      0.015,
+      0.015
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.3,
+     "large_edges": 0.35,
+     "detail": 0.5,
+     "crease": 0.5,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.8
+    }
+   },
+   "MECH_gunmetal": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.1,
+     "large_edges": 0.15,
+     "detail": 0.25,
+     "crease": 0.2,
+     "dirt": 0.6,
+     "dust": 0.35,
+     "use": 0.5
+    }
+   },
+   "MOG_beetle_blued": {
+    "from": "MAT_steel_blued",
+    "colors": {
+     "bluing": [
+      0.03,
+      0.028,
+      0.05
+     ]
+    }
+   },
+   "MOG_beetle_braid": {
+    "from": "MAT_anodized_alu",
+    "colors": {
+     "anodize": [
+      0.6,
+      0.61,
+      0.62
+     ]
+    },
+    "layers": {
+     "anodize": {
+      "metal": 0.9,
+      "rough": 0.42
+     }
+    }
+   },
+   "MOG_beetle_wrap": {
+    "from": "MECH_rubber",
+    "color": [
+     0.3,
+     0.23,
+     0.13
+    ]
+   },
+   "MOG_beetle_flame": {
+    "from": "MECH_eye",
+    "color": [
+     0.9,
+     0.25,
+     0.02
+    ]
+   }
+  }
+ }
+}
