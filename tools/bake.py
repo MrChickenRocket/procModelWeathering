@@ -45,6 +45,9 @@ MAPS = {
                       "cavity within ~0.75 mm, 1 = deep crease"),
     "concave_large": (1, "ao_inv", dict(distance=0.003, inside=False, only_local=True), AO_SAMPLES,
                       "cavity within ~3 mm"),
+    "concave_assembled": (1, "ao_inv", dict(distance=0.003, inside=False, only_local=False), AO_SAMPLES,
+                          "cavity within ~3 mm with all other parts present; minus concave_large, it is the contact "
+                          "line where another piece sits on or over this one"),
     "thickness": (1, "ao", dict(distance=0.01, inside=True, only_local=True), AO_SAMPLES,
                   "material thickness up to 10 mm, 1 = thick"),
     "matid": (1, "matid", {}, 1, "index into meta materials as (i + 0.5) / MATID_SCALE; multi-material parts only"),
@@ -182,7 +185,7 @@ def bake_map(name, low, high, image, highs):
 
     saved = {h: list(h.data.materials) for h in highs}
     if kind == "matid":
-        for h in (high,):
+        for h in high:
             for i, m in enumerate(saved[h]):
                 h.data.materials[i] = matid_material(args["materials"].index(m.name))
     elif kind is not None:
@@ -191,7 +194,8 @@ def bake_map(name, low, high, image, highs):
             set_all_slots(h, mat)
 
     bpy.ops.object.select_all(action='DESELECT')
-    high.select_set(True)
+    for h in high:
+        h.select_set(True)
     low.select_set(True)
     bpy.context.view_layer.objects.active = low
 
@@ -297,7 +301,9 @@ def main():
     setup_cycles()
 
     lows = {o.name[:-4]: o for o in bpy.data.collections["low"].objects if o.name.endswith("_low")}
-    highs = {o.name[:-5]: o for o in bpy.data.collections["high"].objects if o.name.endswith("_high")}
+    highs = {}
+    for o in bpy.data.collections["high"].objects:
+        highs.setdefault(o.get("part", o.name[:-5]), []).append(o)
     wanted = [p for p in args.parts.split(",") if p] or sorted(lows)
 
     # Low meshes overlap the highs; they must not occlude AO rays.
@@ -319,7 +325,7 @@ def main():
         if args.maps:
             with np.load(os.path.join(part_dir, "maps.npz")) as old:
                 maps = {k: old[k].astype(np.float32) for k in old.files}
-        maps.update({name: bake_map(name, low, high, image, list(highs.values())) for name in names})
+        maps.update({name: bake_map(name, low, high, image, [h for hs in highs.values() for h in hs]) for name in names})
 
         set_all_slots(low, *low_mats)
         bpy.data.images.remove(image)

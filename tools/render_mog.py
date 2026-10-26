@@ -160,6 +160,14 @@ shoot("head", head_c, (0.8, 0.9, 0.35), head_r * 5.0)
 legs = co[co[:, 2] < lo[2] + 0.55 * height]
 legs_c = (legs.min(0) + legs.max(0)) / 2
 shoot("legs", legs_c, (0.9, 0.6, 0.25), np.linalg.norm(legs.max(0) - legs.min(0)) * 1.2)
+top = co[co[:, 2] > lo[2] + 0.62 * height]
+sh = top[top[:, 0] > np.percentile(top[:, 0], 80)]
+if len(sh):
+    shoot("shoulder", (sh.min(0) + sh.max(0)) / 2, (0.8, 0.55, 0.45), np.linalg.norm(sh.max(0) - sh.min(0)) * 1.6)
+knee = co[np.abs(co[:, 2] - (lo[2] + 0.28 * height)) < 0.08 * height]
+knee = knee[knee[:, 0] > np.median(knee[:, 0])]
+if len(knee):
+    shoot("knee", (knee.min(0) + knee.max(0)) / 2, (0.7, 0.8, 0.3), np.linalg.norm(knee.max(0) - knee.min(0)) * 1.8)
 
 
 def bone_box(bone):

@@ -150,7 +150,7 @@ GRIME = dict(color=(0.018, 0.015, 0.012), rough=0.75)
 
 
 def register(defs):
-    """Per-mog stacks from a config's "stacks": {name: {from, color: base rgb, rough: base roughness, overlay, colors: {layer: rgb}, layers: {layer: {key: value}},
+    """Per-mog stacks from a config's "stacks": {name: {from, color: base rgb, rough: base roughness, overlay, emissive: mask strength 0..1, colors: {layer: rgb}, layers: {layer: {key: value}},
     weather: {<Params field>: multiplier, flat_impacts, large_edges: multiplier}}}. weather scales the tier's parameters on this
     stack only; light paints show every mark, so they need less wear than dark ones.
     Runs in each sim worker; spawned processes don't see registrations made in the parent."""
@@ -168,6 +168,8 @@ def register(defs):
             s["overlay"] = d["overlay"]
         if "weave" in d:
             s["weave"] = d["weave"]
+        if "emissive" in d:
+            s["emissive"] = d["emissive"]
         s["weather"] = d.get("weather", {})
         STACKS[name] = s
 DUST = dict(color=(0.30, 0.27, 0.22), rough=0.92)

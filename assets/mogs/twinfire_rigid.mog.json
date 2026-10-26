@@ -1,0 +1,373 @@
+{
+ "mech": "twinfire",
+ "src": "C:\\Repos\\procModelWeathering\\build\\gri_src\\twinfire\\export",
+ "m_per_stud": 0.124,
+ "atlases": 3,
+ "face_ranges": {
+  "Torso": [
+   "twinfire_a1",
+   0,
+   2916
+  ],
+  "Neck": [
+   "twinfire_a1",
+   2916,
+   3348
+  ],
+  "ShoulderL": [
+   "twinfire_a1",
+   3348,
+   3796
+  ],
+  "ShoulderR": [
+   "twinfire_a1",
+   3796,
+   4244
+  ],
+  "UpperL": [
+   "twinfire_a1",
+   4244,
+   5032
+  ],
+  "UpperR": [
+   "twinfire_a1",
+   5032,
+   5820
+  ],
+  "ForeL": [
+   "twinfire_a1",
+   5820,
+   6608
+  ],
+  "ForeR": [
+   "twinfire_a1",
+   6608,
+   7396
+  ],
+  "Pelvis": [
+   "twinfire_a2",
+   0,
+   1860
+  ],
+  "ThighL": [
+   "twinfire_a2",
+   1860,
+   2996
+  ],
+  "ThighR": [
+   "twinfire_a2",
+   2996,
+   4132
+  ],
+  "ShinL": [
+   "twinfire_a2",
+   4132,
+   5276
+  ],
+  "ShinR": [
+   "twinfire_a2",
+   5276,
+   6420
+  ],
+  "BootL": [
+   "twinfire_a2",
+   6420,
+   7524
+  ],
+  "BootR": [
+   "twinfire_a2",
+   7524,
+   8628
+  ],
+  "ToeL": [
+   "twinfire_a2",
+   8628,
+   9228
+  ],
+  "ToeR": [
+   "twinfire_a2",
+   9228,
+   9828
+  ],
+  "Head": [
+   "twinfire_a3",
+   0,
+   2614
+  ]
+ },
+ "atlas_of": {
+  "Torso": 1,
+  "Neck": 1,
+  "ShoulderL": 1,
+  "ShoulderR": 1,
+  "UpperL": 1,
+  "UpperR": 1,
+  "ForeL": 1,
+  "ForeR": 1,
+  "Pelvis": 2,
+  "ThighL": 2,
+  "ThighR": 2,
+  "ShinL": 2,
+  "ShinR": 2,
+  "BootL": 2,
+  "BootR": 2,
+  "ToeL": 2,
+  "ToeR": 2,
+  "Head": 3
+ },
+ "stacks": [
+  "MOG_twf_glass",
+  "MOG_twf_glow",
+  "MOG_twf_gunmetal",
+  "MOG_twf_paint",
+  "MOG_twf_paint2",
+  "MOG_twf_rubber"
+ ],
+ "config": {
+  "m_per_stud": 0.124,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_twf_paint",
+   "gunmetal": "MOG_twf_gunmetal",
+   "steel": "MOG_twf_steel",
+   "rubber": "MOG_twf_rubber",
+   "glass": "MOG_twf_glass",
+   "eye": "MOG_twf_glow",
+   "decal": "MOG_twf_paint",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper",
+   "paint2": "MOG_twf_paint2",
+   "glow": "MOG_twf_glow",
+   "cloth": "MOG_twf_cloth"
+  },
+  "tint": [],
+  "wear": [],
+  "decals": {
+   "count": 0,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_twf_paint": 1.0
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": []
+   },
+   "scale": 1.0
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.175,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.03,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "ridge": 1.0,
+    "cavity": 1.0,
+    "ridge_mm": 4.0,
+    "min_feature_px": 10
+   },
+   "scarred": {
+    "age": 0.63,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 0.5,
+    "scorch": 0.0,
+    "streaks": 0.24,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 10
+   }
+  },
+  "stacks": {
+   "MOG_twf_paint": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.6038,
+      0.1873,
+      0.0432
+     ],
+     "primer": [
+      0.05,
+      0.06,
+      0.08
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.55
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.2,
+     "large_edges": 0.45,
+     "detail": 0.45,
+     "crease": 0.45,
+     "use": 0.45,
+     "dirt": 0.5,
+     "dust": 0.45,
+     "streaks": 0.0
+    }
+   },
+   "MOG_twf_paint2": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.214,
+      0.2049,
+      0.1873
+     ],
+     "primer": [
+      0.05,
+      0.06,
+      0.08
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.55
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.2,
+     "large_edges": 0.45,
+     "detail": 0.45,
+     "crease": 0.45,
+     "use": 0.45,
+     "dirt": 0.5,
+     "dust": 0.45,
+     "streaks": 0.0
+    }
+   },
+   "MOG_twf_gunmetal": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "topcoat": [
+      0.1329,
+      0.126,
+      0.1193
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.2,
+     "large_edges": 0.12,
+     "detail": 0.45,
+     "crease": 0.3,
+     "dirt": 0.5,
+     "dust": 0.2,
+     "use": 0.45
+    }
+   },
+   "MOG_twf_rubber": {
+    "from": "MECH_rubber",
+    "color": [
+     0.0732,
+     0.0732,
+     0.0732
+    ]
+   },
+   "MOG_twf_glow": {
+    "from": "MECH_eye",
+    "color": [
+     1.0,
+     0.3185,
+     0.0039
+    ]
+   },
+   "MOG_twf_steel": {
+    "from": "MECH_steel",
+    "color": [
+     0.2633,
+     0.2738,
+     0.2957
+    ]
+   },
+   "MOG_twf_glass": {
+    "from": "MECH_eye",
+    "color": [
+     1.0,
+     0.3185,
+     0.0039
+    ]
+   },
+   "MOG_twf_cloth": {
+    "from": "MAT_fabric",
+    "color": [
+     0.0732,
+     0.0637,
+     0.055
+    ],
+    "weave": {
+     "cell_mm": 3.0,
+     "height_um": 220
+    },
+    "weather": {
+     "crease": 0.1,
+     "dirt": 0.1,
+     "dust": 0.0,
+     "use": 0.2,
+     "detail": 0.15,
+     "streaks": 0.0,
+     "flat_impacts": 0.0,
+     "large_edges": 0.0,
+     "age": 0.4,
+     "edge_band": 0.0,
+     "fine_edge": 0.0
+    }
+   }
+  },
+  "atlases": [
+   [
+    "Torso",
+    "Neck",
+    "ShoulderL",
+    "ShoulderR",
+    "UpperL",
+    "UpperR",
+    "ForeL",
+    "ForeR"
+   ],
+   [
+    "Pelvis",
+    "ThighL",
+    "ThighR",
+    "ShinL",
+    "ShinR",
+    "BootL",
+    "BootR",
+    "ToeL",
+    "ToeR"
+   ],
+   [
+    "Head"
+   ]
+  ],
+  "ao_per_piece": true,
+  "equalize": false
+ }
+}

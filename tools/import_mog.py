@@ -12,6 +12,7 @@ import json
 import os
 import sys
 
+import bmesh
 import bpy
 import numpy as np
 from mathutils import Matrix
@@ -264,12 +265,35 @@ def main():
         uv_unwrap(low, weight[sel])
         lows.append(low)
         part_w.append(weight[sel])
-    density = equalize_density(lows, part_w)
+    if cfg.get("equalize", True):
+        density = equalize_density(lows, part_w)
+    else:
+        # Each atlas keeps its own density: a lone helmet fills its atlas instead of matching the body's.
+        density = min(_density(o.data, w) for o, w in zip(lows, part_w))
     for low in lows:
-        high = low.copy()
-        high.data = low.data.copy()
-        high.name = high.data.name = low.name[:-4] + "_high"
-        high_col.objects.link(high)
+        if not cfg.get("ao_per_piece"):
+            high = low.copy()
+            high.data = low.data.copy()
+            high.name = high.data.name = low.name[:-4] + "_high"
+            high["part"] = low.name[:-4]
+            high_col.objects.link(high)
+            continue
+        # One high per piece: the bake's only_local maps (colour AO, convexity, thickness) then see each rigid piece
+        # alone, so joint overlaps don't bake dark. ao_assembled still sees everything.
+        bid = np.empty(len(low.data.polygons), np.int32)
+        low.data.attributes["bone_id"].data.foreach_get("value", bid)
+        for b in np.unique(bid):
+            bm = bmesh.new()
+            bm.from_mesh(low.data)
+            layer = bm.faces.layers.int["bone_id"]
+            bmesh.ops.delete(bm, geom=[f for f in bm.faces if f[layer] != b], context='FACES')
+            me = low.data.copy()
+            bm.to_mesh(me)
+            bm.free()
+            high = bpy.data.objects.new(f"{low.name[:-4]}_high_{b}", me)
+            me.name = high.name
+            high["part"] = low.name[:-4]
+            high_col.objects.link(high)
 
     for wi, w in enumerate(cfg.get("wear", [])):
         if "box" in w:

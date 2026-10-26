@@ -16,7 +16,7 @@ from scipy.spatial import cKDTree
 from . import decals, materials
 from .composite import shade, write_outputs
 from .noise import fbm
-from .wear import Params, Part, simulate
+from .wear import FOLD3D_FRAC, Params, Part, curvature3d, folds3d, simulate
 
 MATID_SCALE = 32  # tools/bake.py
 
@@ -153,6 +153,17 @@ def patterns(part, mid, rules, m_per_stud, log):
     return mid
 
 
+def burn_field(P, burns, m_per_stud):
+    """Scorch from fixed heat sources: [{"at": [x, y, z] Roblox studs, "radius_studs": r}], full strength within
+    a third of r, gone at r."""
+    out = np.zeros(len(P), np.float32)
+    for b in burns:
+        c = (RBX_TO_BLENDER @ np.array(b["at"], np.float64)) * m_per_stud
+        d = np.linalg.norm(P - c, axis=1) / (b["radius_studs"] * m_per_stud)
+        out = np.maximum(out, b.get("strength", 1.0) * np.clip((1 - d) / (1 - 1 / 3), 0, 1) ** 1.5)
+    return out
+
+
 def run_part(bake_dir, out_dir, name, material, prm, vols, stacks=None, mog=None):
     lines = []
     t = time.time()
@@ -162,6 +173,23 @@ def run_part(bake_dir, out_dir, name, material, prm, vols, stacks=None, mog=None
         # In place: composite imported the SOOT dict by name. Ice mogs turn it into frost.
         materials.SOOT.update(color=tuple(mog["soot"]["color"]), rough=mog["soot"].get("rough", materials.SOOT["rough"]))
     part = Part(os.path.join(bake_dir, name), material)
+    if prm.ridge > 0 or prm.cavity > 0:
+        # On the whole atlas before it splits by material, so seams between pieces of different slots register.
+        n = part.maps["normal_obj"].astype(np.float64)
+        n /= np.maximum(np.linalg.norm(n, axis=1, keepdims=True), 1e-12)
+        part.maps["curv3d"], part.maps["occl3d"] = curvature3d(part.pos, n, prm.ridge_mm / 1000)
+        part.maps["fold_cvx3d"], part.maps["fold_ccv3d"] = folds3d(part.pos, n, FOLD3D_FRAC * prm.ridge_mm / 1000)
+    for key, d in (("grime", materials.GRIME), ("dust", materials.DUST)):
+        # In place, like SOOT: composite imported these dicts by name. Ice characters turn grime into rime.
+        if mog and key in mog:
+            d.update(color=tuple(mog[key]["color"]), rough=mog[key].get("rough", d["rough"]))
+    if mog and "haze" in mog:
+        # Grime rising from the ground: full at the feet, gone at below_studs (Roblox y).
+        h = mog["haze"]
+        y = part.pos[:, 2] / mog["m_per_stud"]
+        part.maps["haze"] = (h.get("strength", 0.5) * np.clip(1 - y / h["below_studs"], 0, 1)).astype(np.float32)
+    if mog and "burns" in mog:
+        part.maps["burn"] = burn_field(part.pos, mog["burns"], mog["m_per_stud"])
     if "matid" in part.maps and len(part.meta.get("materials", [])) > 1:
         F, out = run_atlas(part, stacks or {}, prm, vols, mog, lines.append)
     else:

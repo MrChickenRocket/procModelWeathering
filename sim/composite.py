@@ -11,8 +11,8 @@ from .noise import fbm, smoothstep
 from .wear import scale_params
 
 AO_STRENGTH = 0.75
-DEBUG_FIELDS = ("contact", "coat", "wear", "rust", "impact", "scratch", "grime", "dust", "polymer_wear", "rounding",
-                "scorch", "streaks", "decal_alpha", "lip", "edge_band")
+DEBUG_FIELDS = ("fray", "contact", "coat", "wear", "rust", "impact", "scratch", "grime", "dust", "polymer_wear", "rounding",
+                "scorch", "streaks", "decal_alpha", "lip", "edge_band", "ridge", "relief_mm")
 DEBUG_SIZE = 1024
 
 
@@ -126,6 +126,13 @@ def _shade(part, F, prm, raw=False):
         detail = detail * (1 - 0.8 * pw)
         flatten = 0.75 * pw
 
+    if not clean and "fray" in F:
+        fr = F["fray"]
+        lum = col.mean(1, keepdims=True)
+        col = _mix(col, 0.5 * (col + lum) * 1.7 + 0.02, 0.8 * fr)
+        rough = rough + 0.08 * fr
+        detail = detail * (1 - 0.6 * fr) + 0.05 * fr * (fbm(P, 2500, 2, seed + 8) - 0.5)
+
     r = smoothstep(0.05, 0.8, F["rust"])
     rust_var = 0.65 + 0.7 * fbm(P, 1500, 3, seed + 6)
     corr = base.get("corrosion", RUST)
@@ -197,7 +204,7 @@ def _shade(part, F, prm, raw=False):
     st = F["streaks"] * 0.7 * (not clean)
     col = _mix(col, GRIME["color"], st)
     rough = _mix(rough, GRIME["rough"], 0.6 * st)
-    height = level + detail + F["dent_mm"] - 0.008 * scratch
+    height = level + detail + F["dent_mm"] + F.get("relief_mm", 0) - 0.008 * scratch
 
     g = F["grime"] * 0.85 * (not clean)
     col = _mix(col, GRIME["color"], g)
@@ -218,7 +225,7 @@ def _shade(part, F, prm, raw=False):
     F["rounding"] = rounding
     return dict(color=col if raw else np.clip(col, 0, 1), metal=np.clip(metal, 0, 1),
                 rough=np.clip(rough, 0.02, 1), height_mm=height, flatten=flatten, rounding=rounding,
-                emissive=np.full(N, float(base.get("emissive", False)), np.float32))
+                emissive=np.full(N, float(stack.get("emissive", base.get("emissive", False))), np.float32))
 
 
 def scatter(part, v, fill=0.0):

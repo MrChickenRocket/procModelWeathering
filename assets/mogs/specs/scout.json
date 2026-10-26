@@ -1,0 +1,176 @@
+{
+  "height": 1.6,
+  "stacks": {
+    "MOG_sc_plate": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.2051,
+          0.2307,
+          0.117
+        ],
+        "primer": [
+          0.07,
+          0.075,
+          0.07
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.62
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.12,
+        "large_edges": 0.3,
+        "detail": 0.3,
+        "crease": 0.35,
+        "use": 0.25,
+        "dirt": 0.45,
+        "dust": 0.45,
+        "streaks": 0.0
+      }
+    },
+    "MOG_sc_pack": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "topcoat": [
+          0.0452,
+          0.0513,
+          0.0356
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.6,
+          "metal": 0.0
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.06,
+        "large_edges": 0.12,
+        "detail": 0.2,
+        "crease": 0.3,
+        "dirt": 0.45,
+        "dust": 0.4,
+        "use": 0.3
+      }
+    },
+    "MOG_sc_fabric": {
+      "from": "MAT_fabric",
+      "color": [
+        0.0194,
+        0.0203,
+        0.0176
+      ],
+      "weave": {
+        "cell_mm": 1.53,
+        "height_um": 120
+      },
+      "weather": {
+        "crease": 0.1,
+        "dirt": 0.1,
+        "dust": 0.0,
+        "use": 0.2,
+        "detail": 0.15,
+        "streaks": 0.0,
+        "flat_impacts": 0.0,
+        "large_edges": 0.0,
+        "age": 0.4,
+        "edge_band": 0.0,
+        "fine_edge": 0.0
+      }
+    },
+    "MOG_sc_cloth": {
+      "from": "MAT_fabric",
+      "color": [
+        0.107,
+        0.1195,
+        0.0595
+      ],
+      "rough": 0.92,
+      "weave": {
+        "cell_mm": 3.0,
+        "height_um": 250
+      },
+      "weather": {
+        "crease": 0.1,
+        "dirt": 0.3,
+        "dust": 0.4,
+        "use": 0.2,
+        "detail": 0.15,
+        "streaks": 0.0,
+        "flat_impacts": 0.0,
+        "large_edges": 0.0,
+        "age": 0.6,
+        "edge_band": 0.0,
+        "fine_edge": 0.0
+      }
+    },
+    "MOG_sc_rubber": {
+      "from": "MECH_rubber",
+      "color": [
+        0.007,
+        0.007,
+        0.007
+      ]
+    },
+    "MOG_sc_glow": {
+      "from": "MECH_eye",
+      "color": [
+        1.0,
+        0.3515,
+        0.0144
+      ]
+    }
+  },
+  "slots": {
+    "paint": "MOG_sc_plate",
+    "decal": "MOG_sc_plate",
+    "gunmetal": "MOG_sc_pack",
+    "steel": "MECH_steel",
+    "fabric": "MOG_sc_fabric",
+    "cloth": "MOG_sc_cloth",
+    "rubber": "MOG_sc_rubber",
+    "eye": "MOG_sc_glow"
+  },
+  "tint": [],
+  "base_tint": false,
+  "rams": false,
+  "pinch": [],
+  "decals": {
+    "count": 0
+  },
+  "targets": {
+    "MOG_sc_plate": 1.0
+  },
+  "wear": [],
+  "tier_scale": {
+    "scorch": 0.0,
+    "scratch_cut": 0.5,
+    "age": 0.7,
+    "streaks": 0.3
+  },
+  "min_feature_px": 20,
+  "atlases": [
+    [
+      "Upper"
+    ],
+    [
+      "Lower"
+    ]
+  ],
+  "tier_set": {
+    "minimal": {
+      "ridge": 1.0,
+      "cavity": 1.0,
+      "ridge_mm": 4.0
+    }
+  },
+  "ao_per_piece": true
+}

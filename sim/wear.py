@@ -37,6 +37,7 @@ FOLD_DEG = (6.0, 25.0)
 FOLD_SHARP_DEG = 35.0
 FOLD_RADIUS_PX = 3
 FOLD_FINE_RADIUS_PX = 1
+FOLD3D_FRAC = 0.4  # fold search radius as a fraction of ridge_mm
 
 
 @dataclass
@@ -58,6 +59,17 @@ class Params:
     edge_band: float = 0.0     # broad, patchy wear along hard edges and sharp folds (armour shoulders, chamfers)
     fine_edge: float = 0.0     # hairline wear along shallow folds (faceted shells), where a broad band reads as blotches
     edge_band_mm: float = 4.0  # band half-width; scale with the asset (4 mm at the mech's 40 mm/stud is 0.1 stud)
+    ridge: float = 0.0         # crisp worn line on every convex bevel and ridge from 3D curvature, smooth-shaded or not
+    cavity: float = 0.0        # dark grime line in every concave crease, panel line and plate-on-plate seam
+    ridge_mm: float = 4.0      # curvature measuring radius; about the bevel radius, scale with the asset
+    rivets: float = 0.0        # domed rivet rows inset from plate rims (painted layers only); their crowns chip
+    rivet_mm: float = 2.6      # rivet head radius
+    rivet_pitch_mm: float = 14.0
+    rivet_inset_mm: float = 4.5
+    seams: float = 0.0         # scribed panel line further in from the rim on plates big enough to hold one
+    seam_inset_mm: float = 9.0
+    seam_mm: float = 0.6       # groove half-width
+    fray: float = 0.0          # fabric bases only: bleached, fuzzy, broken-up threads along torn and folded edges
     min_feature_px: float = 0.0  # chip radius and micro-noise floor in texels, for coarse atlases; a stack's weather may set it
 
 
@@ -139,6 +151,164 @@ def _fold_imgs(normal, pos, mask):
     return dict(fold_fine=widen(shallow.astype(np.float32), FOLD_FINE_RADIUS_PX),
                 fold_sharp=widen(smoothstep(FOLD_SHARP_DEG - 8, FOLD_SHARP_DEG, convex).astype(np.float32), 1),
                 fold_concave=widen(smoothstep(lo, hi, concave).astype(np.float32), FOLD_RADIUS_PX))
+
+
+def curvature3d(P, n, r_m):
+    """(curv, occl) at scale r_m from texel positions and smooth object normals, across UV seams.
+    curv: signed mean curvature times r_m (convex > 0); sees smooth-shaded bevels and hard edges alike. A bevel of
+    radius R reads about r_m / (2R).
+    occl: share of the surface within r_m that rises in front of the tangent plane, from any piece; creases and the
+    gap under an overhanging plate edge."""
+    v = r_m / 3
+    key = np.floor(P / v).astype(np.int64)
+    key -= key.min(0)
+    span = key.max(0) + 1
+    _, rep = np.unique((key[:, 0] * span[1] + key[:, 1]) * span[2] + key[:, 2], return_index=True)
+    S, nS = P[rep], n[rep]
+    tree = cKDTree(S)
+    d, j = tree.query(S, k=48, distance_upper_bound=r_m, workers=-1)
+    ok = np.isfinite(d) & (d > 0)
+    jj = np.where(ok, j, 0)
+    nj, dp = nS[jj], S[jj] - S[:, None]
+    g = np.exp(-(d / (0.6 * r_m)) ** 2)
+    rise = np.einsum("ikc,ic->ik", dp, nS) / np.maximum(d, 1e-12)
+    oS = np.where(ok, g * (rise > 0.35), 0).sum(1) / np.maximum(np.where(ok, g, 0).sum(1), 1e-12)
+    # Back faces of thin plates fall inside the radius and would read as a sharp ridge.
+    ok &= np.einsum("ikc,ic->ik", nj, nS) > -0.3
+    kij = np.einsum("ikc,ikc->ik", nj - nS[:, None], dp) / np.maximum(d, 1e-12) ** 2
+    w = np.where(ok, g, 0)
+    cS = (w * kij).sum(1) / np.maximum(w.sum(1), 1e-12) * r_m
+    curv = np.empty(len(P), np.float32)
+    occl = np.empty(len(P), np.float32)
+    for s in range(0, len(P), 1_000_000):
+        q = slice(s, s + 1_000_000)
+        d, j = tree.query(P[q], k=4, workers=-1)
+        w = np.exp(-(d / v) ** 2) * (np.einsum("ikc,ic->ik", nS[j], n[q]) > 0.5) + 1e-9
+        curv[q] = (w * cS[j]).sum(1) / w.sum(1)
+        occl[q] = (w * oS[j]).sum(1) / w.sum(1)
+    return curv, occl
+
+
+def folds3d(P, n, r_m):
+    """Largest convex and concave normal turn in degrees within r_m: hard facet folds and chamfers that the r_m-scale
+    curvature averages away, as a line about 2 r_m wide. Seams between separate pieces count when they touch."""
+    v = r_m / 2
+    key = np.floor(P / v).astype(np.int64)
+    key -= key.min(0)
+    span = key.max(0) + 1
+    _, rep = np.unique((key[:, 0] * span[1] + key[:, 1]) * span[2] + key[:, 2], return_index=True)
+    S, nS = P[rep], n[rep]
+    tree = cKDTree(S)
+    cvx = np.zeros(len(S), np.float32)
+    ccv = np.zeros(len(S), np.float32)
+    for s in range(0, len(S), 500_000):
+        q = slice(s, s + 500_000)
+        d, j = tree.query(S[q], k=24, distance_upper_bound=r_m, workers=-1)
+        ok = np.isfinite(d)
+        jj = np.where(ok, j, 0)
+        nj = nS[jj]
+        cos = np.einsum("ikc,ic->ik", nj, nS[q])
+        # Back faces of thin plates: see curvature3d.
+        ok &= cos > -0.3
+        ang = np.where(ok, np.degrees(np.arccos(np.clip(cos, -1, 1))), 0)
+        out = np.einsum("ikc,ikc->ik", nj - nS[q][:, None], S[jj] - S[q][:, None]) > 0
+        cvx[q] = np.where(out, ang, 0).max(1)
+        ccv[q] = np.where(out, 0, ang).max(1)
+    _, j = tree.query(P, k=1, workers=-1)
+    return cvx[j], ccv[j]
+
+
+def rim_distance(P, n, seeds, reach_m):
+    """(distance, seed) to the nearest seed texel on the same side of the part: inf and -1 beyond reach_m."""
+    sp = np.flatnonzero(seeds)
+    if not len(sp):
+        return np.full(len(P), np.inf), np.full(len(P), -1)
+    sp = sp[::max(1, len(sp) // 400_000)]
+    d, j = cKDTree(P[sp]).query(P, k=4, distance_upper_bound=reach_m, workers=-1)
+    ok = np.isfinite(d)
+    jj = np.where(ok, j, 0)
+    ok &= np.einsum("ikc,ic->ik", n[sp][jj], n) > 0.3
+    d = np.where(ok, d, np.inf)
+    k = d.argmin(1)
+    best = d[np.arange(len(P)), k]
+    return best, np.where(np.isfinite(best), sp[jj[np.arange(len(P)), k]], -1)
+
+
+def _straight(P, idx, r):
+    """Per index: how close the seed texels within r of it lie to a line (1 = straight rim, 0 = blob or corner)."""
+    tree = cKDTree(P[idx])
+    out = np.zeros(len(idx), np.float32)
+    for s in range(0, len(idx), 100_000):
+        q = slice(s, s + 100_000)
+        _, j = tree.query(P[idx[q]], k=24, distance_upper_bound=r, workers=-1)
+        ok = j < len(idx)
+        Q = P[idx][np.where(ok, j, 0)]
+        w = ok[..., None].astype(np.float64)
+        mu = (Q * w).sum(1) / np.maximum(w.sum(1), 1)
+        X = (Q - mu[:, None]) * w
+        ev = np.linalg.eigvalsh(np.einsum("ikc,ikd->icd", X, X))
+        out[q] = 1 - np.clip(ev[:, 1] / np.maximum(ev[:, 2], 1e-30) / 0.05, 0, 1)
+    return out
+
+
+def _spread(idx, P, pitch, rng):
+    """Greedy pick of idx in random order, keeping points at least pitch apart."""
+    keep, cells = [], {}
+    for i in rng.permutation(idx):
+        c = tuple(np.floor(P[i] / pitch).astype(np.int64))
+        if any(np.linalg.norm(P[j] - P[i]) < pitch for dc in np.ndindex(3, 3, 3)
+               for j in cells.get((c[0] + dc[0] - 1, c[1] + dc[1] - 1, c[2] + dc[2] - 1), ())):
+            continue
+        cells.setdefault(c, []).append(i)
+        keep.append(i)
+    return np.array(keep, np.int64)
+
+
+def hardware(P, n, m, curv, prm, texel, rng, seed):
+    """Rivet rows and panel seams placed from plate rims (3D folds and bevels). Returns (relief_mm, grime, crown):
+    crown is the rivet top, where paint chips first."""
+    N = len(P)
+    relief, grime, crown = (np.zeros(N, np.float32) for _ in range(3))
+    # A plate rim turns the surface 60 deg or more within ridge_mm (a chamfered corner is two 45 deg folds); a
+    # single 35 deg facet split inside a curved plate is not a rim.
+    seeds = folds3d(P, n, prm.ridge_mm / 1000)[0] > 60
+    inset_r, inset_s = prm.rivet_inset_mm / 1000, prm.seam_inset_mm / 1000
+    d, near_seed = rim_distance(P, n, seeds, 3 * max(inset_r, inset_s))
+    flat = (np.abs(curv) < 0.15) & (m["fold_cvx3d"] < 15)
+    tol = max(float(np.median(texel)), 0.12 * inset_r)
+    if prm.rivets > 0:
+        R = prm.rivet_mm / 1000
+        cand = np.flatnonzero(flat & (np.abs(d - inset_r) < tol))
+        cen = _spread(cand, P, prm.rivet_pitch_mm / 1000, rng) if len(cand) else np.zeros(0, np.int64)
+        if len(cen):
+            dist, j = cKDTree(P[cen]).query(P, k=1, distance_upper_bound=1.4 * R, workers=-1)
+            hit = np.isfinite(dist)
+            jj = cen[np.where(hit, j, 0)]
+            # Same surface only: not the back of a thin plate or a neighbour piece just behind.
+            hit &= (np.einsum("ic,ic->i", n[jj], n) > 0.7) & (np.abs(np.einsum("ic,ic->i", P - P[jj], n[jj])) < 0.5 * R)
+            rel = np.where(hit, dist / R, 9.0)
+            relief += (prm.rivets * 0.45 * R * 1000 * np.sqrt(np.clip(1 - rel ** 2, 0, 1))).astype(np.float32)
+            grime = np.maximum(grime, prm.rivets * 0.7 * smoothstep(1.4, 1.0, rel) * smoothstep(0.8, 1.0, rel))
+            worn = smoothstep(0.35, 0.75, fbm(P[jj], 40, 1, seed + 74))
+            crown = (smoothstep(0.75, 0.25, rel) * worn * (0.6 + 0.8 * fbm(P, 2500, 2, seed + 75))).astype(np.float32)
+    if prm.seams > 0:
+        # Only plates deep enough to leave a margin inside the line get one.
+        deep = np.flatnonzero(d > 2.2 * inset_s)
+        line = flat & (np.abs(d - inset_s) < prm.seam_mm / 1000 + 0.5 * tol)
+        if len(deep) and line.any():
+            li = np.flatnonzero(line)
+            near = np.isfinite(cKDTree(P[deep[::max(1, len(deep) // 300_000)]]).query(
+                P[li], k=1, distance_upper_bound=1.6 * inset_s, workers=-1)[0])
+            # Only alongside straight stretches of rim: offsets of tabs, slots and corners wobble.
+            ns = near_seed[li[near]]
+            useq, inv = np.unique(ns, return_inverse=True)
+            straight = _straight(P, useq, 2.5 * inset_s)[inv] > 0.5
+            near[np.flatnonzero(near)[~straight]] = False
+            g = np.zeros(N, np.float32)
+            g[li[near]] = smoothstep(prm.seam_mm / 1000 + 0.5 * tol, 0.3 * prm.seam_mm / 1000, np.abs(d[li[near]] - inset_s))
+            relief -= (prm.seams * 0.35 * g).astype(np.float32)
+            grime = np.maximum(grime, prm.seams * 0.8 * g * (0.7 + 0.3 * fbm(P, 400, 2, seed + 76)))
+    return relief, grime.astype(np.float32), crown
 
 
 def edge_band_field(P, n, seeds, width_m):
@@ -399,6 +569,8 @@ def simulate(part, vols, prm, log=print):
         if len(layers) > 1:
             F["T"][:, -2] *= 1 - prm.crease * 0.6 * smoothstep(0.45, 0.8, crease)
     F["scorch"] = scorch_field(P, n, prm, gseed) if prm.scorch > 0 else zeros()
+    if "burn" in m:
+        F["scorch"] = np.maximum(F["scorch"], m["burn"] * (0.75 + 0.5 * fbm(P, 150, 3, gseed + 58))).clip(0, 1)
     F["streaks"] = streak_field(P, n, m, prm, gseed) if prm.streaks > 0 else zeros()
     if layers and prm.scorch > 0:
         # Paint blisters off the hottest spots first; the primer only goes where it burnt hardest.
@@ -406,6 +578,40 @@ def simulate(part, vols, prm, log=print):
         F["T"][:, -1] *= 1 - smoothstep(0.8, 1.0, F["scorch"] + blister)
         if len(layers) > 1:
             F["T"][:, -2] *= 1 - smoothstep(0.95, 1.05, F["scorch"] + blister)
+
+    curv = None
+    if prm.ridge > 0 or prm.cavity > 0:
+        if "curv3d" not in m:
+            m = dict(m)
+            m["curv3d"], m["occl3d"] = curvature3d(P, n, prm.ridge_mm / 1000)
+            m["fold_cvx3d"], m["fold_ccv3d"] = folds3d(P, n, FOLD3D_FRAC * prm.ridge_mm / 1000)
+        curv = m["curv3d"]
+    F["ridge"] = zeros()
+    if layers and prm.ridge > 0:
+        # Hidden faces keep their paint; ao_assembled is not used as a factor, it damps every edge next to another plate.
+        seen = smoothstep(0.1, 0.4, m["ao_assembled"])
+        jag = 0.6 + 0.8 * fbm(P, 1600, 2, seed + 70)
+        runs = smoothstep(0.38, 0.6, fbm(P, 150, 3, seed + 71))
+        edge = np.maximum(smoothstep(0.2, 0.5, curv), smoothstep(FOLD_SHARP_DEG - 13, FOLD_SHARP_DEG + 3, m["fold_cvx3d"]))
+        s = edge * jag * (0.3 + 0.7 * runs) * seen
+        F["ridge"] = s.astype(np.float32)
+        F["T"][:, -1] *= 1 - prm.ridge * smoothstep(0.4, 0.6, s)
+        if len(layers) > 1:
+            F["T"][:, :-1] *= (1 - prm.ridge * smoothstep(0.6, 0.8, s))[:, None]
+
+    F["fray"] = zeros()
+    if stack["base"] == "fabric" and prm.fray > 0 and curv is not None:
+        edge = np.maximum(smoothstep(0.15, 0.45, curv), smoothstep(FOLD_SHARP_DEG - 18, FOLD_SHARP_DEG, m["fold_cvx3d"]))
+        tufts = smoothstep(0.35, 0.65, fbm(P, 900, 3, seed + 74))
+        F["fray"] = np.clip(prm.fray * edge * (0.4 + 0.6 * tufts) * smoothstep(0.1, 0.4, m["ao_assembled"]), 0, 1).astype(np.float32)
+
+    F["relief_mm"] = zeros()
+    hw_grime = None
+    if layers and curv is not None and (prm.rivets > 0 or prm.seams > 0):
+        F["relief_mm"], hw_grime, crown = hardware(P, n, m, curv, prm, part.texel, rng, seed)
+        F["T"][:, -1] *= 1 - 0.9 * smoothstep(0.3, 0.6, crown)
+        if len(layers) > 1:
+            F["T"][:, :-1] *= (1 - 0.9 * smoothstep(0.75, 0.95, crown))[:, None]
 
     F["layers"] = F.pop("T") / np.maximum(thick, 1e-6) if layers else np.zeros((N, 0), np.float32)
     flaky = [k for k, l in enumerate(layers) if l["profile"] == "voronoi"]
@@ -424,6 +630,16 @@ def simulate(part, vols, prm, log=print):
     grime_site = 0.9 * m["concave_large"] + 0.5 * m["concave_small"] + 0.6 * (1 - m["ao_assembled"]) + prm.crease * 0.6 * m["fold_concave"]
     F["grime"] = np.clip(prm.dirt * prm.age * 2.0 * grime_site * (1 - 0.8 * contact)
                          * smoothstep(0.3, 0.7, fbm(P, 300, 4, seed + 4)), 0, 1)
+    if "haze" in m:
+        F["grime"] = np.maximum(F["grime"], m["haze"] * smoothstep(0.25, 0.75, fbm(P, 120, 4, seed + 73)))
+    if curv is not None and prm.cavity > 0:
+        # Contact lines where another piece sits on or overhangs this one.
+        under = smoothstep(0.15, 0.4, m["concave_assembled"] - m["concave_large"]) if "concave_assembled" in m else zeros()
+        cav = np.maximum.reduce([smoothstep(0.06, 0.25, -curv), smoothstep(0.05, 0.2, m["occl3d"]), smoothstep(FOLD_SHARP_DEG - 13, FOLD_SHARP_DEG + 5, m["fold_ccv3d"]),
+                                 0.8 * under]) * (0.75 + 0.25 * fbm(P, 400, 3, seed + 72))
+        F["grime"] = np.maximum(F["grime"], np.clip(prm.cavity * cav, 0, 1))
+    if hw_grime is not None:
+        F["grime"] = np.maximum(F["grime"], hw_grime)
     up = np.clip(n[:, 2], 0, 1) ** 2
     F["dust"] = np.clip(prm.dust * prm.age * 2.5 * up * m["ao_assembled"] * (1 - contact)
                         * smoothstep(0.3, 0.7, fbm(P, 600, 4, seed + 5)), 0, 1).astype(np.float32)

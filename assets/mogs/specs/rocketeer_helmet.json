@@ -1,0 +1,188 @@
+{
+  "height": 1.6,
+  "stacks": {
+    "MOG_rkth_shell": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.0685,
+          0.0742,
+          0.0844
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.5
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.1,
+        "large_edges": 0.3,
+        "detail": 0.3,
+        "crease": 0.45,
+        "use": 0.25,
+        "dirt": 0.45,
+        "dust": 0.2
+      }
+    },
+    "MOG_rkth_frame": {
+      "from": "MECH_gunmetal",
+      "colors": {
+        "topcoat": [
+          0.0232,
+          0.0252,
+          0.0296
+        ],
+        "primer": [
+          0.1,
+          0.1,
+          0.097
+        ]
+      },
+      "weather": {
+        "flat_impacts": 0.06,
+        "large_edges": 0.12,
+        "detail": 0.2,
+        "crease": 0.3,
+        "dirt": 0.45,
+        "dust": 0.2,
+        "use": 0.3
+      }
+    },
+    "MOG_rkth_trim": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.3325,
+          0.3467,
+          0.3663
+        ],
+        "primer": [
+          0.05,
+          0.06,
+          0.08
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.5
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.1,
+        "large_edges": 0.3,
+        "detail": 0.3,
+        "crease": 0.45,
+        "use": 0.25,
+        "dirt": 0.45,
+        "dust": 0.2
+      }
+    },
+    "MOG_rkth_orange": {
+      "from": "MECH_paint_red",
+      "colors": {
+        "topcoat": [
+          0.5776,
+          0.1274,
+          0.0232
+        ],
+        "primer": [
+          0.06,
+          0.065,
+          0.07
+        ]
+      },
+      "layers": {
+        "topcoat": {
+          "rough": 0.42
+        }
+      },
+      "weather": {
+        "flat_impacts": 0.1,
+        "large_edges": 0.3,
+        "detail": 0.3,
+        "crease": 0.45,
+        "use": 0.25,
+        "dirt": 0.45,
+        "dust": 0.2
+      }
+    },
+    "MOG_rkth_rubber": {
+      "from": "MECH_rubber",
+      "color": [
+        0.0075,
+        0.0075,
+        0.0075
+      ]
+    },
+    "MOG_rkth_visor": {
+      "from": "MECH_glass",
+      "color": [
+        0.6867,
+        0.2542,
+        0.0103
+      ],
+      "rough": 0.05,
+      "emissive": 0.2,
+      "weather": {
+        "dust": 0.1,
+        "dirt": 0.1,
+        "detail": 0.15,
+        "use": 0.1
+      }
+    },
+    "MOG_rkt_glow": {
+      "from": "MECH_eye",
+      "color": [
+        0.0513,
+        0.807,
+        1.0
+      ]
+    }
+  },
+  "slots": {
+    "paint": "MOG_rkth_shell",
+    "decal": "MOG_rkth_orange",
+    "gunmetal": "MOG_rkth_frame",
+    "steel": "MOG_rkth_trim",
+    "rubber": "MOG_rkth_rubber",
+    "glass": "MOG_rkth_visor",
+    "eye": "MOG_rkt_glow"
+  },
+  "tint": [],
+  "base_tint": false,
+  "rams": false,
+  "pinch": [],
+  "decals": {
+    "count": 0
+  },
+  "targets": {
+    "MOG_rkth_shell": 1.0
+  },
+  "wear": [],
+  "tier_scale": {
+    "scorch": 0.0,
+    "scratch_cut": 0.5,
+    "age": 0.7,
+    "streaks": 0.3
+  },
+  "min_feature_px": 7,
+  "atlases": [
+    [
+      "Head"
+    ]
+  ],
+  "tier_set": {
+    "minimal": {
+      "ridge": 1.0,
+      "cavity": 1.0,
+      "ridge_mm": 4.0
+    }
+  },
+  "ao_per_piece": true
+}

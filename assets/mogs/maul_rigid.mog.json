@@ -1,0 +1,381 @@
+{
+ "mech": "maul",
+ "src": "C:\\Repos\\procModelWeathering\\build\\gri_src\\maul\\export",
+ "m_per_stud": 0.124,
+ "atlases": 3,
+ "face_ranges": {
+  "Torso": [
+   "maul_a1",
+   0,
+   2286
+  ],
+  "Neck": [
+   "maul_a1",
+   2286,
+   3234
+  ],
+  "ShoulderL": [
+   "maul_a1",
+   3234,
+   3746
+  ],
+  "ShoulderR": [
+   "maul_a1",
+   3746,
+   4258
+  ],
+  "UpperL": [
+   "maul_a1",
+   4258,
+   5010
+  ],
+  "UpperR": [
+   "maul_a1",
+   5010,
+   5762
+  ],
+  "ForeL": [
+   "maul_a1",
+   5762,
+   6370
+  ],
+  "ForeR": [
+   "maul_a1",
+   6370,
+   6978
+  ],
+  "Pelvis": [
+   "maul_a2",
+   0,
+   1144
+  ],
+  "ThighL": [
+   "maul_a2",
+   1144,
+   2029
+  ],
+  "ThighR": [
+   "maul_a2",
+   2029,
+   2914
+  ],
+  "ShinL": [
+   "maul_a2",
+   2914,
+   3878
+  ],
+  "ShinR": [
+   "maul_a2",
+   3878,
+   4842
+  ],
+  "BootL": [
+   "maul_a2",
+   4842,
+   5756
+  ],
+  "BootR": [
+   "maul_a2",
+   5756,
+   6670
+  ],
+  "ToeL": [
+   "maul_a2",
+   6670,
+   7056
+  ],
+  "ToeR": [
+   "maul_a2",
+   7056,
+   7442
+  ],
+  "Head": [
+   "maul_a3",
+   0,
+   5254
+  ]
+ },
+ "atlas_of": {
+  "Torso": 1,
+  "Neck": 1,
+  "ShoulderL": 1,
+  "ShoulderR": 1,
+  "UpperL": 1,
+  "UpperR": 1,
+  "ForeL": 1,
+  "ForeR": 1,
+  "Pelvis": 2,
+  "ThighL": 2,
+  "ThighR": 2,
+  "ShinL": 2,
+  "ShinR": 2,
+  "BootL": 2,
+  "BootR": 2,
+  "ToeL": 2,
+  "ToeR": 2,
+  "Head": 3
+ },
+ "stacks": [
+  "MOG_ml_glow",
+  "MOG_ml_gunmetal",
+  "MOG_ml_paint",
+  "MOG_ml_rubber"
+ ],
+ "config": {
+  "m_per_stud": 0.124,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_ml_paint",
+   "gunmetal": "MOG_ml_gunmetal",
+   "steel": "MOG_ml_steel",
+   "rubber": "MOG_ml_rubber",
+   "glass": "MOG_ml_glass",
+   "eye": "MOG_ml_glow",
+   "decal": "MOG_ml_paint",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper",
+   "paint2": "MOG_ml_paint2",
+   "glow": "MOG_ml_glow",
+   "cloth": "MOG_ml_cloth"
+  },
+  "tint": [],
+  "wear": [],
+  "decals": {
+   "count": 0,
+   "mirror": 0.6,
+   "targets": {
+    "MOG_ml_paint": 1.0
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": []
+   },
+   "scale": 1.0
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.175,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.03,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "ridge": 1.0,
+    "cavity": 1.0,
+    "ridge_mm": 4.0,
+    "rivets": 1.0,
+    "seams": 1.0,
+    "min_feature_px": 10
+   },
+   "scarred": {
+    "age": 0.63,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 0.5,
+    "scorch": 0.0,
+    "streaks": 0.24,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 10
+   }
+  },
+  "stacks": {
+   "MOG_ml_paint": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.2738,
+      0.0331,
+      0.0272
+     ],
+     "primer": [
+      0.06,
+      0.065,
+      0.07
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.6
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.12,
+     "large_edges": 0.3,
+     "detail": 0.3,
+     "crease": 0.45,
+     "use": 0.25,
+     "dirt": 0.45,
+     "dust": 0.2,
+     "streaks": 0.0
+    }
+   },
+   "MOG_ml_paint2": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.1473,
+      0.0153,
+      0.0116
+     ],
+     "primer": [
+      0.06,
+      0.065,
+      0.07
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.55
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.12,
+     "large_edges": 0.3,
+     "detail": 0.3,
+     "crease": 0.45,
+     "use": 0.25,
+     "dirt": 0.45,
+     "dust": 0.2,
+     "streaks": 0.0
+    }
+   },
+   "MOG_ml_gunmetal": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "topcoat": [
+      0.0331,
+      0.0316,
+      0.0301
+     ],
+     "primer": [
+      0.06,
+      0.06,
+      0.058
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.06,
+     "large_edges": 0.12,
+     "detail": 0.2,
+     "crease": 0.3,
+     "dirt": 0.45,
+     "dust": 0.2,
+     "use": 0.3,
+     "ridge": 0.6
+    }
+   },
+   "MOG_ml_rubber": {
+    "from": "MECH_rubber",
+    "color": [
+     0.0116,
+     0.0108,
+     0.0108
+    ]
+   },
+   "MOG_ml_glow": {
+    "from": "MECH_eye",
+    "color": [
+     1.0,
+     0.022,
+     0.0072
+    ]
+   },
+   "MOG_ml_steel": {
+    "from": "MECH_steel",
+    "color": [
+     0.2633,
+     0.2738,
+     0.2957
+    ]
+   },
+   "MOG_ml_glass": {
+    "from": "MECH_glass",
+    "color": [
+     0.7874,
+     0.0331,
+     0.01
+    ],
+    "rough": 0.05,
+    "weather": {
+     "dust": 0.1,
+     "dirt": 0.1,
+     "detail": 0.15,
+     "use": 0.1
+    }
+   },
+   "MOG_ml_cloth": {
+    "from": "MAT_fabric",
+    "color": [
+     0.0732,
+     0.0732,
+     0.0835
+    ],
+    "weave": {
+     "cell_mm": 3.0,
+     "height_um": 220
+    },
+    "weather": {
+     "crease": 0.1,
+     "dirt": 0.1,
+     "dust": 0.0,
+     "use": 0.2,
+     "detail": 0.15,
+     "streaks": 0.0,
+     "flat_impacts": 0.0,
+     "large_edges": 0.0,
+     "age": 0.4,
+     "edge_band": 0.0,
+     "fine_edge": 0.0
+    }
+   }
+  },
+  "atlases": [
+   [
+    "Torso",
+    "Neck",
+    "ShoulderL",
+    "ShoulderR",
+    "UpperL",
+    "UpperR",
+    "ForeL",
+    "ForeR"
+   ],
+   [
+    "Pelvis",
+    "ThighL",
+    "ThighR",
+    "ShinL",
+    "ShinR",
+    "BootL",
+    "BootR",
+    "ToeL",
+    "ToeR"
+   ],
+   [
+    "Head"
+   ]
+  ],
+  "ao_per_piece": true,
+  "equalize": false
+ }
+}

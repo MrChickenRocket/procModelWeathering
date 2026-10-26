@@ -1,0 +1,363 @@
+{
+ "mech": "horse",
+ "src": "C:\\Repos\\MogCompany\\tools\\out\\mogs\\horse\\export",
+ "m_per_stud": 0.025534,
+ "atlases": 1,
+ "face_ranges": {
+  "Pelvis": [
+   "horse_a1",
+   0,
+   488
+  ],
+  "Chest": [
+   "horse_a1",
+   488,
+   840
+  ],
+  "Neck": [
+   "horse_a1",
+   840,
+   1040
+  ],
+  "Neck2": [
+   "horse_a1",
+   1040,
+   1224
+  ],
+  "Head": [
+   "horse_a1",
+   1224,
+   2592
+  ],
+  "Tail1": [
+   "horse_a1",
+   2592,
+   2732
+  ],
+  "ThighL": [
+   "horse_a1",
+   2732,
+   2968
+  ],
+  "ShinL": [
+   "horse_a1",
+   2968,
+   3112
+  ],
+  "MetaL": [
+   "horse_a1",
+   3112,
+   3264
+  ],
+  "ToeL": [
+   "horse_a1",
+   3264,
+   3568
+  ],
+  "ThighR": [
+   "horse_a1",
+   3568,
+   3804
+  ],
+  "ShinR": [
+   "horse_a1",
+   3804,
+   3948
+  ],
+  "MetaR": [
+   "horse_a1",
+   3948,
+   4100
+  ],
+  "ToeR": [
+   "horse_a1",
+   4100,
+   4404
+  ],
+  "FThighL": [
+   "horse_a1",
+   4404,
+   4682
+  ],
+  "FShinL": [
+   "horse_a1",
+   4682,
+   4834
+  ],
+  "FMetaL": [
+   "horse_a1",
+   4834,
+   4978
+  ],
+  "FToeL": [
+   "horse_a1",
+   4978,
+   5238
+  ],
+  "FThighR": [
+   "horse_a1",
+   5238,
+   5516
+  ],
+  "FShinR": [
+   "horse_a1",
+   5516,
+   5668
+  ],
+  "FMetaR": [
+   "horse_a1",
+   5668,
+   5812
+  ],
+  "FToeR": [
+   "horse_a1",
+   5812,
+   6072
+  ]
+ },
+ "atlas_of": {
+  "Pelvis": 1,
+  "Chest": 1,
+  "Neck": 1,
+  "Neck2": 1,
+  "Head": 1,
+  "Tail1": 1,
+  "ThighL": 1,
+  "ShinL": 1,
+  "MetaL": 1,
+  "ToeL": 1,
+  "ThighR": 1,
+  "ShinR": 1,
+  "MetaR": 1,
+  "ToeR": 1,
+  "FThighL": 1,
+  "FShinL": 1,
+  "FMetaL": 1,
+  "FToeL": 1,
+  "FThighR": 1,
+  "FShinR": 1,
+  "FMetaR": 1,
+  "FToeR": 1
+ },
+ "stacks": [
+  "MECH_rubber",
+  "MECH_steel",
+  "MOG_glint",
+  "MOG_horse_dome",
+  "MOG_horse_frame",
+  "MOG_horse_lens",
+  "MOG_horse_white"
+ ],
+ "config": {
+  "m_per_stud": 0.025534,
+  "bake": {
+   "ao_distance": 0.01
+  },
+  "slots": {
+   "paint": "MOG_horse_white",
+   "gunmetal": "MOG_horse_frame",
+   "steel": "MECH_steel",
+   "rubber": "MECH_rubber",
+   "glass": "MOG_horse_dome",
+   "eye": "MOG_glint",
+   "decal": "MOG_horse_white",
+   "yellow": "MECH_paint_yellow",
+   "copper": "MECH_copper"
+  },
+  "tint": [
+   {
+    "slot": "eye",
+    "stack": "MOG_horse_lens",
+    "near": [
+     [
+      -0.505,
+      6.6802,
+      -4.66
+     ],
+     [
+      0.505,
+      6.6802,
+      -4.66
+     ]
+    ],
+    "mirror_x": false,
+    "within_studs": 0.004
+   }
+  ],
+  "wear": [
+   {
+    "bone": "ToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "ToeR",
+    "weight": 0.4
+   },
+   {
+    "bone": "FToeL",
+    "weight": 0.4
+   },
+   {
+    "bone": "FToeR",
+    "weight": 0.4
+   }
+  ],
+  "decals": {
+   "count": 0,
+   "mirror": 0,
+   "targets": {
+    "MOG_horse_white": 1.0
+   },
+   "pinch": {
+    "radius_studs": 0.35,
+    "per_point": 2,
+    "kinds": [
+     "hazard",
+     "warning"
+    ],
+    "points": []
+   },
+   "light_paint": [
+    "MOG_horse_white"
+   ],
+   "scale": 1.566532258064516
+  },
+  "tiers": {
+   "minimal": {
+    "age": 0.175,
+    "use": 0.3,
+    "humidity": 0.05,
+    "dirt": 0.15,
+    "dust": 0.05,
+    "detail": 0.5,
+    "scratch_cut": 0.0,
+    "scorch": 0.0,
+    "streaks": 0.1,
+    "crease": 0.3,
+    "edge_band": 0.15,
+    "edge_band_mm": 2.2,
+    "fine_edge": 0.35,
+    "min_feature_px": 7
+   },
+   "scarred": {
+    "age": 0.63,
+    "use": 0.75,
+    "humidity": 0.3,
+    "dirt": 0.5,
+    "dust": 0.2,
+    "detail": 1.4,
+    "scratch_cut": 0.5,
+    "scorch": 0.0,
+    "streaks": 0.8,
+    "crease": 1.0,
+    "edge_band": 0.5,
+    "edge_band_mm": 2.2,
+    "fine_edge": 1.0,
+    "min_feature_px": 7
+   }
+  },
+  "stacks": {
+   "MOG_glint": {
+    "from": "MECH_eye",
+    "color": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "MOG_horse_white": {
+    "from": "MECH_paint_red",
+    "colors": {
+     "topcoat": [
+      0.74,
+      0.72,
+      0.66
+     ],
+     "primer": [
+      0.05,
+      0.06,
+      0.08
+     ]
+    },
+    "layers": {
+     "topcoat": {
+      "rough": 0.35
+     }
+    },
+    "weather": {
+     "flat_impacts": 0.12,
+     "large_edges": 0.25,
+     "detail": 0.3,
+     "crease": 0.3,
+     "use": 0.3,
+     "dirt": 0.35,
+     "dust": 0.25
+    }
+   },
+   "MOG_horse_frame": {
+    "from": "MECH_gunmetal",
+    "colors": {
+     "topcoat": [
+      0.018,
+      0.018,
+      0.02
+     ],
+     "primer": [
+      0.1,
+      0.1,
+      0.097
+     ]
+    },
+    "weather": {
+     "flat_impacts": 0.08,
+     "large_edges": 0.12,
+     "detail": 0.2,
+     "crease": 0.2,
+     "dirt": 0.4,
+     "dust": 0.25,
+     "use": 0.4
+    }
+   },
+   "MOG_horse_lens": {
+    "from": "MECH_glass",
+    "color": [
+     0.004,
+     0.004,
+     0.005
+    ],
+    "rough": 0.2
+   },
+   "MOG_horse_dome": {
+    "from": "MECH_glass",
+    "rough": 0.03
+   }
+  },
+  "atlases": [
+   [
+    "Root",
+    "Pelvis",
+    "Chest",
+    "Neck",
+    "Neck2",
+    "Head",
+    "Tail1",
+    "ThighL",
+    "ShinL",
+    "MetaL",
+    "ToeL",
+    "ThighR",
+    "ShinR",
+    "MetaR",
+    "ToeR",
+    "FThighL",
+    "FShinL",
+    "FMetaL",
+    "FToeL",
+    "FThighR",
+    "FShinR",
+    "FMetaR",
+    "FToeR"
+   ]
+  ]
+ }
+}
