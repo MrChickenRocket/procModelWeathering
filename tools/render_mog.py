@@ -156,6 +156,10 @@ shoot("side", center, (1, 0, 0.08), span * 2.0)
 shoot("front", center, (0, 1, 0.12), span * 2.0)
 shoot("three_quarter", center, (0.75, 0.85, 0.45), span * 2.0)
 shoot("three_quarter_rear", center, (-0.8, -0.7, 0.4), span * 2.0)
+shoot("back", center, (0, -1, 0.12), span * 2.0)
+chest = co[(co[:, 2] > lo[2] + 0.5 * height) & (co[:, 2] < lo[2] + 0.8 * height)]
+if len(chest):
+    shoot("torso", (chest.min(0) + chest.max(0)) / 2, (0.3, 0.95, 0.25), np.linalg.norm(chest.max(0) - chest.min(0)) * 1.25)
 shoot("head", head_c, (0.8, 0.9, 0.35), head_r * 5.0)
 legs = co[co[:, 2] < lo[2] + 0.55 * height]
 legs_c = (legs.min(0) + legs.max(0)) / 2

@@ -1,0 +1,305 @@
+{
+ "m_per_stud": 0.124,
+ "bake": {
+  "ao_distance": 0.01
+ },
+ "slots": {
+  "paint": "MOG_tkr_paint",
+  "gunmetal": "MOG_tkr_gunmetal",
+  "steel": "MOG_tkr_steel",
+  "rubber": "MOG_tkr_rubber",
+  "glass": "MOG_tkr_glass",
+  "eye": "MOG_tkr_glow",
+  "decal": "MOG_tkr_paint",
+  "yellow": "MECH_paint_yellow",
+  "copper": "MECH_copper",
+  "paint2": "MOG_tkr_paint2",
+  "glow": "MOG_tkr_glow",
+  "cloth": "MOG_tkr_cloth"
+ },
+ "tint": [],
+ "wear": [],
+ "tiers": {
+  "minimal": {
+   "age": 0.175,
+   "use": 0.3,
+   "humidity": 0.05,
+   "dirt": 0.15,
+   "dust": 0.05,
+   "detail": 0.5,
+   "scratch_cut": 0.0,
+   "scorch": 0.0,
+   "streaks": 0.03,
+   "crease": 0.3,
+   "edge_band": 0.15,
+   "edge_band_mm": 2.2,
+   "fine_edge": 0.35,
+   "ridge": 1.0,
+   "cavity": 1.0,
+   "ridge_mm": 4.0,
+   "rivets": 1.0,
+   "seams": 1.0,
+   "min_feature_px": 10,
+   "ao_contact": 0.2,
+   "tones": 1.0,
+   "hemi": 0.07,
+   "lining": 0.35,
+   "edge_hi": 0.05,
+   "satin": 0.45,
+   "metallic": 0.5,
+   "metal_rough": 0.33
+  },
+  "scarred": {
+   "age": 0.63,
+   "use": 0.75,
+   "humidity": 0.3,
+   "dirt": 0.5,
+   "dust": 0.2,
+   "detail": 1.4,
+   "scratch_cut": 0.5,
+   "scorch": 0.0,
+   "streaks": 0.24,
+   "crease": 1.0,
+   "edge_band": 0.5,
+   "edge_band_mm": 2.2,
+   "fine_edge": 1.0,
+   "min_feature_px": 10
+  }
+ },
+ "stacks": {
+  "MOG_tkr_paint": {
+   "from": "MECH_paint_red",
+   "colors": {
+    "topcoat": [
+     0.7106,
+     0.42,
+     0.022
+    ],
+    "primer": [
+     0.05,
+     0.06,
+     0.08
+    ]
+   },
+   "layers": {
+    "topcoat": {
+     "rough": 0.5
+    }
+   },
+   "weather": {
+    "flat_impacts": 0.12,
+    "large_edges": 0.3,
+    "detail": 0.3,
+    "crease": 0.45,
+    "use": 0.25,
+    "dirt": 0.45,
+    "dust": 0.2,
+    "streaks": 0.0
+   }
+  },
+  "MOG_tkr_paint2": {
+   "from": "MECH_paint_red",
+   "colors": {
+    "topcoat": [
+     0.0593,
+     0.0615,
+     0.066
+    ],
+    "primer": [
+     0.05,
+     0.06,
+     0.08
+    ]
+   },
+   "layers": {
+    "topcoat": {
+     "rough": 0.55
+    }
+   },
+   "weather": {
+    "flat_impacts": 0.12,
+    "large_edges": 0.3,
+    "detail": 0.3,
+    "crease": 0.45,
+    "use": 0.25,
+    "dirt": 0.45,
+    "dust": 0.2,
+    "streaks": 0.0
+   }
+  },
+  "MOG_tkr_gunmetal": {
+   "from": "MECH_gunmetal",
+   "colors": {
+    "topcoat": [
+     0.1065,
+     0.1128,
+     0.126
+    ],
+    "primer": [
+     0.06,
+     0.06,
+     0.058
+    ]
+   },
+   "weather": {
+    "flat_impacts": 0.06,
+    "large_edges": 0.12,
+    "detail": 0.2,
+    "crease": 0.3,
+    "dirt": 0.45,
+    "dust": 0.2,
+    "use": 0.3,
+    "ridge": 0.6
+   }
+  },
+  "MOG_tkr_rubber": {
+   "from": "MECH_rubber",
+   "color": [
+    0.0153,
+    0.0153,
+    0.0174
+   ]
+  },
+  "MOG_tkr_glow": {
+   "from": "MECH_eye",
+   "color": [
+    1.0,
+    0.6038,
+    0.0134
+   ]
+  },
+  "MOG_tkr_steel": {
+   "from": "MECH_steel",
+   "color": [
+    0.3185,
+    0.3185,
+    0.3185
+   ]
+  },
+  "MOG_tkr_glass": {
+   "from": "MECH_glass",
+   "color": [
+    0.0039,
+    0.0039,
+    0.0044
+   ],
+   "rough": 0.05,
+   "weather": {
+    "dust": 0.1,
+    "dirt": 0.1,
+    "detail": 0.15,
+    "use": 0.1
+   }
+  },
+  "MOG_tkr_cloth": {
+   "from": "MAT_polymer",
+   "color": [
+    0.1473,
+    0.0637,
+    0.0245
+   ],
+   "rough": 0.6,
+   "weather": {
+    "use": 0.5,
+    "dirt": 0.4,
+    "dust": 0.2,
+    "detail": 0.2,
+    "flat_impacts": 0.0,
+    "large_edges": 0.0,
+    "streaks": 0.0
+   }
+  }
+ },
+ "atlases": [
+  [
+   "Torso",
+   "Neck",
+   "ShoulderL",
+   "ShoulderR",
+   "UpperL",
+   "UpperR",
+   "ForeL",
+   "ForeR"
+  ],
+  [
+   "Pelvis",
+   "ThighL",
+   "ThighR",
+   "ShinL",
+   "ShinR",
+   "BootL",
+   "BootR",
+   "ToeL",
+   "ToeR"
+  ],
+  [
+   "Head"
+  ]
+ ],
+ "ao_per_piece": true,
+ "equalize": false,
+ "livery": {
+  "targets": {
+   "MOG_tkr_paint": 1.0,
+   "MOG_tkr_paint2": 0.6,
+   "MOG_tkr_gunmetal": 0.5
+  },
+  "light_paint": [
+   "MOG_tkr_paint"
+  ],
+  "pinch": [
+   {
+    "at": [
+     -0.42,
+     1.44,
+     -0.813
+    ],
+    "mirror_x": true,
+    "kinds": [
+     "warning",
+     "hazard"
+    ],
+    "count": 2
+   },
+   {
+    "at": [
+     -1.98,
+     3.559,
+     -0.21
+    ],
+    "mirror_x": true,
+    "kinds": [
+     "warning"
+    ],
+    "count": 1
+   },
+   {
+    "at": [
+     -1.09,
+     4.5,
+     -0.2
+    ],
+    "mirror_x": true,
+    "kinds": [
+     "hazard"
+    ],
+    "count": 1
+   }
+  ],
+  "panels": 3,
+  "stripes": 4,
+  "panel_min_d": 0.1,
+  "anchors": [
+   {
+    "part": "tinkerer_a1",
+    "at": [
+     -0.025,
+     0,
+     0.5
+    ],
+    "h": 0.014,
+    "cover": 0.85
+   }
+  ]
+ }
+}

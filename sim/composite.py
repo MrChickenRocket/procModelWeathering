@@ -10,7 +10,6 @@ from .materials import BASES, DUST, GRIME, HEAT_TINT, RUST, SOOT, STACKS
 from .noise import fbm, smoothstep
 from .wear import scale_params
 
-AO_STRENGTH = 0.75
 DEBUG_FIELDS = ("fray", "contact", "coat", "wear", "rust", "impact", "scratch", "grime", "dust", "polymer_wear", "rounding",
                 "scorch", "streaks", "decal_alpha", "lip", "edge_band", "ridge", "relief_mm")
 DEBUG_SIZE = 1024
@@ -115,7 +114,7 @@ def _shade(part, F, prm, raw=False):
         drive = F["contact"] * np.clip(m["ao_assembled"], 0, 1) ** 1.5 * (0.35 + 0.8 * edge)
         pw = smoothstep(0.2, 0.6, drive * (0.25 + 1.5 * patches) * 2 * prm.age * prm.use)
         # Corners take every knock regardless of grip patches; the sharpest edge line abrades matte grey.
-        corner = smoothstep(0.3, 0.8, m["convex_small"]) * np.clip(m["ao_assembled"], 0, 1) * (0.5 + F["contact"])
+        corner = smoothstep(0.3, 0.8, m["convex_small"]) * np.clip(m["ao_assembled"], 0, 1) * (0.5 + F["contact"]) * m.get("exposure", 1.0)
         pw = np.maximum(pw, smoothstep(0.1, 0.4, corner * 2 * prm.age * prm.use))
         scuff = smoothstep(0.5, 0.9, m["convex_small"]) * smoothstep(0.2, 0.6, corner * 2 * prm.age * prm.use)
         # Over a player-picked Color the polish darkening reads as camo, so overlay keeps it mostly in roughness.
@@ -172,7 +171,7 @@ def _shade(part, F, prm, raw=False):
         level += 0.004 * da
         F["decal_alpha"] = da
     contact = F["contact"]
-    expo = np.clip(m["ao_assembled"], 0, 1) ** 1.5
+    expo = np.clip(m["ao_assembled"], 0, 1) ** 1.5 * m.get("exposure", 1.0)
     if prm.detail > 0 and not clean:
         # Micro-scratches haze gloss and burnish matte finishes, so roughness moves toward the middle.
         sc = _detail("scratches", part, prm, seed + 40) * np.clip(1.5 * contact + 0.15, 0, 1) * expo * prm.detail
@@ -217,15 +216,61 @@ def _shade(part, F, prm, raw=False):
 
     if not overlay:
         # Overlay maps carry wear only; the part's flat Color has no baked occlusion either.
-        col = col * (1 - AO_STRENGTH * (1 - np.clip(m["ao"], 0, 1)))[:, None]
+        col = col * (1 - prm.ao_self * (1 - np.clip(m["ao"], 0, 1)))[:, None]
+        if prm.ao_contact > 0 and "ao_contact" in m:
+            col = col * _lin(1 - prm.ao_contact * (1 - np.clip(m["ao_contact"], 0, 1)))[:, None]
+        if not clean:
+            col, rough, metal = _finish(part, F, prm, col, rough, metal, stack)
     F["polymer_wear"] = flatten / 0.75
-    corner = smoothstep(0.3, 0.8, m["convex_small"]) * np.clip(m["ao_assembled"], 0, 1) * (0.5 + F["contact"])
+    corner = smoothstep(0.3, 0.8, m["convex_small"]) * np.clip(m["ao_assembled"], 0, 1) * (0.5 + F["contact"]) * m.get("exposure", 1.0)
     worn_round = smoothstep(0.1, 0.4, corner * 2 * prm.age * prm.use)
     rounding = np.clip(base["round"] + (1 - base["round"]) * worn_round, 0, 1).astype(np.float32)
     F["rounding"] = rounding
     return dict(color=col if raw else np.clip(col, 0, 1), metal=np.clip(metal, 0, 1),
                 rough=np.clip(rough, 0.02, 1), height_mm=height, flatten=flatten, rounding=rounding,
                 emissive=np.full(N, float(stack.get("emissive", base.get("emissive", False))), np.float32))
+
+
+def _lin(f):
+    return np.maximum(f, 0) ** 2.2
+
+
+def _hue_rotate(col, deg):
+    """Rotate about the grey axis: shifts hue while keeping the channel mean and roughly the saturation."""
+    a = np.radians(deg)[:, None]
+    k = np.full(3, 1 / np.sqrt(3), np.float32)
+    return col * np.cos(a) + np.cross(k, col) * np.sin(a) + k * (col @ k)[:, None] * (1 - np.cos(a))
+
+
+def _finish(part, F, prm, col, rough, metal, stack):
+    """Model-kit finish over the paint: per-panel tone variants, sky-light gradient, panel lining, edge highlight.
+    Strengths are fractions of displayed (sRGB) value; _lin turns them into linear-colour factors."""
+    m = part.maps
+    layered = bool(stack["layers"])
+    # Topcoat present: satin and metallic finishes sit on the paint only, never on primer or bare metal in chips.
+    paint = layered and stack["base"] != "fabric" and stack["layers"][-1]["metal"] < 0.5
+    top = F["layers"][:, -1] * (1 - F.get("decal_alpha", 0)) if paint else 0.0
+    if prm.satin > 0 or prm.metallic > 0:
+        clean = stack["layers"][-1]["rough"] if paint else 0.0
+        metal_v = (m["tone"] > 0.5) * float(prm.metallic > 0) if "tone" in m else 0.0
+        target = np.where(metal_v, prm.metal_rough, prm.satin if prm.satin > 0 else clean)
+        rough = rough + (target - clean) * top
+        metal = metal + (prm.metallic * metal_v - metal) * top
+    if prm.tones > 0 and "tone" in m:
+        v = m["tone"].astype(np.float32) * prm.tones
+        col = _hue_rotate(col, 3.0 * v) * _lin(1 + 0.045 * v)[:, None]
+    if prm.hemi > 0:
+        nz = m["normal_obj"][:, 2].astype(np.float32)
+        col = col * _lin(1 + prm.hemi * nz)[:, None]
+    if prm.lining > 0:
+        line = np.maximum(smoothstep(0.2, 0.55, m["concave_small"]), m.get("piece_seam", 0.0))
+        col = col * _lin(1 - prm.lining * line)[:, None]
+    if prm.edge_hi > 0:
+        # Under edge wear: any thinned layer or worn band takes the highlight back out.
+        keep = F["layers"].min(1) if layered else 1.0
+        keep = keep * (1 - np.clip(F.get("edge_band", 0) + F.get("lip", 0) + F["wear"], 0, 1))
+        col = col * _lin(1 + prm.edge_hi * smoothstep(0.2, 0.55, m["convex_small"]) * keep)[:, None]
+    return col, rough, metal
 
 
 def scatter(part, v, fill=0.0):

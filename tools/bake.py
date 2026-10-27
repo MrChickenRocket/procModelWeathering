@@ -50,6 +50,9 @@ MAPS = {
                           "line where another piece sits on or over this one"),
     "thickness": (1, "ao", dict(distance=0.01, inside=True, only_local=True), AO_SAMPLES,
                   "material thickness up to 10 mm, 1 = thick"),
+    "ao_contact": (1, "ao", dict(distance=0.05, inside=False, only_local=False), AO_SAMPLES,
+                   "short-range contact occlusion (~0.4 stud) with all other parts present, 1 = open"),
+    "piece": (1, "piece", {}, 1, "id of the connected mesh piece (panel) the texel lies on, 1-based, 0 = none"),
     "matid": (1, "matid", {}, 1, "index into meta materials as (i + 0.5) / MATID_SCALE; multi-material parts only"),
 }
 MATID_SCALE = 32
@@ -114,6 +117,11 @@ def emit_material(kind, args):
     elif kind == "normal":
         geo = nt.nodes.new("ShaderNodeNewGeometry")
         nt.links.new(geo.outputs["Normal"], emit.inputs["Color"])
+    elif kind == "piece":
+        at = nt.nodes.new("ShaderNodeAttribute")
+        at.attribute_type = 'GEOMETRY'
+        at.attribute_name = "_piece"
+        nt.links.new(at.outputs["Fac"], emit.inputs["Color"])
     elif kind in ("ao", "ao_inv"):
         ao = nt.nodes.new("ShaderNodeAmbientOcclusion")
         ao.samples = AO_SAMPLES
@@ -129,6 +137,35 @@ def emit_material(kind, args):
             src = inv.outputs["Value"]
         nt.links.new(src, emit.inputs["Color"])
     return mat
+
+
+def tag_pieces(highs):
+    """Face attribute _piece: 1-based id of each connected run of faces, numbered across the part's highs in name
+    order, so the ids stay put while the meshes do."""
+    import bmesh
+    nxt = 1
+    for h in sorted(highs, key=lambda o: o.name):
+        bm = bmesh.new()
+        bm.from_mesh(h.data)
+        bm.faces.ensure_lookup_table()
+        ids = np.zeros(len(bm.faces), np.float32)
+        for f0 in bm.faces:
+            if ids[f0.index]:
+                continue
+            stack = [f0]
+            ids[f0.index] = nxt
+            while stack:
+                f = stack.pop()
+                for v in f.verts:
+                    for g in v.link_faces:
+                        if not ids[g.index]:
+                            ids[g.index] = nxt
+                            stack.append(g)
+            nxt += 1
+        bm.free()
+        at = h.data.attributes.get("_piece") or h.data.attributes.new("_piece", 'FLOAT', 'FACE')
+        at.data.foreach_set("value", ids)
+    return nxt - 1
 
 
 def matid_material(i):
@@ -180,6 +217,8 @@ def bake_map(name, low, high, image, highs):
         # The high is a copy of the low, so the tangent normal is flat by definition; a ray bake would only
         # pick up neighbouring pieces that sit within the cage distance.
         return np.broadcast_to(np.array([0, 0, 1], np.float32), (image.size[1], image.size[0], 3)).copy()
+    if kind == "piece":
+        print(f"[bake] {low.name}: {tag_pieces(high)} pieces")
     if name in ("ao", "ao_assembled") and "ao_distance" in scene:
         args = dict(args, distance=scene["ao_distance"])
 

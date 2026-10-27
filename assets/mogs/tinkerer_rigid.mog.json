@@ -7,92 +7,92 @@
   "Torso": [
    "tinkerer_a1",
    0,
-   2170
+   2232
   ],
   "Neck": [
    "tinkerer_a1",
-   2170,
-   2350
+   2232,
+   2504
   ],
   "ShoulderL": [
    "tinkerer_a1",
-   2350,
-   2664
+   2504,
+   2996
   ],
   "ShoulderR": [
    "tinkerer_a1",
-   2664,
-   2978
+   2996,
+   3488
   ],
   "UpperL": [
    "tinkerer_a1",
-   2978,
-   3736
+   3488,
+   4246
   ],
   "UpperR": [
    "tinkerer_a1",
-   3736,
-   4494
+   4246,
+   5004
   ],
   "ForeL": [
    "tinkerer_a1",
-   4494,
-   5112
+   5004,
+   5622
   ],
   "ForeR": [
    "tinkerer_a1",
-   5112,
-   5730
+   5622,
+   6240
   ],
   "Pelvis": [
    "tinkerer_a2",
    0,
-   1262
+   1787
   ],
   "ThighL": [
    "tinkerer_a2",
-   1262,
-   2292
+   1787,
+   2956
   ],
   "ThighR": [
    "tinkerer_a2",
-   2292,
-   3322
+   2956,
+   4125
   ],
   "ShinL": [
    "tinkerer_a2",
-   3322,
-   4416
+   4125,
+   5155
   ],
   "ShinR": [
    "tinkerer_a2",
-   4416,
-   5510
+   5155,
+   6185
   ],
   "BootL": [
    "tinkerer_a2",
-   5510,
-   6528
+   6185,
+   7274
   ],
   "BootR": [
    "tinkerer_a2",
-   6528,
-   7546
+   7274,
+   8363
   ],
   "ToeL": [
    "tinkerer_a2",
-   7546,
-   7976
+   8363,
+   8781
   ],
   "ToeR": [
    "tinkerer_a2",
-   7976,
-   8406
+   8781,
+   9199
   ],
   "Head": [
    "tinkerer_a3",
    0,
-   4270
+   4444
   ]
  },
  "atlas_of": {
@@ -373,6 +373,12 @@
    ]
   ],
   "ao_per_piece": true,
-  "equalize": false
+  "equalize": false,
+  "exposure": {
+   "dir": "C:/Repos/GRI_Dan/tools/out/characters/tinkerer/export/exposure",
+   "lo": 0.0,
+   "hi": 0.03,
+   "reach_studs": 0.05
+  }
  }
 }

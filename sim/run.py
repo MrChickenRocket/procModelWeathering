@@ -13,7 +13,7 @@ from dataclasses import asdict, fields
 import numpy as np
 from scipy.spatial import cKDTree
 
-from . import decals, materials
+from . import decals, finish, livery, materials
 from .composite import shade, write_outputs
 from .noise import fbm
 from .wear import FOLD3D_FRAC, Params, Part, curvature3d, folds3d, simulate
@@ -29,7 +29,9 @@ def _init_worker(threads):
 
 
 def run_atlas(part, stacks, prm, vols, mog, log):
-    if mog and "decals" in mog:
+    if mog and "livery" in mog:
+        livery.place(part, dict(mog["livery"], m_per_stud=mog["m_per_stud"]), prm.seed, log=log)
+    elif mog and "decals" in mog:
         # Several atlas parts share the mog's marking budget by surface area.
         d = mog["decals"]
         d = dict(d, count=round(d["count"] * mog.get("area_frac", {}).get(part.name, 1.0)), m_per_stud=mog["m_per_stud"])
@@ -164,6 +166,30 @@ def burn_field(P, burns, m_per_stud):
     return out
 
 
+def exposure_field(P, n, ex, m_per_stud):
+    """Weather exposure from GRI's spherecast samples ({"dir": folder of <Part>.npz with pos/nrm/exposure in Roblox
+    studs}): best exposure among samples within reach_studs whose normal agrees, else the nearest sample's, mapped
+    through smoothstep(lo, hi)."""
+    import glob
+    pos, nrm, e = [], [], []
+    for f in sorted(glob.glob(os.path.join(ex["dir"], "*.npz"))):
+        d = np.load(f)
+        pos.append(d["pos"]), nrm.append(d["nrm"]), e.append(d["exposure"])
+    pos = (np.concatenate(pos).astype(np.float64) @ RBX_TO_BLENDER.T) * m_per_stud
+    nrm = np.concatenate(nrm).astype(np.float64) @ RBX_TO_BLENDER.T
+    e = np.concatenate(e).astype(np.float32)
+    dist, idx = cKDTree(pos).query(P, k=16, distance_upper_bound=ex.get("reach_studs", 0.05) * m_per_stud, workers=-1)
+    ok = np.isfinite(dist)
+    idx = np.where(ok, idx, 0)
+    agree = ok & (np.einsum("ikj,ij->ik", nrm[idx], n) > 0.5)
+    best = np.where(agree, e[idx], -1).max(1)
+    near = e[cKDTree(pos).query(P, workers=-1)[1]]
+    raw = np.where(best >= 0, best, near)
+    lo, hi = ex.get("lo", 0.0), ex.get("hi", 0.03)
+    t = np.clip((raw - lo) / (hi - lo), 0, 1)
+    return (t * t * (3 - 2 * t)).astype(np.float32)
+
+
 def run_part(bake_dir, out_dir, name, material, prm, vols, stacks=None, mog=None):
     lines = []
     t = time.time()
@@ -188,8 +214,15 @@ def run_part(bake_dir, out_dir, name, material, prm, vols, stacks=None, mog=None
         h = mog["haze"]
         y = part.pos[:, 2] / mog["m_per_stud"]
         part.maps["haze"] = (h.get("strength", 0.5) * np.clip(1 - y / h["below_studs"], 0, 1)).astype(np.float32)
+    if mog and "exposure" in mog:
+        n = part.maps["normal_obj"].astype(np.float64)
+        n /= np.maximum(np.linalg.norm(n, axis=1, keepdims=True), 1e-12)
+        part.maps["exposure"] = exposure_field(part.pos, n, mog["exposure"], mog["m_per_stud"])
     if mog and "burns" in mog:
         part.maps["burn"] = burn_field(part.pos, mog["burns"], mog["m_per_stud"])
+    if (prm.tones > 0 or prm.lining > 0) and "piece" in part.maps:
+        part.maps["tone"], part.maps["piece_seam"] = finish.panel_fields(
+            part.pos, part.maps["piece"], part.texel, 0.1 * (mog["m_per_stud"] if mog else 0.124), log=lines.append)
     if "matid" in part.maps and len(part.meta.get("materials", [])) > 1:
         F, out = run_atlas(part, stacks or {}, prm, vols, mog, lines.append)
     else:

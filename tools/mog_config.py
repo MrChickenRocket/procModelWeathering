@@ -3,7 +3,9 @@
 python tools/mog_config.py <spec.json> <export_dir> <out.json>
 
 spec: {height, stacks, slots, tint, wear, pinch: [{at, mirror_x, kinds?, count?}], rams: true, decals: {...},
-       tier_scale: {<Params field>: multiplier}, tier_set: {<tier>: {<Params field>: value}}, min_feature_px, base_tint, atlases, ao_per_piece, equalize, burns, grime, dust, haze, density, glow_through, soot, stripes, patterns}
+       tier_scale: {<Params field>: multiplier}, tier_set: {<tier>: {<Params field>: value}}, min_feature_px, base_tint, atlases, ao_per_piece, equalize, burns, grime, dust, haze, exposure, density, glow_through, soot, stripes, patterns,
+       livery_tune}
+livery_tune is merged into the pristine set's livery config by tools/gri/pristine_cfg.py (see sim/livery.py).
 glow_through, soot, stripes and patterns are documented at their use in sim/run.py.
 base_tint false drops the raptor's tint rules (random red rubber).
 tier_scale scales both tiers for every stack (frames and rubber too); a stack's weather scales only that stack.
@@ -33,7 +35,8 @@ def main():
     cfg["slots"].update(spec.get("slots", {}))
     cfg["tint"] = (cfg["tint"] if spec.get("base_tint", True) else []) + spec.get("tint", [])
     cfg["wear"] = spec["wear"]
-    for key in ("atlases", "density", "glow_through", "soot", "stripes", "patterns", "ao_per_piece", "equalize", "burns", "grime", "dust", "haze"):
+    for key in ("atlases", "density", "glow_through", "soot", "stripes", "patterns", "ao_per_piece", "equalize", "burns", "grime", "dust", "haze", "exposure",
+                "livery_tune"):
         cfg.pop(key, None)
         if key in spec:
             cfg[key] = spec[key]

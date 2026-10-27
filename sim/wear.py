@@ -69,7 +69,17 @@ class Params:
     seams: float = 0.0         # scribed panel line further in from the rim on plates big enough to hold one
     seam_inset_mm: float = 9.0
     seam_mm: float = 0.6       # groove half-width
+    factory: float = 0.0       # 1 = factory-new: rivet/seam relief and AO only; every wear, dirt and fray field is cleared
     fray: float = 0.0          # fabric bases only: bleached, fuzzy, broken-up threads along torn and folded edges
+    ao_self: float = 0.75      # colour darkening from the per-piece AO bake at full occlusion
+    ao_contact: float = 0.0    # colour darkening from the assembled short-range ao_contact bake (pieces meeting)
+    tones: float = 0.0         # per-panel paint tone variants: 1 = +-4.5% value, +-3 deg hue on neighbouring pieces
+    hemi: float = 0.0          # sky-light gradient: up-facing lighter, down-facing darker by this fraction
+    lining: float = 0.0        # Gunpla panel lining: darkening in creases and piece-to-piece seams
+    edge_hi: float = 0.0       # lightening on convex chamfers, under any edge wear
+    satin: float = 0.0         # painted topcoat's clean roughness (0 = the stack's own); wear still roughens from there
+    metallic: float = 0.0      # metalness of the +1 tone variant's topcoat (metallic-flake paint); 0 = plain paint
+    metal_rough: float = 0.33  # clean roughness of that metallic variant
     min_feature_px: float = 0.0  # chip radius and micro-noise floor in texels, for coarse atlases; a stack's weather may set it
 
 
@@ -614,6 +624,11 @@ def simulate(part, vols, prm, log=print):
             F["T"][:, :-1] *= (1 - 0.9 * smoothstep(0.75, 0.95, crown))[:, None]
 
     F["layers"] = F.pop("T") / np.maximum(thick, 1e-6) if layers else np.zeros((N, 0), np.float32)
+    if prm.factory > 0:
+        F["layers"][:] = 1.0
+    if "exposure" in m:
+        # Spherecast weather exposure: surfaces nothing outdoors reaches keep their paint. Grime is left ungated.
+        F["layers"] = 1 - (1 - F["layers"]) * m["exposure"][:, None]
     flaky = [k for k, l in enumerate(layers) if l["profile"] == "voronoi"]
     if flaky:
         seed_texel = np.concatenate([
@@ -643,6 +658,13 @@ def simulate(part, vols, prm, log=print):
     up = np.clip(n[:, 2], 0, 1) ** 2
     F["dust"] = np.clip(prm.dust * prm.age * 2.5 * up * m["ao_assembled"] * (1 - contact)
                         * smoothstep(0.3, 0.7, fbm(P, 600, 4, seed + 5)), 0, 1).astype(np.float32)
+    if "exposure" in m:
+        for k in ("contact", "lip", "edge_band", "impact", "dent_mm", "scratch", "wear", "rust", "dust", "streaks", "ridge", "fray"):
+            F[k] = (F[k] * m["exposure"]).astype(np.float32)
+    if prm.factory > 0:
+        for k in ("contact", "lip", "edge_band", "impact", "dent_mm", "scratch", "wear", "rust", "dust", "streaks", "ridge",
+                  "fray", "grime", "scorch"):
+            F[k] = np.zeros(N, np.float32)
     if layers:
         exposed = m["ao_assembled"] > 0.6
         bottom, top = F["layers"][:, 0], F["layers"][:, -1]

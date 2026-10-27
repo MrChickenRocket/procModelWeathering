@@ -7,42 +7,42 @@
   "Torso": [
    "rocketeer_a1",
    0,
-   4590
+   4592
   ],
   "Neck": [
    "rocketeer_a1",
-   4590,
-   4762
+   4592,
+   4764
   ],
   "ShoulderL": [
    "rocketeer_a1",
-   4762,
-   5094
+   4764,
+   5096
   ],
   "ShoulderR": [
    "rocketeer_a1",
-   5094,
-   5426
+   5096,
+   5428
   ],
   "UpperL": [
    "rocketeer_a1",
-   5426,
-   6136
+   5428,
+   6138
   ],
   "UpperR": [
    "rocketeer_a1",
-   6136,
-   6846
+   6138,
+   6848
   ],
   "ForeL": [
    "rocketeer_a1",
-   6846,
-   7421
+   6848,
+   7423
   ],
   "ForeR": [
    "rocketeer_a1",
-   7421,
-   7996
+   7423,
+   7998
   ],
   "Pelvis": [
    "rocketeer_a2",
@@ -92,7 +92,7 @@
   "Head": [
    "rocketeer_a3",
    0,
-   3332
+   1564
   ]
  },
  "atlas_of": {
@@ -379,6 +379,12 @@
    ]
   ],
   "ao_per_piece": true,
-  "equalize": false
+  "equalize": false,
+  "exposure": {
+   "dir": "C:/Repos/GRI_Dan/tools/out/characters/rocketeer/export/exposure",
+   "lo": 0.0,
+   "hi": 0.03,
+   "reach_studs": 0.05
+  }
  }
 }

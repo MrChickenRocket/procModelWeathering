@@ -383,6 +383,12 @@
   "haze": {
    "below_studs": 1.6,
    "strength": 0.45
+  },
+  "exposure": {
+   "dir": "C:/Repos/GRI_Dan/tools/out/characters/frostbite/export/exposure",
+   "lo": 0.0,
+   "hi": 0.03,
+   "reach_studs": 0.05
   }
  }
 }

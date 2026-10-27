@@ -205,7 +205,15 @@
       "ridge": 1.0,
       "cavity": 1.0,
       "ridge_mm": 4.0,
-      "scorch": 0.4
+      "scorch": 0.4,
+      "ao_contact": 0.2,
+      "tones": 1.0,
+      "hemi": 0.07,
+      "lining": 0.35,
+      "edge_hi": 0.05,
+      "satin": 0.45,
+      "metallic": 0.5,
+      "metal_rough": 0.33
     }
   },
   "ao_per_piece": true,
@@ -244,5 +252,11 @@
       "radius_studs": 0.22,
       "strength": 0.8
     }
-  ]
+  ],
+  "exposure": {
+    "dir": "C:/Repos/GRI_Dan/tools/out/characters/pyro/export/exposure",
+    "lo": 0.0,
+    "hi": 0.03,
+    "reach_studs": 0.05
+  }
 }
